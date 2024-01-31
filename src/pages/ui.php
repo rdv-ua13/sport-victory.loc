@@ -563,7 +563,7 @@
                         <span class="tooltip" data-tippy-content="search">
                             <!--start ui content-->
                             <div class="titled-input">
-                                <div class="input-title">Label</div>
+                                <div class="input-title">Label search</div>
 
                                 <div class="input-search-wrapper has-data">
                                     <input class="input-reset input-search has-data"

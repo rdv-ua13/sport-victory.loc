@@ -16,6 +16,7 @@ application.prototype.init = function () {
     this.setMenuHeightOverflow();
     this.initMenuCatalogSubmenu();
     this.initSliders();
+    this.initReadmore();
 
 
     /*
@@ -340,7 +341,7 @@ application.prototype.initMenuCatalogSubmenu = function () {
     }
 };
 
-// Initialize sliders
+// Initialization sliders
 application.prototype.initSliders = function () {
     /*if ($('.product-card-descr-slider').length) {
         let productCardDescrSliderThumb = null;
@@ -555,6 +556,54 @@ application.prototype.initSliders = function () {
         }
 
     }*/
+};
+
+// Initialization readmore plugin
+application.prototype.initReadmore = function () {
+    if ($('[data-spoiler]').length) {
+
+        console.log("success");
+        const spoiler = $('[data-spoiler]');
+
+        spoiler.each(function (i) {
+            let currentMoreText = $(this).data('spoiler-more');
+            let currentLessText = $(this).data('spoiler-less');
+            let defaultHeight = 200;
+            let defaultMoreText = 'Показать все';
+            let defaultLessText = 'Свернуть';
+            let currentElemHeight = spoiler.eq(i).data('collapsed-height');
+
+            if ($(this).is('[data-spoiler-more]')) {
+                currentMoreText = currentMoreText;
+                currentLessText = defaultLessText;
+            } else if ($(this).is('[data-spoiler-less]')) {
+                currentMoreText = defaultMoreText;
+                currentLessText = currentLessText;
+            } else if (!$(this).is('[data-spoiler-more]') && !$(this).is('[data-spoiler-less]')) {
+                currentMoreText = defaultMoreText;
+                currentLessText = defaultLessText;
+            }
+
+            if (currentElemHeight === '' || currentElemHeight === null || currentElemHeight === undefined) {
+                currentElemHeight = defaultHeight;
+            }
+
+            if ($(this).find('.spoiler-content').height() > defaultHeight) {
+                $(this).addClass('spoiler-scrolled');
+            }
+
+            spoiler.eq(i).addClass('spoiler-' + i);
+            $('.spoiler-' + i).readmore({
+                collapsedHeight: currentElemHeight,
+                moreLink: '<a href="javascript:;" class="link-dashed link-red spoiler-trigger">\n' +
+                    '                                        <span class="btn__text">' + currentMoreText + '</span>\n' +
+                    '                                    </a>',
+                lessLink: '<a href="javascript:;" class="link-dashed link-red spoiler-trigger">\n' +
+                    '                                        <span class="btn__text">' + currentLessText + '</span>\n' +
+                    '                                    </a>'
+            });
+        });
+    }
 };
 
 

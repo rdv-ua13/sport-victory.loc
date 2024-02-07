@@ -306,9 +306,11 @@
             </button>
         </div>
 
-        <div class="mobile-menu__item mobile-menu-contacts">
-            <a class="mobile-menu-contacts__number" href="tel:+88005553829">8 800 555-38-29</a>
-            <a class="link-dashed link-gray mobile-menu-contacts__call" href="javascript:;">Звонок по РФ бесплатный</a>
+        <div class="mobile-menu__item">
+            <a class="mobile-menu-contacts" href="tel:+88005553829">
+                <span class="mobile-menu-contacts__num fz-subtitle">8 800 555-38-29</span>
+                <span class="mobile-menu-contacts__caption link-secondary fz-caption">Звонок по РФ бесплатный</span>
+            </a>
         </div>
     </div>
 </div>

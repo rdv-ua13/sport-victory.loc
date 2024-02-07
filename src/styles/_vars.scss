@@ -34,18 +34,13 @@
 	// transition
 	--transition: 0.2s ease-out;
 }
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
 	:root {
-		--container-offset: 80px;
+		--container-offset: 60px;
 	}
 }
 @media (max-width: 991.98px) {
 	:root {
 		--container-offset: 16px;
-	}
-}
-@media (min-width: 992px) and (max-width: 1439.98px) {
-	:root {
-		--container-offset: 50px;
 	}
 }

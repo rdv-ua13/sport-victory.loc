@@ -8,8 +8,14 @@ function application() {
     //this.myMap;
 }
 application.prototype.init = function () {
+    this.initTouch();
     this.initHeaderScroll();
     this.initBurger();
+    this.initOverlay();
+    this.initMenu();
+
+
+    /*
     this.initPopupMenuMobile();
     this.initHeaderActionsMobile();
     this.initOverlay();
@@ -36,31 +42,14 @@ application.prototype.init = function () {
     this.initMaskedInput();
     this.initAddList();
     this.initDropfiles();
-    this.initDatepicker();
     this.initReadmore();
     this.initAccordion();
     this.initCheckall();
     this.setSettingsBarHeight();
-    this.setStaticStarRating();
+    this.setStaticStarRating();*/
 
     /*-----------------------*/
-    this.initInputSearchBehavior();
-};
-
-// Initialization header scroll
-application.prototype.initHeaderScroll = function () {
-    $(window).scroll(function () {
-        setHeaderScroll();
-    });
-    setHeaderScroll();
-
-    function setHeaderScroll() {
-        if ($(window).scrollTop() > 25) {
-            $('.header').addClass("scrolled");
-        } else {
-            $('.header').removeClass("scrolled");
-        }
-    }
+    this.initInputSearch();
 };
 
 // Initialization disable scroll
@@ -84,17 +73,41 @@ application.prototype.enableScroll = function () {
     body.classList.remove('dis-scroll');
 };
 
+// Initialization device check
+application.prototype.initTouch = function () {
+    if ('ontouchstart' in document.documentElement) {
+        $('html').addClass('touch');
+    }
+};
+
+// Initialization header scroll
+application.prototype.initHeaderScroll = function () {
+    $(window).scroll(function () {
+        setHeaderScroll();
+    });
+    setHeaderScroll();
+
+    function setHeaderScroll() {
+        if ($(window).scrollTop() > 125) {
+            $('.header').addClass('scrolled');
+        } else {
+            $('.header').removeClass('scrolled');
+        }
+    }
+};
+
 // Initialization burger-menu
 application.prototype.initBurger = function () {
-    const burger = document?.querySelector('[data-burger]');
+    const body = document?.querySelector('body');
+    const burger = document?.querySelector('[data-menu-spoiler]');
     const menu = document?.querySelector('[data-menu]');
     const menuClose = document?.querySelector('[data-menu-close]');
 
     burger?.addEventListener('click', (e) => {
-        burger?.classList.toggle('burger--active');
-        menu?.classList.toggle('burger-menu--active');
+        burger?.classList.toggle('active');
+        menu?.classList.toggle('active');
 
-        if (menu?.classList.contains('burger-menu--active')) {
+        if (menu?.classList.contains('active')) {
             burger?.setAttribute('aria-expanded', 'true');
             burger?.setAttribute('aria-label', 'Закрыть меню');
             this.disableScroll();
@@ -107,22 +120,133 @@ application.prototype.initBurger = function () {
 
     menuClose?.addEventListener('click', () => {
         setMenuClose();
-        $(".overlay").remove();
+        $('.overlay').remove();
+    });
+
+    $(window).on('resize', function () {
+        setMenuClose();
+    });
+
+    $(document).on('keyup', function (e) {
+        if (e.key == 'Escape') {
+            setMenuClose();
+        }
+    });
+
+    $(document).on('click', function (e) {
+        if ($('.overlay').is(e.target)) {
+            setMenuClose();
+        }
     });
 
     function setMenuClose() {
         burger?.setAttribute('aria-expanded', 'false');
         burger?.setAttribute('aria-label', 'Открыть меню');
-        burger.classList.remove('burger--active');
-        menu.classList.remove('burger-menu--active');
+        burger?.classList.remove('active');
+        menu?.classList.remove('active');
+        body?.classList.remove('overflow-hidden');
+        $('.overlay').remove();
+        return application.prototype.enableScroll();
     }
+};
 
-    $(document).on("click", function (e) {
-        if ($('.overlay').is(e.target)) {
-            setMenuClose();
+// Initialize overlay element
+application.prototype.initOverlay = function () {
+    if($('[data-overlay]').length) {
+        const body = $('body');
+        const triggerEl = $('[data-overlay]');
+
+        $(triggerEl).on('click', function () {
+            body.addClass('overflow-hidden');
+            $("<div class='overlay'></div>").insertAfter($(this));
+        });
+
+        $(document).on('click', function (e) {
+            if ($('.overlay').is(e.target)) {
+                setTargetAction()
+            }
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key == 'Escape') {
+                setTargetAction()
+            }
+        });
+
+        function setTargetAction() {
+            body.removeClass('overflow-hidden');
+            $('.overlay').remove();
+            return application.prototype.enableScroll();
+        }
+    }
+};
+
+// Initialize menu call
+application.prototype.initMenu = function () {
+    const catalogSpoiler = $('[data-catalog-spoiler]');
+    const catalog = $('[data-catalog]');
+    const catalogClose = $('[data-catalog-close]');
+    let overlayTrigger = $('[data-overlay-transparent]');
+
+    catalogSpoiler.on('click', () => {
+        setCatalogSwitch();
+    });
+
+    catalogClose.on('click', () => {
+        setCatalogClose();
+    });
+
+    setOverlay();
+
+    $(window).on('resize', function () {
+        setCatalogClose();
+    });
+
+    $(document).on('keyup', function (e) {
+        if (e.key == 'Escape') {
+            setCatalogClose();
         }
     });
+
+    function setCatalogSwitch() {
+        if (catalog.hasClass('active') && catalogSpoiler.hasClass('active')) {
+            catalogSpoiler.attr('aria-expanded', 'false');
+            catalogSpoiler.attr('aria-label', 'Открыть меню');
+            catalogSpoiler.removeClass('active');
+            catalog.removeClass('active');
+        } else {
+            catalogSpoiler.attr('aria-expanded', 'true');
+            catalogSpoiler.attr('aria-label', 'Закрыть меню');
+            catalogSpoiler.addClass('active');
+            catalog.addClass('active');
+        }
+    }
+
+    function setCatalogClose() {
+        catalogSpoiler.attr('aria-expanded', 'false');
+        catalogSpoiler.attr('aria-label', 'Открыть меню');
+        catalogSpoiler.removeClass('active');
+        catalog.removeClass('active');
+        $('.menu-catalog-header').removeClass('submenu');
+        $('.overlay-transparent').remove();
+    }
+
+    function setOverlay() {
+        overlayTrigger.on('click', function () {
+            $("<div class='overlay-transparent'></div>").insertAfter($(this));
+        });
+
+        $(document).on('click', function (e) {
+            if ($('.overlay-transparent').is(e.target)) {
+                setCatalogClose();
+            }
+        });
+    }
 };
+
+
+
+
 
 // Initialization popup menu mobile
 application.prototype.initPopupMenuMobile = function () {
@@ -1256,18 +1380,6 @@ application.prototype.initDropfiles = function () {
     });
 };
 
-// Init datepicker
-application.prototype.initDatepicker = function () {
-    if ($(".flatpickr").length) {
-        const dateElem = $(".flatpickr");
-
-        let newFlatpickr = flatpickr(dateElem, {
-            dateFormat: "d.m.Y",
-            disableMobile: "true",
-            locale: "ru"
-        });
-    }
-};
 
 // Initialization readmore plugin
 application.prototype.initReadmore = function () {
@@ -1515,8 +1627,9 @@ application.prototype.setStaticStarRating = function () {
 
 /*------------------------------------*/
 // Initialize input-search behavior
-application.prototype.initInputSearchBehavior = function () {
+application.prototype.initInputSearch = function () {
     if ($('.input-search').length) {
+        console.log("success");
         $('.input-search').on('input', function () {
             if ($(this).val() === '' || $(this).val() === null) {
                 $(this).removeClass('has-data');

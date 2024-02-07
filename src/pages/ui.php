@@ -134,6 +134,13 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#cross">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#cross"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#cart-tick">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
@@ -247,11 +254,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-primary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -260,11 +267,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-secondary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -273,11 +280,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-light">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -294,11 +301,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-primary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -307,11 +314,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-secondary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -320,11 +327,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-light">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -341,11 +348,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-primary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -354,11 +361,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-secondary">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -367,11 +374,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-light">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                                 <span class="btn__text">Кнопка</span>
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -388,17 +395,17 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-header'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-header">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#filled-user-octagon"></use>
                                 </svg>
                                 <span class="btn__text">Кабинет</span>
                             </button>
                             <!--end ui content-->
                         </span>
-                        <span class="tooltip" data-tippy-content="class='btn-reset btn btn-arrow'">
+                        <span class="tooltip" data-tippy-content="class='btn-reset btn btn-square'">
                             <!--start ui content-->
-                            <button class="btn-reset btn btn-arrow">
-                                <svg class="icon btn__icon">
+                            <button class="btn-reset btn btn-square">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -407,7 +414,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-cart'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-cart">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#cart-add"></use>
                                 </svg>
                             </button>
@@ -416,7 +423,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-icon'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-icon">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#filled-tag-cross"></use>
                                 </svg>
                             </button>
@@ -425,7 +432,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-play'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-play">
-                                <svg class="icon btn__icon">
+                                <svg class="icon icon-fill btn__icon">
                                     <use href="img/sprite.svg#play"></use>
                                 </svg>
                             </button>
@@ -520,6 +527,16 @@
                             <a class="link link-tdu" href="javascript:;">Витамины и добавки</a>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="class='link link-primary' (default)">
+                            <!--start ui content-->
+                            <a class="link link-primary link-dropdown" href="javascript:;">
+                                <span class="text-content">Витамины и добавки</span>
+                                <svg class="icon icon-fill">
+                                    <use href="img/sprite.svg#chevron-down"></use>
+                                </svg>
+                            </a>
+                            <!--end ui content-->
+                        </span>
                     </div>
                 </div>
             </div>
@@ -538,6 +555,7 @@
                                 <div class="input-title">Label</div>
                                 <div class="input-wrapper has-icon-l has-icon-r">
                                     <input
+                                            id="ui-input-search-example-1"
                                             class="input-reset input"
                                             type="text"
                                             name=""
@@ -545,12 +563,12 @@
                                             placeholder="Placeholder"
                                             autocomplete="off"
                                     >
-                                    <label class="input-icon input-icon-l">
+                                    <label for="ui-input-search-example-1" class="input-icon input-icon-l c-pointer">
                                         <svg class="icon icon-sm icon-fill">
                                             <use href="img/sprite.svg#search"></use>
                                         </svg>
                                     </label>
-                                    <label class="input-icon input-icon-r">
+                                    <label for="ui-input-search-example-1" class="input-icon input-icon-r">
                                         <svg class="icon icon-sm icon-fill">
                                             <use href="img/sprite.svg#search"></use>
                                         </svg>
@@ -563,47 +581,31 @@
                         <span class="tooltip" data-tippy-content="search">
                             <!--start ui content-->
                             <div class="titled-input">
-                                <div class="input-title">Label search</div>
-
-                                <div class="input-search-wrapper has-data">
-                                    <input class="input-reset input-search has-data"
-                                           type="search"
-                                           name="Поиск"
-                                           placeholder="Placeholder"
-                                           autocomplete="off"
-                                           onclick="$(this).closest('.header-search').find('.header-search-results').toggleClass('active');"
-                                    >
-                                    <button class="btn-reset btn btn-link input-delete-btn">
-                                        <svg class="icon btn__icon icon-xs">
-                                            <use href="img/sprite.svg#cross"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="btn-reset btn btn-mini btn-primary input-search-btn" type="submit">
-                                        <span class="btn__text">Найти</span>
-                                    </button>
-                                </div>
-
-                                <div class="input-wrapper input-search-wrapper has-icon-l has-data">
+                                <div class="input-title">Label</div>
+                                <div class="input-wrapper input-search-wrapper has-icon-l">
                                     <input
-                                            class="input-reset input"
-                                            type="text"
+                                            id="ui-input-search-example-2"
+                                            class="input-reset input input-search"
+                                            type="search"
                                             name=""
                                             value=""
                                             placeholder="Placeholder"
                                             autocomplete="off"
                                     >
-                                    <label class="input-icon input-icon-l">
+                                    <label for="ui-input-search-example-2" class="input-icon input-icon-l">
                                         <svg class="icon icon-sm icon-fill">
                                             <use href="img/sprite.svg#search"></use>
                                         </svg>
                                     </label>
-                                    <label class="input-btn-g">
+                                    <label for="ui-input-search-example-2" class="input-search-action">
                                         <button class="btn-reset btn btn-icon input-delete-btn" type="button">
-                                            <svg class="icon btn__icon">
+                                            <svg class="icon icon-fill btn__icon">
                                                 <use href="img/sprite.svg#filled-tag-cross"></use>
                                             </svg>
                                         </button>
-                                        <button class="btn-reset btn btn-sm input-search-btn" type="button">Найти</button>
+                                        <button class="btn-reset btn btn-sm input-search-btn" type="submit">
+                                            <span class="btn__text">Найти</span>
+                                        </button>
                                     </label>
                                 </div>
                             </div>
@@ -626,10 +628,10 @@
                                             required
                                     >
                                     <label class="input-icon input-icon-btn">
-                                        <svg class="icon icon-sm icon-default">
+                                        <svg class="icon icon-sm icon-fill icon-default">
                                             <use href="img/sprite.svg#search"></use>
                                         </svg>
-                                        <svg class="icon icon-sm icon-selected">
+                                        <svg class="icon icon-sm icon-fill icon-selected">
                                             <use href="img/sprite.svg#search"></use>
                                         </svg>
                                         <input
@@ -673,12 +675,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class="ui-section">
+                <h3 class="h3 ui-title title-bold text-center">Hr</h3>
+
+                <div class="ui-row">
+                    <div class="ui-title">
+                        <div class="fz-subtitle">class="hr"</div>
+                    </div>
+                    <div class="hr"></div>
+                </div>
+
+                <div class="ui-row">
+                    <div class="ui-title">
+                        <div class="fz-subtitle">class="hr-logo"</div>
+                    </div>
+                    <div class="hr-logo"></div>
+                </div>
+            </div>
         </div>
 
-
-        <br>
         <br>
 
+        <?/*
         <h3 class="text-center">Checkbox / Radio buttons (для примера состояний стоит type=checkbox)</h3>
         <div>
             <div class="container-ui">
@@ -903,7 +922,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Tags</h3>
@@ -1415,7 +1433,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Custom icons</h3>
         <div class="container-ui">
@@ -1475,7 +1492,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Tabs</h3>
@@ -1556,7 +1572,7 @@
                                 </div>
                             </div>
                         </div>
-						<?/* ".inner-page-tabs-content" должен располагаться за пределами ".inner-page-tabs-wrapper" */?>
+						<?/ * ".inner-page-tabs-content" должен располагаться за пределами ".inner-page-tabs-wrapper" * /?>
                         <div class="inner-page-tabs-content" data-tab-content="tab-ui">
                             <div class="inner-page-tabs-content__panel active" data-id="0">
                                 Tabs 1 content
@@ -1575,7 +1591,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Notice</h3>
@@ -1598,7 +1613,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Cards</h3>
@@ -1920,7 +1934,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Select (select2)</h3>
         <div class="container-ui">
@@ -1957,7 +1970,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Modal</h3>
@@ -2226,7 +2238,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Check all</h3>
         <div class="container-ui">
@@ -2267,7 +2278,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Block text-spoiler</h3>
         <div class="container-ui">
@@ -2288,7 +2298,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Pagination</h3>
         <div class="container-ui">
@@ -2304,7 +2313,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Tooltip</h3>
@@ -2334,7 +2342,6 @@
         <hr style="width: 100%;">
 
         <br>
-        <br>
 
         <h3 class="text-center">Обёртка для input flatpickr</h3>
         <div class="container-ui">
@@ -2358,7 +2365,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Banner</h3>
@@ -2408,7 +2414,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Star rating (input)</h3>
@@ -2492,7 +2497,6 @@
         </div>
 
         <br>
-        <br>
 
         <h3 class="text-center">Star rating (static: desk - 5stars/ mob - 5stars)</h3>
         <div class="container-ui">
@@ -2538,7 +2542,6 @@
             </div>
         </div>
 
-        <br>
         <br>
 
         <h3 class="text-center">Star rating (static: desk - 5stars/ mob - 1stars)</h3>
@@ -2586,7 +2589,6 @@
         </div>
 
         <br>
-        <br>
 
         <h3 class="text-center">Star rating (static: desk - 1stars/ mob - 1stars)</h3>
         <div class="container-ui">
@@ -2613,7 +2615,6 @@
         </div>
         <hr style="width: 100%;">
 
-        <br>
         <br>
 
         <h3 class="text-center">Requests status</h3>
@@ -2694,12 +2695,7 @@
             </div>
         </div>
         <hr style="width: 100%;">
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        */?>
     </div>
 </body>
 </html>

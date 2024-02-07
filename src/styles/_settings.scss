@@ -170,6 +170,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	h3, .h3 {
 		font-size: 32px;
 	}
+	h4, .h4 {
+		font-size: 24px;
+	}
 }
 @media (max-width: 991.98px) {
 	h1, .h1 {
@@ -180,6 +183,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	}
 	h3, .h3 {
 		font-size: 24px;
+	}
+	h4, .h4 {
+		font-size: 20px;
 	}
 }
 
@@ -412,6 +418,17 @@ fs-italic {
 .fz-caption {
 	font-size: 12px;
 	line-height: 1.5;
+}
+@media (max-width: 991.98px) {
+	.fz-subtitle {
+		font-size: 18px;
+	}
+	.fz-sm {
+		font-size: 13px;
+	}
+	.fz-caption {
+		font-size: 11px;
+	}
 }
 
 .error {
@@ -1494,7 +1511,7 @@ input.disabled {
 	}
 }
 .input-search {
-	padding-right: 140px;
+	padding-right: 130px;
 
 	&-field {
 		position: relative;

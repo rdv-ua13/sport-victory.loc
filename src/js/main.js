@@ -13,6 +13,9 @@ application.prototype.init = function () {
     this.initBurger();
     this.initOverlay();
     this.initMenu();
+    this.setMenuHeightOverflow();
+    this.initMenuCatalogSubmenu();
+    this.initSliders();
 
 
     /*
@@ -88,7 +91,7 @@ application.prototype.initHeaderScroll = function () {
     setHeaderScroll();
 
     function setHeaderScroll() {
-        if ($(window).scrollTop() > 125) {
+        if ($(window).scrollTop() > 120) {
             $('.header').addClass('scrolled');
         } else {
             $('.header').removeClass('scrolled');
@@ -150,7 +153,7 @@ application.prototype.initBurger = function () {
     }
 };
 
-// Initialize overlay element
+// Initialization overlay element
 application.prototype.initOverlay = function () {
     if($('[data-overlay]').length) {
         const body = $('body');
@@ -181,8 +184,9 @@ application.prototype.initOverlay = function () {
     }
 };
 
-// Initialize menu call
+// Initialization menu call
 application.prototype.initMenu = function () {
+    const body = $('body');
     const catalogSpoiler = $('[data-catalog-spoiler]');
     const catalog = $('[data-catalog]');
     const catalogClose = $('[data-catalog-close]');
@@ -214,11 +218,13 @@ application.prototype.initMenu = function () {
             catalogSpoiler.attr('aria-label', 'Открыть меню');
             catalogSpoiler.removeClass('active');
             catalog.removeClass('active');
+            body.removeClass('overflow-hidden');
         } else {
             catalogSpoiler.attr('aria-expanded', 'true');
             catalogSpoiler.attr('aria-label', 'Закрыть меню');
             catalogSpoiler.addClass('active');
             catalog.addClass('active');
+            body.addClass('overflow-hidden');
         }
     }
 
@@ -227,6 +233,7 @@ application.prototype.initMenu = function () {
         catalogSpoiler.attr('aria-label', 'Открыть меню');
         catalogSpoiler.removeClass('active');
         catalog.removeClass('active');
+        body.removeClass('overflow-hidden');
         $('.menu-catalog-header').removeClass('submenu');
         $('.overlay-transparent').remove();
     }
@@ -244,9 +251,315 @@ application.prototype.initMenu = function () {
     }
 };
 
+// Initialization menu height overflow
+application.prototype.setMenuHeightOverflow = function () {
+    defineMenuOverflow();
+    $(window).on('resize scroll', function () {
+        defineMenuOverflow();
+    });
+
+    function defineMenuOverflow() {
+        let viewportHeight = $(window).outerHeight() - $('.header').outerHeight();
+        let menuHeight = $('.menu-catalog').outerHeight();
+
+        if (menuHeight > viewportHeight) {
+            $('.menu-catalog').addClass('menu-catalog-overflow');
+        } else {
+            $('.menu-catalog').removeClass('menu-catalog-overflow');
+        }
+    }
+};
+
+// Initialization menu catalog behavior
+application.prototype.initMenuCatalogSubmenu = function () {
+    const catalogSpoiler = $('[data-catalog-spoiler]');
+    const catalogTitle = $('[data-catalog-title]');
+    const rootItem = $('.menu-catalog-root-link');
+    const rootSubmenuItem = $('.menu-catalog-submenu-section');
+
+    catalogSpoiler.on('click', function (e) {
+        const defaultRootItem = $(".menu-catalog-root-link[data-submenu-section='0']");
+        const defaultSubmenuItem = $(".menu-catalog-submenu-section[data-root-pointer='0']");
+        let currentCatalogTitle = catalogTitle.data('catalog-title');
+
+        catalogTitle.text(currentCatalogTitle);
+        rootItem.removeClass('selected');
+        rootItem.closest('.menu-catalog-root').removeClass('hide');
+        rootItem.closest('.menu-catalog').find('.menu-catalog-submenu').removeClass('active');
+        rootSubmenuItem.removeClass('active');
+        defaultRootItem.addClass('selected');
+        defaultSubmenuItem.addClass('active');
+    });
+
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        if (!$('html').hasClass('touch')) {
+            rootItem.on('mouseover', function () {
+                let rootItemId = null;
+                if ($(this).is('[data-submenu-section]')) {
+                    rootItemId = $(this).data('submenu-section');
+                }
+
+                $('.menu-catalog-submenu-section').removeClass('active');
+                $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+            });
+        } else {
+            rootItem.on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                let rootItemId = $(this).data('submenu-section');
+
+                $('.menu-catalog-submenu-section').removeClass('active');
+                $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+            });
+        }
+    } else if (window.matchMedia('(max-width: 991.98px)').matches) {
+        rootItem.on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            let rootItemId = $(this).data('submenu-section');
+            let currentCatalogTitle = $(this).text();
+
+            catalogTitle.text(currentCatalogTitle);
+            $(this).closest('.menu-catalog').find('.menu-catalog-header').addClass('submenu');
+            $(this).closest('.menu-catalog-root').addClass('hide');
+            $(this).closest('.menu-catalog').find('.menu-catalog-submenu').addClass('active');
+            $('.menu-catalog-submenu-section').removeClass('active');
+            $(".menu-catalog-submenu-section[data-root-pointer='" + rootItemId + "']").addClass('active');
+        });
+
+        $('.menu-catalog-title-back').on('click', function (e) {
+            let currentCatalogTitle = catalogTitle.data('catalog-title');
+
+            catalogTitle.text(currentCatalogTitle);
+            $(this).closest('.menu-catalog-header').removeClass('submenu');
+            $(this).closest('.menu-catalog').find('.menu-catalog-root').removeClass('hide');
+            $(this).closest('.menu-catalog').find('.menu-catalog-submenu').removeClass('active');
+        });
+    }
+};
+
+// Initialize sliders
+application.prototype.initSliders = function () {
+    /*if ($('.product-card-descr-slider').length) {
+        let productCardDescrSliderThumb = null;
+        let productCardDescrSlider = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                productCardDescrSlider = null;
+
+                productCardDescrSliderThumb = new Swiper('.product-card-descr-slider-thumb', {
+                    spaceBetween: 8,
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                productCardDescrSlider = new Swiper('.product-card-descr-desktop .product-card-descr-slider', {
+                    spaceBetween: 8,
+                    pagination: {
+                        el: '.product-card-descr-slider .swiper-pagination',
+                    },
+                    thumbs: {
+                        swiper: productCardDescrSliderThumb,
+                    },
+                });
+                initStopSlideVideoOnChange();
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                productCardDescrSliderThumb = null;
+                productCardDescrSlider = null;
+
+                productCardDescrSlider = new Swiper('.product-card-descr-mobile .product-card-descr-slider', {
+                    spaceBetween: 8,
+                    pagination: {
+                        el: '.product-card-descr-slider .swiper-pagination',
+                    },
+                });
+                initStopSlideVideoOnChange();
+            }
+        }
+
+        function initStopSlideVideoOnChange() {
+            let slideVideo = $('.product-card-descr-slider .swiper-slide video');
+            productCardDescrSlider.on('slideChange', function () {
+                slideVideo.each(function(i) {
+                    this.pause();
+                    this.currentTime = 0;
+                    this.play();
+                });
+            });
+        }
+    }*/
+
+    if ($('.nav-breadcrumbs').length) {
+        let sliderNavBreadcrumbs = new Swiper('.nav-breadcrumbs', {
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+        });
+    }
+
+    if ($('.menu-catalog-submenu-banners').length) {
+        $('.menu-catalog-submenu-banners').each(function (i) {
+            let currentElem = $(this).find('.swiper').addClass('menu-catalog-submenu-banners-slider-' + i);
+
+            let sliderCatalogSubmenuBanners = new Swiper('.menu-catalog-submenu-banners-slider-' + i, {
+                spaceBetween: 12,
+                slidesPerView: 'auto',
+                breakpoints: {
+                    992: {
+                        spaceBetween: 40
+                    },
+                }
+            });
+        });
+    }
+
+    /*if ($('.mobile-search-results-hint').length) {
+        const MobileSearchSliderSettings = {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            watchOverflow: true,
+            freeMode: true,
+            mousewheel: true
+        };
+
+        let sliderSearchResultsHint = new Swiper('.search-results .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
+        let sliderMobileCityHint = new Swiper('.mobile-city .mobile-search-results-hint .swiper', MobileSearchSliderSettings);
+    }*/
+
+    /*if ($('.catalog-content__section').length) {
+        let sliderCatalogContentFilterSelected = new Swiper('.catalog-content__section .swiper', {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            breakpoints: {
+                992: {
+                    spaceBetween: 20,
+                }
+            }
+        });
+    }*/
+
+    /*if ($('.catalog-content__popular-collection').length) {
+        let sliderCatalogContentPopularCollection = new Swiper('.catalog-content__popular-collection .swiper', {
+            slidesPerView: 2.15,
+            grid: {
+                rows: 3,
+            },
+            spaceBetween: 12,
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                }
+            }
+        });
+    }*/
+
+    /*if ($('.catalog-content__popular-color').length) {
+        let sliderCatalogContentPopularColor = new Swiper('.catalog-content__popular-color .swiper', {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            breakpoints: {
+                992: {
+                    spaceBetween: 16,
+                }
+            }
+        });
+    }*/
+
+    /*if ($('.catalog-content__grid-mobile-slider').length) {
+        let sliderCatalogContentGrid = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                sliderCatalogContentGrid = null;
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                sliderCatalogContentGrid = null;
+
+                sliderCatalogContentGrid = new Swiper('.catalog-content__grid-mobile-slider .swiper', {
+                    spaceBetween: 12,
+                    slidesPerView: 'auto',
+                });
+            }
+        }
+    }*/
+
+    /*if ($('.index-slider-wrapper').length) {
+        const indexSliderSettings = new Swiper('.index-slider', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.index-slider .swiper-button-next',
+                prevEl: '.index-slider .swiper-button-prev',
+            },
+            pagination: {
+                el: ".index-slider .swiper-pagination",
+            },
+        });
+        let indexSlider = new Swiper('.index-slider', indexSliderSettings);
+    }*/
+
+    /*if ($('.partners-label').length) {
+        const slider = $('[data-partners-label-slider]');
+
+        slider.each(function (i) {
+            slider.eq(i).closest('.partners-label-wrapper').addClass('partners-label-wrapper-' + i);
+
+            const partnersLabelSliderSetting = {
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 8,
+                /!*loop: true,*!/
+                direction: 'horizontal',
+                navigation: {
+                    nextEl: '.partners-label-wrapper-' + i + ' .swiper-button-next',
+                    prevEl: '.partners-label-wrapper-' + i + ' .swiper-button-prev',
+                },
+                breakpoints: {
+                    992: {
+                        spaceBetween: 16,
+                        /!*allowTouchMove: false*!/
+                    },
+                }
+            };
+            let partnersLabelSlider = new Swiper('.partners-label-wrapper-' + i + ' .partners-label', partnersLabelSliderSetting);
+        });
+    }*/
+
+    /*if ($('.collection-slider').length) {
+        let collectionSlider = null;
+
+        breakpointChecker();
+        $(window).on('resize', breakpointChecker);
+
+        function breakpointChecker() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                collectionSlider = null;
+            }
+            else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                collectionSlider = null;
+
+                collectionSlider = new Swiper('.collection-slider', {
+                    spaceBetween: 12,
+                    slidesPerView: 'auto',
+                });
+            }
+        }
+
+    }*/
+};
 
 
 
+/////////////
 
 // Initialization popup menu mobile
 application.prototype.initPopupMenuMobile = function () {
@@ -1626,10 +1939,9 @@ application.prototype.setStaticStarRating = function () {
 
 
 /*------------------------------------*/
-// Initialize input-search behavior
+// Initialization input-search behavior
 application.prototype.initInputSearch = function () {
     if ($('.input-search').length) {
-        console.log("success");
         $('.input-search').on('input', function () {
             if ($(this).val() === '' || $(this).val() === null) {
                 $(this).removeClass('has-data');

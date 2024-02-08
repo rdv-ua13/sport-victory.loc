@@ -658,14 +658,12 @@
                     <div class="ui-tooltip-set">
                         <span class="tooltip" data-tippy-content="class='card' (default)">
                             <!--start ui content-->
-                            <span class="card">
+                            <span class="card card-info">
                                 <a class="card__view" href="javascript:;">
                                     <img
                                             loading="lazy"
                                             class="image"
-                                            src="img/brand.png"
-                                            width="181"
-                                            height="84"
+                                            src="img/brand-1.png"
                                             alt="Изображение блока"
                                     >
                                 </a>

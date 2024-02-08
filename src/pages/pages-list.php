@@ -60,9 +60,9 @@
             <img src="img/sprite.svg#logo" width="162" height="78" alt="Логотип компании">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">00 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">1 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">00 + ui (всего страниц в макете)</span>
+            <span style="font-size: 24px;">1 + ui (всего страниц в макете)</span>
         </span>
     </div>
 
@@ -72,7 +72,7 @@
             <li><a href="index.php" target="_blank">Главная</a></li>
 
             <br>
-            <li><a href="ui.php" target="_blank">ui</a></li>
+            <li><a class="ready" href="ui.php" target="_blank">ui</a></li>
         </ul>
     </div>
     </body>

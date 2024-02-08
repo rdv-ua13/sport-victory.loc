@@ -4992,6 +4992,127 @@
 
 /*////////////////*/
 
+@media (min-width: 1200px) {
+	.svn-brands {
+		.card-info {
+			min-width: calc((100% - 100px) / 6);
+			width: calc((100% - 100px) / 6);
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.svn-brands {
+		.card-info {
+			min-width: calc((100% - 20px) / 2);
+			width: calc((100% - 20px) / 2);
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.svn-brands {
+		.card-info {
+			min-width: calc((100% - 40px) / 3);
+			width: calc((100% - 40px) / 3);
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.svn-brands {
+		.card-info {
+			min-width: calc((100% - 60px) / 4);
+			width: calc((100% - 60px) / 4);
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.svn-brands {
+		.card-info {
+			min-width: calc((100% - 80px) / 5);
+			width: calc((100% - 80px) / 5);
+		}
+	}
+}
+
+.svn-articles {
+	.card-article {
+		.card__view {
+			.image {
+				aspect-ratio: 16/10;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.svn-articles {
+		.card-list {
+			gap: 40px;
+		}
+
+		.card-article {
+			min-width: calc((100% - 80px) / 3);
+			width: calc((100% - 80px) / 3);
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.svn-articles {
+		.card-article {
+			min-width: 100%;
+			width: 100%;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+	.svn-articles {
+		.card-article {
+			min-width: calc((100% - 20px) / 2);
+			width: calc((100% - 20px) / 2);
+		}
+	}
+}
+
+.svn-offer {
+	.card-sale {
+		.card__view {
+			.image {
+				aspect-ratio: 16/10;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.svn-offer {
+		.card-sale {
+			min-width: calc((100% - 60px) / 4);
+			width: calc((100% - 60px) / 4);
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.svn-offer {
+		.card-sale {
+			min-width: 100%;
+			width: 100%;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+	.svn-offer {
+		.card-sale {
+			min-width: calc((100% - 20px) / 2);
+			width: calc((100% - 20px) / 2);
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.svn-offer {
+		.card-sale {
+			min-width: calc((100% - 40px) / 3);
+			width: calc((100% - 40px) / 3);
+		}
+	}
+}
+
 .svn-about {
 	.spoiler {
 		max-height: 136px;

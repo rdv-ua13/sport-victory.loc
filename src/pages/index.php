@@ -1,129 +1,27 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
-<div class="block-mb">
-    <div class="mainscreen-slider-container">
-        <div class="swiper mainscreen-slider js-mainscreen-slider">
-            <div class="mainscreen-slider__header">
-                <h1 class="block-mb-md h1 text-center">
-                    <span class="green-color">Главный</span> слоган <span class="green-color">заголовка.</span><br>
-                    Просто текст.
-                </h1>
-                <div class="mainscreen-slider__action">
-                    <button class="btn-reset btn btn--fill">
-                        <span class="btn__text">Кнопка</span>
-                    </button>
-                    <button class="btn-reset btn">
-                        <span class="btn__text">Кнопка</span>
-                    </button>
+<div class="gap-xl">
+    <div class="container">
+        <div class="svn-about">
+            <div class="gap-md">
+                <div class="h3">Производитель спортивного питания и пищевых добавок Sport Victory Nutrition</div>
+            </div>
+            <div class="spoiler-wrapper">
+                <div
+                        class="spoiler"
+                        data-spoiler
+                        data-readmore
+                >
+                    <div class="spoiler-content">
+                        <p>Магазин не взимает никаких дополнительных комиссий. Все комиссии оплачиваются нашим магазином. Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL.</p>
+                        <p>В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.</p>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="mainscreen-slider__pointer">
-                        <img
-                                loading="lazy"
-                                src="img/test.png"
-                                class="image"
-                                width=""
-                                height=""
-                                alt="Изображение главного слайдера"
-                        >
-                        <div class="mainscreen-slider__video">
-                            <a
-                                    href=""
-                                    class="btn-reset btn"
-                                    data-fancybox="mainslider"
-                                    data-src="demo.mp4"
-                            >
-                                <svg class="icon btn__icon">
-                                    <use href="img/sprite.svg#play"></use>
-                                </svg>
-                                <span class="btn__text">Видео о платформе</span>
-                            </a>
-                        </div>
-
-                        <div class="mainscreen-slider__pointer-hero">
-                            <div class="mainscreen-slider__pointer-hero-item">
-                                <span class="mainscreen-slider__pointer-hero-descr">Электронная система учета<br> волонтерского опыта и достижений</span>
-                                <span class="mainscreen-slider__pointer-hero-view">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#favorite"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="mainscreen-slider__pointer-hero-item">
-                                <span class="mainscreen-slider__pointer-hero-descr">Краудфаундинг для<br> экопроектов и организаций</span>
-                                <span class="mainscreen-slider__pointer-hero-view">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#money2"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="mainscreen-slider__pointer-hero-item">
-                                <span class="mainscreen-slider__pointer-hero-view">
-                                    <svg class="icon">
-                                        <use href="img/sprite.svg#user"></use>
-                                    </svg>
-                                </span>
-                                <span class="mainscreen-slider__pointer-hero-descr">Личные кабинеты организаций<br> и супервайзеров</span>
-                            </div>
-                        </div>
-
-                        <div class="mainscreen-slider__pointer-decor-left">
-                            <div class="mainscreen-slider__pointer-decor-item blur">
-                                <img
-                                    loading="lazy"
-                                    src="img/test.png"
-                                    class="mainscreen-slider__pointer-decor-img"
-                                    width="40"
-                                    height="40"
-                                    alt="Изображение блока"
-                                >
-                            </div>
-                        </div>
-                        <div class="mainscreen-slider__pointer-decor-right">
-                            <div class="mainscreen-slider__pointer-decor-item">
-                                <img
-                                        loading="lazy"
-                                        src="img/test.png"
-                                        class="mainscreen-slider__pointer-decor-img"
-                                        width="50"
-                                        height="50"
-                                        alt="Изображение блока"
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="mainscreen-slider__pointer">
-                        <img
-                                loading="lazy"
-                                src="img/test.png"
-                                class="image"
-                                width=""
-                                height=""
-                                alt="Изображение главного слайдера"
-                        >
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="mainscreen-slider__pointer">
-                        <img
-                                loading="lazy"
-                                src="img/test.png"
-                                class="image"
-                                width=""
-                                height=""
-                                alt="Изображение главного слайдера"
-                        >
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
+
+
 
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/footer.php"); ?>

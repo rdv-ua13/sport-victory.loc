@@ -19,6 +19,11 @@
 	min-width: 320px;
 	overflow: hidden;
 }
+@media (max-width: 1199.98px) {
+	.main {
+		padding-top: 16px;
+	}
+}
 
 .main-section {
 	&__content {
@@ -4987,7 +4992,18 @@
 
 /*////////////////*/
 
+.svn-about {
+	.spoiler {
+		max-height: 136px;
 
+		&[aria-expanded="false"] {
+			&::before {
+				min-height: 56px;
+				height: 56px;
+			}
+		}
+	}
+}
 
 .pre-footer {
 	background-color: var(--gray5-color);

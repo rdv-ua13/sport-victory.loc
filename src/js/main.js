@@ -18,41 +18,6 @@ application.prototype.init = function () {
     this.initSliders();
     this.initReadmore();
 
-
-    /*
-    this.initPopupMenuMobile();
-    this.initHeaderActionsMobile();
-    this.initOverlay();
-    this.initTabs();
-    this.initNotice();
-    this.initRegStepper();
-    this.initValidationNumCode();
-    this.initNavTabs();
-    this.initPageContentTabs();
-    this.initInnerPageTabs();
-    this.initTooltips();
-    this.initProgressBar();
-    this.initFormProcessing();
-    this.initCardFavorite();
-    this.initMainscreenSlider();
-    this.initTagbarSlider();
-    this.initBasicSlider();
-    this.initMobileSlider();
-    this.initResponsiveCardSlider();
-    this.initHandlerCurrentUser();
-    this.initPasswordSwitcher();
-    this.initSelect2();
-    this.initTagSelected();
-    this.initMaskedInput();
-    this.initAddList();
-    this.initDropfiles();
-    this.initReadmore();
-    this.initAccordion();
-    this.initCheckall();
-    this.setSettingsBarHeight();
-    this.setStaticStarRating();*/
-
-    /*-----------------------*/
     this.initInputSearch();
 };
 
@@ -559,10 +524,8 @@ application.prototype.initSliders = function () {
 };
 
 // Initialization readmore plugin
-application.prototype.initReadmore = function () {
+/*application.prototype.initReadmore = function () {
     if ($('[data-spoiler]').length) {
-
-        console.log("success");
         const spoiler = $('[data-spoiler]');
 
         spoiler.each(function (i) {
@@ -600,7 +563,63 @@ application.prototype.initReadmore = function () {
                     '                                    </a>',
                 lessLink: '<a href="javascript:;" class="link-dashed link-red spoiler-trigger">\n' +
                     '                                        <span class="btn__text">' + currentLessText + '</span>\n' +
-                    '                                    </a>'
+                    '                                    </a>',
+                afterToggle:
+                    function(trigger, element, expanded) {
+                        if (!expanded) { // The "Close" link was clicked
+                            console.log("successZZZZZZ");
+                        }
+                    }
+            });
+        });
+    }
+};*/
+application.prototype.initReadmore = function () {
+    if ($('[data-spoiler]').length) {
+        const spoiler = $('[data-spoiler]');
+
+        spoiler.each(function (i) {
+            let currentMoreText = $(this).data('spoiler-more');
+            let currentLessText = $(this).data('spoiler-less');
+            let defaultHeight = 340;
+            let defaultMoreText = 'Показать все';
+            let defaultLessText = 'Свернуть';
+            let currentElemHeight = spoiler.eq(i).data('collapsed-height');
+
+            if ($(this).is('[data-spoiler-more]')) {
+                currentMoreText = currentMoreText;
+                currentLessText = defaultLessText;
+            } else if ($(this).is('[data-spoiler-less]')) {
+                currentMoreText = defaultMoreText;
+                currentLessText = currentLessText;
+            } else if (!$(this).is('[data-spoiler-more]') && !$(this).is('[data-spoiler-less]')) {
+                currentMoreText = defaultMoreText;
+                currentLessText = defaultLessText;
+            }
+
+            if (currentElemHeight === '' || currentElemHeight === null || currentElemHeight === undefined) {
+                currentElemHeight = defaultHeight;
+            }
+
+            if ($(this).find('.spoiler-content').height() > defaultHeight) {
+                $(this).addClass('spoiler-scrolled');
+            }
+
+            spoiler.eq(i).addClass('spoiler-' + i);
+            $('.spoiler-' + i).readmore({
+                collapsedHeight: currentElemHeight,
+                moreLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
+                    '           <span class="text-content">' + currentMoreText + '</span>\n' +
+                    '               <svg class="icon icon-fill">\n' +
+                    '                   <use href="img/sprite.svg#chevron-down"></use>\n' +
+                    '               </svg>\n' +
+                    '       </a>',
+                lessLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
+                    '           <span class="text-content">' + currentLessText + '</span>\n' +
+                    '               <svg class="icon icon-fill">\n' +
+                    '                   <use href="img/sprite.svg#chevron-up"></use>\n' +
+                    '               </svg>\n' +
+                    '       </a>',
             });
         });
     }
@@ -1740,29 +1759,6 @@ application.prototype.initDropfiles = function () {
         console.log('oks')
         $(this).closest('.dropfile-documents__item').remove();
     });
-};
-
-
-// Initialization readmore plugin
-application.prototype.initReadmore = function () {
-    if ($(".js-spoiler").length) {
-        const spoiler = $(".js-spoiler");
-
-        spoiler.each(function (i) {
-            let currentElemHeight = spoiler.eq(i).data("collapsed-height");
-            spoiler.eq(i).addClass("js-spoiler-" + i);
-
-            $(".js-spoiler-" + i).readmore({
-                collapsedHeight: currentElemHeight,
-                moreLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green page-content__spoiler-trigger">\n' +
-                    '                                        <span class="btn__text">Показать полностью</span>\n' +
-                    '                                    </a>',
-                lessLink: '<a href="javascript:;" class="btn-reset btn btn--noframe btn--link btn--tdu-dashed btn--green page-content__spoiler-trigger">\n' +
-                    '                                        <span class="btn__text">Скрыть</span>\n' +
-                    '                                    </a>'
-            });
-        });
-    }
 };
 
 // Initialization accordion

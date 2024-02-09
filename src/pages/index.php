@@ -1,5 +1,210 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
+<div class="gap-md">
+    <div class="container">
+        <div class="index-slider-wrapper">
+            <div class="index-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner__item main-banner__descr">
+                                <div class="main-banner__title h2">
+                                    <div class="link-new">premium–комплекс</div>
+                                    Для эффективных тренировок
+                                </div>
+                                <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
+                                <div class="main-banner__more">
+                                    <a class="btn-reset btn btn-primary" href="javascript:;">
+                                        <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
+                                        <svg class="icon icon-fill btn__icon">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-banner__item main-banner__decor">
+                                <img
+                                        loading="lazy"
+                                        src="img/banner-product.png"
+                                        class="image"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner__item main-banner__descr">
+                                <div class="main-banner__title h2">
+                                    <div class="link-new">premium–комплекс</div>
+                                    Для эффективных тренировок2
+                                </div>
+                                <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
+                                <div class="main-banner__more">
+                                    <a class="btn-reset btn btn-primary" href="javascript:;">
+                                        <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
+                                        <svg class="icon icon-fill btn__icon">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-banner__item main-banner__decor">
+                                <img
+                                        loading="lazy"
+                                        src="img/banner-product.png"
+                                        class="image"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner__item main-banner__descr">
+                                <div class="main-banner__title h2">
+                                    <div class="link-new">premium–комплекс</div>
+                                    Для эффективных тренировок3
+                                </div>
+                                <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
+                                <div class="main-banner__more">
+                                    <a class="btn-reset btn btn-primary" href="javascript:;">
+                                        <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
+                                        <svg class="icon icon-fill btn__icon">
+                                            <use href="img/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main-banner__item main-banner__decor">
+                                <img
+                                        loading="lazy"
+                                        src="img/banner-product.png"
+                                        class="image"
+                                        alt="Изображение блока"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-button-next">
+                        <button class="btn-reset btn btn-square">
+                            <svg class="icon icon-fill btn__icon">
+                                <use href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <button class="btn-reset btn btn-square">
+                            <svg class="icon icon-fill btn__icon">
+                                <use href="img/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-lg">
+    <div class="container">
+        <div class="svn-benefit">
+            <ul class="list-reset card-list">
+                <li class="card card-benefit">
+                    <div class="card__view" href="javascript:;">
+                        <svg class="icon icon-xl icon-fill">
+                            <use href="img/sprite.svg#double-cpu-setting"></use>
+                        </svg>
+                    </div>
+                    <div class="card__descr">
+                        <div class="card__title">Полностью европейское производство</div>
+                        <div class="card__text-content">C контролем качества на каждом этапе</div>
+                    </div>
+                </li>
+                <li class="card card-benefit">
+                    <div class="card__view" href="javascript:;">
+                        <svg class="icon icon-xl icon-fill">
+                            <use href="img/sprite.svg#double-category"></use>
+                        </svg>
+                    </div>
+                    <div class="card__descr">
+                        <div class="card__title">Высокое содержание активных компонентов</div>
+                        <div class="card__text-content">Позволяет достигать результатов быстрее</div>
+                    </div>
+                </li>
+                <li class="card card-benefit">
+                    <div class="card__view" href="javascript:;">
+                        <svg class="icon icon-xl icon-fill">
+                            <use href="img/sprite.svg#double-box"></use>
+                        </svg>
+                    </div>
+                    <div class="card__descr">
+                        <div class="card__title">Быстрая и удобная доставка товаров </div>
+                        <div class="card__text-content">В удобное время и место</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="gap-lg">
+    <div class="container">
+        <div class="svn-pop">
+            <div class="gap-md">
+                <div class="h3">@Популярные товары</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-lg">
+    <div class="container">
+        <div class="svn-pop">
+            <div class="gap-md">
+                <div class="h3">@Выносливость/Иммунитет/Коллаген</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-lg">
+    <div class="container">
+        <div class="svn-pop">
+            <div class="gap-md">
+                <div class="h3">@подробнее о производстве</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-lg">
+    <div class="hr-logo"></div>
+</div>
+
+<div class="gap-lg">
+    <div class="container">
+        <div class="svn-pop">
+            <div class="gap-md">
+                <div class="h3">@Новинки</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap-xl">
+    <div class="container">
+        <div class="svn-pop">
+            <div class="gap-md">
+                <div class="h3">@Выбери свою цель</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="gap-lg">
     <div class="container">
         <div class="svn-brands">
@@ -142,7 +347,7 @@
                 </div>
 
                 <div class="basic-slider-wrap slider-out">
-                    <div class="basic-slider nav-out view-less swiper" data-basic-slider data-basic-slider-gap>
+                    <div class="basic-slider nav-out view-less swiper articles-slider" data-basic-slider data-basic-slider-gap>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a class="card card-article" href="javascript:;">

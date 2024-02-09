@@ -50,7 +50,7 @@
     "just-validate": "^3.3.3",
     "rellax": "^1.12.1",
     "select2": "^4.1.0-rc.0",
-    "swiper": "^7.4.1",
+    "swiper": "^11.0.6",
     "tippy.js": "^6.3.7"
   }
 }

@@ -41,66 +41,6 @@
 <body>
 <? endif; ?>
 <header class="header fixed-block">
-    <?/*
-    <div class="header-top">
-        <div class="container header-container">
-            <div class="header-top-nav">
-                <ul class="list-reset header-top-nav__list">
-                    <li><a class="header-top__link" href="javascript:;">Доставка</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Оплата</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Гарантия</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Программа лояльности</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Акции</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Статьи</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Распродажа</a></li>
-                    <li><a class="header-top__link" href="javascript:;">Контакты</a></li>
-                </ul>
-            </div>
-			<?/* login
-                <div class="header-top-profile">
-                    <div class="header-top-profile__view">
-                        <picture>
-                            <source srcset="img/avatar.webp" type="image/webp">
-                            <img
-                                loading="lazy"
-                                src="img/avatar.png"
-                                width="28"
-                                height="28"
-                                alt="Изображение блока"
-                            >
-                        </picture>
-                    </div>
-                    <div class="header-top-profile__descr">
-                        <div class="header-top-profile__name">Илья маковецкий</div>
-                        <div class="header-top-profile__bonus">
-                            <div class="header-top-profile__bonus-value">
-                                <span>2746,99</span>
-                                <svg class="icon">
-                                    <use href="img/sprite.svg#fill-bonus"></use>
-                                </svg>
-                            </div>
-                            <div class="header-top-profile__bonus-exp">до 01.04</div>
-                        </div>
-                    </div>
-                    <div class="header-top-profile__pointer">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#chevron-down"></use>
-                        </svg>
-                    </div>
-                </div>* /?>
-			<?/ * not logged * /?>
-            <div class="header-top-profile not-logged">
-                <button class="btn-reset btn btn-mini btn-light" data-fancybox data-src="#modal-auth">
-                    <span class="btn__text">Войти</span>
-                </button>
-                <button class="btn-reset btn btn-mini btn-primary" data-fancybox data-src="#modal-reg">
-                    <span class="btn__text">Регистрация</span>
-                </button>
-            </div>
-        </div>
-    </div>
-    */?>
-
     <div class="header-nav">
         <div class="container header-container header-nav-container">
             <div class="header-logo">

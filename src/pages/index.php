@@ -163,19 +163,96 @@
 
 <div class="gap-lg">
     <div class="container">
-        <div class="svn-pop">
-            <div class="gap-md">
-                <div class="h3">@Выносливость/Иммунитет/Коллаген</div>
-            </div>
+        <div class="svn-trend">
+            <ul class="list-reset svn-trend__list">
+                <li class="svn-trend__item">
+                    <a class="svn-trend__card bg-red dark-theme" href="javascript:;" style="background-image: url('img/trend-red.png');">
+                        <span class="svn-trend__view" style="background-image: url('img/trend-1.png');"></span>
+                        <span class="svn-trend__descr">
+                            <span class="svn-trend__title">Выносливость</span>
+                            <span class="svn-trend__text-content">Спортивные комплексы</span>
+                            <span class="svn-trend__more">
+                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
+                                    <span class="btn__text">Купить</span>
+                                    <svg class="icon icon-fill btn__icon">
+                                        <use href="img/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="svn-trend__item">
+                    <a class="svn-trend__card bg-blue dark-theme" href="javascript:;" style="background-image: url('img/trend-blue.png');">
+                        <span class="svn-trend__view" style="background-image: url('img/trend-2.png');"></span>
+                        <span class="svn-trend__descr">
+                            <span class="svn-trend__title">Иммунитет</span>
+                            <span class="svn-trend__text-content">Восстановление и защита</span>
+                            <span class="svn-trend__more">
+                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
+                                    <span class="btn__text">Купить</span>
+                                    <svg class="icon icon-fill btn__icon">
+                                        <use href="img/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="svn-trend__item">
+                    <a class="svn-trend__card bg-yellow dark-theme" href="javascript:;" style="background-image: url('img/trend-yellow.png');">
+                        <span class="svn-trend__view" style="background-image: url('img/trend-3.png');"></span>
+                        <span class="svn-trend__descr">
+                            <span class="svn-trend__title h3">Коллаген</span>
+                            <span class="svn-trend__text-content">Молодость кожи</span>
+                            <span class="svn-trend__more">
+                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
+                                    <span class="btn__text">Купить</span>
+                                    <svg class="icon icon-fill btn__icon">
+                                        <use href="img/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 
 <div class="gap-lg">
     <div class="container">
-        <div class="svn-pop">
-            <div class="gap-md">
-                <div class="h3">@подробнее о производстве</div>
+        <div class="svn-production">
+            <div class="svn-production__title flex-start-start">
+                <img
+                        loading="lazy"
+                        class="image"
+                        src="img/logo-clear.png"
+                        alt="Изображение блока"
+                >
+                <div class="svn-production__title-content link-new">Sport victory  nutrition</div>
+            </div>
+
+            <div class="svn-production__descr">
+                <div class="svn-production__text-content">SPORT VICTORY NUTRITION — российская инновационная фармацевтическая компания, использующая современные технологии для создания уникальных продуктов. Наша продукция выпускается на современном заводе в московской области — GLOBAL HEALTH CARE</div>
+                <div class="svn-production__more">
+                    <a class="btn-reset btn btn-primary" href="javascript:;">
+                        <span class="btn__text">Подробнее <span class="desktop-only">о производстве</span></span>
+                        <svg class="icon icon-fill btn__icon">
+                            <use href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="svn-production__view media-content media-content--16-10">
+                <img
+                        loading="lazy"
+                        class="media-content__item image"
+                        src="img/trend-red.png"
+                        alt="Изображение блока"
+                >
             </div>
         </div>
     </div>
@@ -197,10 +274,42 @@
 
 <div class="gap-xl">
     <div class="container">
-        <div class="svn-pop">
+        <div class="svn-goal">
             <div class="gap-md">
-                <div class="h3">@Выбери свою цель</div>
+                <div class="h3">Выбери свою цель</div>
             </div>
+            <ul class="list-reset svn-goal__list">
+                <li class="svn-goal__item">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Увеличение силы</span>
+                    </a>
+                </li>
+                <li class="svn-goal__item">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Набор массы</span>
+                    </a>
+                </li>
+                <li class="svn-goal__item wide">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Выносливость</span>
+                    </a>
+                </li>
+                <li class="svn-goal__item">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Восстановление и поддержка</span>
+                    </a>
+                </li>
+                <li class="svn-goal__item">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Защита суставов и связок</span>
+                    </a>
+                </li>
+                <li class="svn-goal__item wide">
+                    <a class="svn-goal__card" href="javascript:;" style="background-image: url('');">
+                        <span class="svn-goal__title fz-subtitle">Снижение веса</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -211,7 +320,6 @@
             <div class="gap-md">
                 <div class="h3">Бренды</div>
             </div>
-
             <ul class="list-reset card-list">
                 <li class="card card-info">
                     <div class="card__view" href="javascript:;">
@@ -345,7 +453,6 @@
                 <div class="gap-md">
                     <div class="h3">Полезные статьи</div>
                 </div>
-
                 <div class="basic-slider-wrap slider-out">
                     <div class="basic-slider nav-out view-less swiper articles-slider" data-basic-slider data-basic-slider-gap>
                         <div class="swiper-wrapper">

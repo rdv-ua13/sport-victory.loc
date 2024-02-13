@@ -1685,12 +1685,21 @@ input.disabled {
 
 .media-content {
 	position: relative;
-	display: flex;
 
-	&-item {
+	&__item {
+		display: flex;
 		min-width: 100%;
 		width: 100%;
-		aspect-ratio: 16 / 9;
+	}
+	&--16-9 {
+		.media-content__item {
+			aspect-ratio: 16 / 9;
+		}
+	}
+	&--16-10 {
+		.media-content__item {
+			aspect-ratio: 16 / 10;
+		}
 	}
 }
 

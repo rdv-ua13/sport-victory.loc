@@ -68,8 +68,7 @@
 
     <div>
         <ul>
-            <!--class="ready"-->
-            <li><a href="index.php" target="_blank">Главная</a></li>
+            <li><a class="ready" href="index.php" target="_blank">Главная</a></li>
 
             <br>
             <li><a class="ready" href="ui.php" target="_blank">ui</a></li>

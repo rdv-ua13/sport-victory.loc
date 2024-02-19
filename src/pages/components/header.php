@@ -35,8 +35,8 @@
     <script defer src="js/main.js"></script>
 </head>
 
-<? if (strpos($_SERVER["REQUEST_URI"], "card-product.php")) : ?>
-<body class="card-product-page">
+<? if (strpos($_SERVER["REQUEST_URI"], "index.php")) : ?>
+<body class="index">
 <? else : ?>
 <body>
 <? endif; ?>

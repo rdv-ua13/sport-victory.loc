@@ -455,10 +455,6 @@
 	.header {
 		position: fixed;
 
-		& ~ .main {
-			padding-top: calc(162px + 24px);
-		}
-
 		&-logo {
 			.image {
 				min-width: 162px;

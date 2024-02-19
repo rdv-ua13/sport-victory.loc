@@ -1143,49 +1143,54 @@ input.disabled {
 }
 
 .nav-breadcrumbs {
-	&-wrap {
-		position: relative;
-	}
-	.swiper-slide {
+	& .swiper-slide {
 		width: auto;
-		line-height: 1;
 
-		span {
+		& a {
 			position: relative;
-			color: var(--gray4-color);
+			display: flex;
 			font-size: 12px;
-			line-height: 16px;
-
-			&:hover {
-				text-decoration: underline;
-			}
+			line-height: 1.5;
 		}
-		&:not(:first-child) span {
-			padding-left: 14px;
+		&:not(:first-child) a {
+			padding-left: 20px;
 
 			&::before {
-				content: "-";
+				content: "";
 				position: absolute;
 				top: 50%;
-				left: 4px;
+				left: 8px;
 				transform: translateY(-50%);
+				min-width: 4px;
+				width: 4px;
+				min-height: 4px;
+				height: 4px;
+				border-radius: 1px;
+				background-color: var(--gray3-color);
 			}
 		}
-		&:last-child span {
+		&:not(:last-child) a {
+			color: var(--gray2-color);
+		}
+		&:last-child a {
 			color: var(--black-color);
-			pointer-events: none;
-			user-select: none;
 		}
 	}
 }
 @media (max-width: 991.98px) {
 	.nav-breadcrumbs {
-		padding-right: 16px;
-		padding-left: 16px;
+		margin-right: -16px;
+		margin-left: -16px;
 
-		&-wrap {
-			margin-right: -16px;
-			margin-left: -16px;
+		& .swiper-slide {
+			width: auto;
+
+			&:first-child {
+				padding-left: 16px;
+			}
+			&:last-child {
+				padding-right: 16px;
+			}
 		}
 	}
 }

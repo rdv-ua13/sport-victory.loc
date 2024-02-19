@@ -436,7 +436,7 @@
                                             <div class="card__dose">1000 гр</div>
                                             <div class="card__stock product-stock on-order">
                                                 <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#hourglass"></use>
+                                                    <use href="img/sprite.svg#filled-hourglass"></use>
                                                 </svg>
                                                 <span>Под заказ до 20 дней</span>
                                             </div>

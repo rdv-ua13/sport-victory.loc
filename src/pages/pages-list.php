@@ -60,15 +60,16 @@
             <img src="img/sprite.svg#logo" width="162" height="78" alt="Логотип компании">
         </div>
         <span style="display: inline-flex; align-items:center; font-size: 24px;">
-            <span style="color: forestgreen; font-weight: 600;">1 + ui</span>
+            <span style="color: forestgreen; font-weight: 600;">2 + ui</span>
             &nbsp;/&nbsp;
-            <span style="font-size: 24px;">1 + ui (всего страниц в макете)</span>
+            <span style="font-size: 24px;">2 + ui (всего страниц в макете)</span>
         </span>
     </div>
 
     <div>
         <ul>
             <li><a class="ready" href="index.php" target="_blank">Главная</a></li>
+            <li><a href="catalog.php" target="_blank">Каталог</a></li>
 
             <br>
             <li><a class="ready" href="ui.php" target="_blank">ui</a></li>

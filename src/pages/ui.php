@@ -225,6 +225,13 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#filled-hourglass">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#filled-hourglass"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#double-box">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">

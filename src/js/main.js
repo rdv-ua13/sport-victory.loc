@@ -423,21 +423,33 @@ application.prototype.initReadmore = function () {
             }
 
             spoiler.eq(i).addClass('spoiler-' + i);
-            $('.spoiler-' + i).readmore({
-                collapsedHeight: currentElemHeight,
-                moreLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
-                    '           <span class="text-content">' + currentMoreText + '</span>\n' +
+            if ($(this).is('[data-spoiler-sidebar]')) {
+                $('.spoiler-' + i).readmore({
+                    collapsedHeight: currentElemHeight,
+                    moreLink: '<a class="link link-red link-tdu" href="javascript:;">\n' +
+                        '           <span class="text-content">' + currentMoreText + '</span>\n' +
+                        '       </a>',
+                    lessLink: '<a class="link link-red link-tdu" href="javascript:;">\n' +
+                        '           <span class="text-content">' + currentLessText + '</span>\n' +
+                        '       </a>',
+                });
+            } else {
+                $('.spoiler-' + i).readmore({
+                    collapsedHeight: currentElemHeight,
+                    moreLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
+                        '           <span class="text-content">' + currentMoreText + '</span>\n' +
                     '               <svg class="icon icon-fill">\n' +
                     '                   <use href="img/sprite.svg#chevron-down"></use>\n' +
                     '               </svg>\n' +
-                    '       </a>',
-                lessLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
-                    '           <span class="text-content">' + currentLessText + '</span>\n' +
+                        '       </a>',
+                    lessLink: '<a class="link link-primary link-dropdown" href="javascript:;">\n' +
+                        '           <span class="text-content">' + currentLessText + '</span>\n' +
                     '               <svg class="icon icon-fill">\n' +
                     '                   <use href="img/sprite.svg#chevron-up"></use>\n' +
                     '               </svg>\n' +
-                    '       </a>',
-            });
+                        '       </a>',
+                });
+            }
         });
     }
 };
@@ -487,7 +499,6 @@ application.prototype.initTagbarSlider = function () {
 
             slider.eq(i).addClass('tag-bar-slider-' + i);
 
-            setCheckedSlide();
             breakpointChecker();
             $(window).on('resize', breakpointChecker);
 
@@ -500,16 +511,6 @@ application.prototype.initTagbarSlider = function () {
                     tagbarSlider = new Swiper('.tag-bar-slider-' + i, tagbarSliderSetting);
                 }
             }
-
-            function setCheckedSlide() {
-                $('.tag-bar-slider-' + i + ' .tag-wrapper input').on('click', function () {
-                    if($(this).prop('checked')) {
-                        $(this).closest('.tag-wrapper').addClass('checked');
-                    } else {
-                        $(this).closest('.tag-wrapper').removeClass('checked');
-                    }
-                });
-            }
         });
     }
 };
@@ -521,9 +522,7 @@ application.prototype.initMaskedInput = function () {
 
 // Initialization switch content
 application.prototype.initSwitchContent = function () {
-    const switchContent = $('.switch-content');
-
-    switchContent.on('click', function () {
+    $('.switch-content').on('click', function () {
         if($(this).hasClass('active')) {
             $(this).removeClass('active');
         } else {

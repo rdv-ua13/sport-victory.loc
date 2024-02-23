@@ -24,6 +24,10 @@ application.prototype.init = function () {
     this.initMaskedInput();
     this.initSwitchContent();
     this.initNotification();
+    this.initCatalogPriceSlider();
+    this.initCatalogSidebarFilter();
+    this.initCatalogSidebarApplyFilter();
+    this.initCatalogContentSort();
 };
 
 // Initialization disable scroll
@@ -311,7 +315,7 @@ application.prototype.initMenuCatalogSubmenu = function () {
     }
 };
 
-// Initialize basic slider
+// Initialization basic slider
 application.prototype.initBasicSlider = function () {
     if ($('.basic-slider-wrap').length) {
         const slider = $('[data-basic-slider]');
@@ -531,7 +535,7 @@ application.prototype.initSwitchContent = function () {
     });
 };
 
-// Initialize notification
+// Initialization notification
 application.prototype.initNotification = function () {
     const actionNotice = $('.action-notice');
     const noticeBtn = $('[data-notice]');
@@ -561,5 +565,254 @@ application.prototype.initNotification = function () {
         actionNotice
             .fadeOut('slow')
             .removeClass('added');
+    }
+};
+
+// Initialization range slider
+application.prototype.initCatalogPriceSlider = function () {
+    if ($('.range-slider').length) {
+        const slider = document.getElementById('range-slider');
+        const inputNumMin = document.getElementById('rsf_min');
+        const inputNumMax = document.getElementById('rsf_max');
+        let inputs = [inputNumMin, inputNumMax];
+
+        noUiSlider.create(slider, {
+            start: [10, 60],
+            step: 1,
+            connect: true,
+            range: {
+                'min': [0],
+                'max': [100],
+            }
+        });
+
+        slider.noUiSlider.on('update', function (values, handle) {
+            inputs[handle].value = values[handle];
+        });
+
+        // Listen to keydown events on the input field.
+        inputs.forEach(function (input, handle) {
+            input.addEventListener('change', function () {
+                slider.noUiSlider.setHandle(handle, this.value);
+            });
+
+            input.addEventListener('keydown', function (e) {
+                let values = slider.noUiSlider.get();
+                let value = Number(values[handle]);
+
+                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+                let steps = slider.noUiSlider.steps();
+
+                // [down, up]
+                let step = steps[handle];
+
+                let position;
+
+                // 13 is enter,
+                // 38 is key up,
+                // 40 is key down.
+                switch (e.which) {
+                    case 13:
+                        slider.noUiSlider.setHandle(handle, this.value);
+
+                        break;
+                    case 38:
+                        // Get step to go increase slider value (up)
+                        position = step[1];
+
+                        // false = no step is set
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        // null = edge of slider
+                        if (position !== null) {
+                            slider.noUiSlider.setHandle(handle, value + position);
+                        }
+
+                        break;
+                    case 40:
+                        position = step[0];
+
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        if (position !== null) {
+                            slider.noUiSlider.setHandle(handle, value - position);
+                        }
+
+                        break;
+                }
+            });
+        });
+
+
+        // Restricts input for the given textbox to the given inputFilter.
+        function setInputFilter(textbox, inputFilter, errMsg) {
+            ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "focusout"].forEach(function(event) {
+                textbox.addEventListener(event, function(e) {
+                    if (inputFilter(this.value)) {
+                        // Accepted value
+                        this.oldValue = this.value;
+                        this.oldSelectionStart = this.selectionStart;
+                        this.oldSelectionEnd = this.selectionEnd;
+                    } else if (this.hasOwnProperty("oldValue")) {
+                        // Rejected value - restore the previous one
+                        this.reportValidity();
+                        this.value = this.oldValue;
+                        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                    } else {
+                        // Rejected value - nothing to restore
+                        this.value = "";
+                    }
+                });
+            });
+        }
+
+        // Install input filters.
+        setInputFilter(document.querySelector(".range-slider-fields__input"), function(value) {
+            return /^-?\d*$/.test(value); });
+    }
+};
+
+// Initialization catalog sidebar filter
+application.prototype.initCatalogSidebarFilter = function () {
+    if ($('[data-filter]').length && $('[data-filter-spoiler]').length) {
+        const filter = $('[data-filter]');
+        const filterSpoiler = $('[data-filter-spoiler]');
+        const filterClose = $('[data-filter-close]');
+
+        setResponsiveFilter();
+        setCheckChangeFilter();
+        $(window).on('resize', setResponsiveFilter, setCloseFilter, setCheckChangeFilter);
+
+        filterClose.on('click', function () {
+            setCloseFilter();
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key == 'Escape') {
+                setCloseFilter();
+            }
+        });
+
+        function setResponsiveFilter() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                setCloseFilter();
+            } else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                filterSpoiler.on('click', function () {
+                    $(this).addClass('active');
+                    filter.addClass('active');
+                });
+            }
+        }
+
+        function setCloseFilter() {
+            filter.removeClass('active');
+            filterSpoiler.removeClass('active');
+        }
+
+        function setCheckChangeFilter() {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                filter.removeClass('has-filter');
+            } else if (window.matchMedia('(max-width: 991.98px)').matches) {
+                filter.on('change', function () {
+                    filter.addClass('has-filter');
+                    filterSpoiler.addClass('has-filter');
+                });
+            }
+        }
+    }
+};
+
+// Initialization catalog sidebar apply filter
+application.prototype.initCatalogSidebarApplyFilter = function () {
+    let trigger = null;
+    let coordsTrigger = null;
+    let wTrigger = null;
+    let hTrigger = null;
+    let html = '<div class="catalog-sidebar-apply-filter">' +
+        '           <div class="catalog-sidebar-apply-filter__title">Показать</div>' +
+        '           <div class="catalog-sidebar-apply-filter__value">2 184 товара</div>' +
+        '       </div>';
+
+    $(document).on('click', '.catalog-sidebar-filter__item .custom-checkbox__input', '.catalog-sidebar-filter__item .custom-checkbox__label-for', function () {
+        let scroll = $(window).scrollTop();
+        trigger = $(this).closest('.custom-checkbox');
+        coordsTrigger = trigger.offset();
+        wTrigger = trigger.outerWidth();
+        hTrigger = trigger.outerHeight();
+
+        $('.catalog-sidebar-apply-filter').remove();
+        $('body').append(html);
+        $('.catalog-sidebar-apply-filter').css({
+            'top': parseInt(coordsTrigger.top + (hTrigger * 0.5)) - scroll + 'px',
+            'left': parseInt(coordsTrigger.left + (wTrigger - 2)) + 'px',
+        });
+        setTimeout(function () {
+            $('.catalog-sidebar-apply-filter').remove();
+        }, 5000);
+
+    });
+
+    $(window).on('scroll', function () {
+        $('.catalog-sidebar-apply-filter').remove();
+    });
+};
+
+// Initialization catalog content sort
+application.prototype.initCatalogContentSort = function () {
+    if ($('.catalog-content-settings__sort-options').length) {
+        initCatalogContentSortSwitch();
+        catalogSettingsSortSelect();
+        $(window).on('resize', catalogSettingsSortSelect);
+
+        $(document).on('click', function (e) {
+            if (!$('.catalog-content-settings__sort-select').is(e.target) &&
+                !$('.catalog-content-settings__sort-options').is(e.target) &&
+                $('.catalog-content-settings__sort-options').has(e.target).length === 0)
+            {
+                closeCatalogContentSettingsSort();
+            }
+        });
+
+        $(document).on('keyup', function (e) {
+            if (e.key == 'Escape') {
+                closeCatalogContentSettingsSort();
+            }
+        });
+
+        function initCatalogContentSortSwitch() {
+            $('.catalog-content-settings__sort-options input[type="radio"]').on('click', function () {
+                if (window.matchMedia('(max-width: 1199.98px)').matches) {
+                    let selectPlaceholder = $(this).siblings('.tag').text();
+
+                    $('.catalog-content-settings__sort').find('.catalog-content-settings__sort-select-text').text(selectPlaceholder);
+                    closeCatalogContentSettingsSort();
+                }
+            });
+        }
+
+        function catalogSettingsSortSelect() {
+            if (window.matchMedia('(min-width: 1200px)').matches) {
+                closeCatalogContentSettingsSort();
+            } else if (window.matchMedia('(max-width: 1199.98px)').matches) {
+                $('.catalog-content-settings__sort-select').on('click', function () {
+                    if (!$(this).hasClass('active')) {
+                        $(this).addClass('active');
+                        $(this).siblings('.catalog-content-settings__sort-options').addClass('active');
+                    } else if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                        $(this).siblings('.catalog-content-settings__sort-options').removeClass('active');
+                    }
+                });
+            }
+        }
+
+        function closeCatalogContentSettingsSort () {
+            $('.catalog-content-settings__sort-select').removeClass('active');
+            $('.catalog-content-settings__sort-options').removeClass('active');
+        }
     }
 };

@@ -123,6 +123,7 @@ const includedJsBuild = () => {
             "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
+            "node_modules/nouislider/dist/nouislider.js",
         ]
     )
         .pipe(dest(path.build.js))
@@ -143,6 +144,7 @@ const libsJsBuild = () => {
             "node_modules/@fancyapps/ui/dist/fancybox.umd.js",
             "node_modules/select2/dist/js/select2.js",
             "node_modules/readmore-js/readmore.js",
+            "node_modules/nouislider/dist/nouislider.js",
         ]
     )
         .pipe(concat("libs.min.js"))

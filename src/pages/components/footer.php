@@ -29,7 +29,7 @@
                                     placeholder="Введите ваш email"
                                     autocomplete="off"
                             >
-                            <button class="btn-reset btn btn-md btn-primary" type="submit">
+                            <button class="btn-reset btn btn-md btn-secondary" type="submit">
                                 <span class="btn__text">Подписаться</span>
                             </button>
                         </div>

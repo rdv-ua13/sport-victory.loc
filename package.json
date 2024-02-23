@@ -48,6 +48,7 @@
     "jquery-validation": "^1.19.3",
     "jquery.maskedinput": "^1.4.1",
     "just-validate": "^3.3.3",
+    "nouislider": "^15.7.1",
     "rellax": "^1.12.1",
     "select2": "^4.1.0-rc.0",
     "swiper": "^11.0.6",

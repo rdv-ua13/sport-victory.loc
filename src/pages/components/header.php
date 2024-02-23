@@ -28,6 +28,7 @@
     <script defer src="js/fancybox.umd.js"></script>        <!-- fancybox -->
     <script defer src="js/select2.js"></script>             <!-- select2 -->
     <script defer src="js/readmore.js"></script>            <!-- readmore -->
+    <script defer src="js/nouislider.js"></script>          <!-- nouislider -->
 
 	<?/* Подключение библиотек (объединённо)
     <script defer src="js/libs.min.js"></script> */?>

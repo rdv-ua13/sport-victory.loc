@@ -141,6 +141,13 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#filter">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#filter"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#cart-tick">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">

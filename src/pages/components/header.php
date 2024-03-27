@@ -160,28 +160,138 @@
                         <span class="btn__text">Каталог</span>
                     </button>
                 </div>
-                <div class="header-catalog-preview">
-                    <a class="link link-primary link-dropdown" href="javascript:;">
-                        <span class="text-content">Витамины и добавки</span>
-                        <svg class="icon icon-fill">
-                            <use href="img/sprite.svg#chevron-down"></use>
-                        </svg>
-                    </a>
-                    <a class="link link-primary link-dropdown" href="javascript:;">
-                        <span class="text-content">Фитнес</span>
-                        <svg class="icon icon-fill">
-                            <use href="img/sprite.svg#chevron-down"></use>
-                        </svg>
-                    </a>
-                    <a class="link link-primary link-dropdown" href="javascript:;">
-                        <span class="text-content">По назначению</span>
-                        <svg class="icon icon-fill">
-                            <use href="img/sprite.svg#chevron-down"></use>
-                        </svg>
-                    </a>
-                    <a class="link link-primary" href="javascript:;">Бренды</a>
-                    <a class="link link-new" href="javascript:;">Новинки</a>
-                </div>
+
+                <ul class="list-reset header-catalog-preview">
+                    <li class="dropdown-container">
+                        <a class="link link-primary link-dropdown dropdown-spoiler" href="javascript:;">
+                            <span class="text-content">Витамины и добавки</span>
+                            <svg class="icon icon-fill">
+                                <use href="img/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="list-reset dropdown-menu">
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <a class="link link-primary link-dropdown dropdown-spoiler" href="javascript:;">
+                            <span class="text-content">Фитнес</span>
+                            <svg class="icon icon-fill">
+                                <use href="img/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="list-reset dropdown-menu">
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <a class="link link-primary link-dropdown dropdown-spoiler" href="javascript:;">
+                            <span class="text-content">По назначению</span>
+                            <svg class="icon icon-fill">
+                                <use href="img/sprite.svg#chevron-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="list-reset dropdown-menu">
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link link-primary">
+                                    <span>Название</span>
+                                    <svg class="icon icon-fill">
+                                        <use href="img/sprite.svg#chevron-down"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-container">
+                        <a class="link link-primary" href="javascript:;">
+                            <span class="text-content">Бренды</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-container">
+                        <a class="link link-new" href="javascript:;">
+                            <span class="text-content">Новинки</span>
+                        </a>
+                    </li>
+                </ul>
+
                 <div class="header-catalog-sections">
                     <a class="link link-secondary" href="javascript:;">О компании</a>
                     <a class="link link-secondary" href="javascript:;">Доставка и оплата</a>
@@ -234,6 +344,30 @@
         <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Доставка и оплата</a></li>
         <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Блог</a></li>
         <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Контакты</a></li>
+        <li>
+            <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
+                <svg class="icon icon-fill btn__icon">
+                    <use href="img/sprite.svg#filled-user-octagon"></use>
+                </svg>
+                <span class="btn__text">Кабинет</span>
+            </a>
+        </li>
+        <li>
+            <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
+                <svg class="icon icon-fill btn__icon">
+                    <use href="img/sprite.svg#filled-heart"></use>
+                </svg>
+                <span class="btn__text">Избранное</span>
+            </a>
+        </li>
+        <li>
+            <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
+                <svg class="icon icon-fill btn__icon">
+                    <use href="img/sprite.svg#filled-bag"></use>
+                </svg>
+                <span class="btn__text">Корзина</span>
+            </a>
+        </li>
     </ul>
 
     <div class="mobile-menu-footer">
@@ -248,10 +382,31 @@
         </div>
 
         <div class="mobile-menu__item">
-            <a class="mobile-menu-contacts" href="tel:+88005553829">
-                <span class="mobile-menu-contacts__num fz-subtitle">8 800 555-38-29</span>
-                <span class="mobile-menu-contacts__caption link-secondary fz-caption">Звонок по РФ бесплатный</span>
-            </a>
+            <div class="mobile-menu-contacts">
+                <a class="mobile-menu-contacts__tel" href="tel:+88005553829">
+                    <span class="mobile-menu-contacts__num fz-subtitle">8 800 555-38-29</span>
+                    <span class="mobile-menu-contacts__caption link-secondary fz-caption">Звонок по РФ бесплатный</span>
+                </a>
+
+                <div class="header-contacts__soc social">
+                    <ul class="list-reset social__list">
+                        <li>
+                            <a href="javascript:;" target="_blank" aria-label="Наша страничка в Whatsapp">
+                                <svg class="icon icon-fill icon-md">
+                                    <use href="img/sprite.svg#soc-wa"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" target="_blank" aria-label="Наша страничка в Telegram">
+                                <svg class="icon icon-fill icon-md">
+                                    <use href="img/sprite.svg#soc-tg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

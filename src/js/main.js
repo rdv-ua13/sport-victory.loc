@@ -15,6 +15,7 @@ application.prototype.init = function () {
     this.initMenu();
     this.setMenuHeightOverflow();
     this.initMenuCatalogSubmenu();
+    this.initDropdownMenu();
     this.initBasicSlider();
     this.initSliders();
     this.initReadmore();
@@ -311,6 +312,31 @@ application.prototype.initMenuCatalogSubmenu = function () {
             $(this).closest('.menu-catalog-header').removeClass('submenu');
             $(this).closest('.menu-catalog').find('.menu-catalog-root').removeClass('hide');
             $(this).closest('.menu-catalog').find('.menu-catalog-submenu').removeClass('active');
+        });
+    }
+};
+
+// Initialization dropdown menu
+application.prototype.initDropdownMenu = function () {
+    if ($('.dropdown-container').length) {
+        let spoiler = $('.dropdown-spoiler');
+        let dropdown = $('.dropdown-menu');
+
+        spoiler.on('mouseover', function () {
+            $(this).addClass('active');
+            $(this).next('.dropdown-menu').addClass('active');
+        });
+        dropdown.on('mouseover', function () {
+            $(this).prev('.dropdown-spoiler').addClass('active');
+            $(this).addClass('active');
+        });
+        spoiler.on('mouseout', function () {
+            spoiler.removeClass('active');
+            dropdown.removeClass('active');
+        });
+        dropdown.on('mouseout', function () {
+            spoiler.removeClass('active');
+            dropdown.removeClass('active');
         });
     }
 };

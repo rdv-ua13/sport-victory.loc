@@ -487,7 +487,7 @@
                             <?/* add class='has-filter' when selected filter */?>
 							<div class="catalog-content-filter-spoiler has-filter" data-filter-spoiler>
 								<div class="catalog-content-filter-spoiler__view">
-									<svg class="icon icon-fill">
+									<svg class="icon icon-sm icon-fill">
 										<use href="img/sprite.svg#filter"></use>
 									</svg>
 								</div>

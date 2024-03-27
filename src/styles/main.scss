@@ -848,9 +848,6 @@
 					display: none;
 				}
 			}
-			&__grid {
-				gap: 16px;
-			}
 
 			.pagination-wrapper {
 				justify-content: center;
@@ -860,6 +857,16 @@
 
 	.catalog-sidebar-apply-filter {
 		display: none;
+	}
+}
+@media (max-width: 767.98px) {
+	.catalog-category {
+		.catalog-content {
+			&__grid {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 8px;
+			}
+		}
 	}
 }
 @media (max-width: 575.98px) {
@@ -873,21 +880,12 @@
 		}
 		.catalog-content {
 			&__grid {
-				grid-template-columns: 1fr;
-			}
-		}
-	}
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-	.catalog-category {
-		.catalog-content {
-			&__grid {
 				grid-template-columns: repeat(2, 1fr);
 			}
 		}
 	}
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
 	.catalog-category {
 		.catalog-content {
 			&__grid {
@@ -1175,6 +1173,30 @@
 				color: var(--black-color);
 			}
 		}
+		&.bg-red {
+			.svn-trend__text-bg {
+				&::before,
+				&::after {
+					background: linear-gradient(315deg, rgba(207, 101, 74, 0.75), rgba(199, 123, 81, 0.75));
+				}
+			}
+		}
+		&.bg-blue {
+			.svn-trend__text-bg {
+				&::before,
+				&::after {
+					background: linear-gradient(315deg, rgba(26, 114, 158, 0.75), rgba(36, 141, 177, 0.75));
+				}
+			}
+		}
+		&.bg-yellow {
+			.svn-trend__text-bg {
+				&::before,
+				&::after {
+					background: linear-gradient(315deg, rgba(187, 134, 92, 0.75), rgba(198, 155, 110, 0.75));
+				}
+			}
+		}
 		&:hover {
 			.svn-trend__more {
 				.btn-primary {
@@ -1219,6 +1241,21 @@
 	&__text-content {
 		&:not(:last-child) {
 			margin-bottom: 24px;
+		}
+	}
+	&__text-bg {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			top: -4px;
+			right: -4px;
+			bottom: -4px;
+			left: -4px;
+			filter: blur(8px);
 		}
 	}
 }
@@ -1432,7 +1469,14 @@
 		}
 	}
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
+	.svn-offer {
+		.card-list {
+			gap: 12px;
+		}
+	}
+}
+@media (max-width: 419.98px) {
 	.svn-offer {
 		.card-sale {
 			min-width: 100%;
@@ -1440,11 +1484,19 @@
 		}
 	}
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 420px) and (max-width: 767.98px) {
 	.svn-offer {
 		.card-sale {
-			min-width: calc((100% - 20px) / 2);
-			width: calc((100% - 20px) / 2);
+			min-width: calc((100% - 12px) / 2);
+			width: calc((100% - 12px) / 2);
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.svn-offer {
+		.card-sale {
+			min-width: calc((100% - 24px) / 3);
+			width: calc((100% - 24px) / 3);
 		}
 	}
 }

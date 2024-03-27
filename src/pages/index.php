@@ -659,8 +659,12 @@
                     <a class="svn-trend__card bg-red dark-theme" href="javascript:;" style="background-image: url('img/trend-red.png');">
                         <span class="svn-trend__view" style="background-image: url('img/trend-1.png');"></span>
                         <span class="svn-trend__descr">
-                            <span class="svn-trend__title">Выносливость</span>
-                            <span class="svn-trend__text-content">Спортивные комплексы</span>
+                            <span class="svn-trend__title">
+                                <span class="svn-trend__text-bg">Выносливость</span>
+                            </span>
+                            <span class="svn-trend__text-content">
+                                <span class="svn-trend__text-bg">Спортивные комплексы</span>
+                            </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
                                     <span class="btn__text">Купить</span>
@@ -676,8 +680,12 @@
                     <a class="svn-trend__card bg-blue dark-theme" href="javascript:;" style="background-image: url('img/trend-blue.png');">
                         <span class="svn-trend__view" style="background-image: url('img/trend-2.png');"></span>
                         <span class="svn-trend__descr">
-                            <span class="svn-trend__title">Иммунитет</span>
-                            <span class="svn-trend__text-content">Восстановление и защита</span>
+                            <span class="svn-trend__title">
+                                <span class="svn-trend__text-bg">Иммунитет</span>
+                            </span>
+                            <span class="svn-trend__text-content">
+                                <span class="svn-trend__text-bg">Восстановление и защита</span>
+                            </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
                                     <span class="btn__text">Купить</span>
@@ -693,8 +701,12 @@
                     <a class="svn-trend__card bg-yellow dark-theme" href="javascript:;" style="background-image: url('img/trend-yellow.png');">
                         <span class="svn-trend__view" style="background-image: url('img/trend-3.png');"></span>
                         <span class="svn-trend__descr">
-                            <span class="svn-trend__title h3">Коллаген</span>
-                            <span class="svn-trend__text-content">Молодость кожи</span>
+                            <span class="svn-trend__title h3">
+                                <span class="svn-trend__text-bg">Коллаген</span>
+                            </span>
+                            <span class="svn-trend__text-content">
+                                <span class="svn-trend__text-bg">Молодость кожи</span>
+                            </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
                                     <span class="btn__text">Купить</span>

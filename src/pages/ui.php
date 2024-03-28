@@ -44,6 +44,7 @@
                     <div class="ui-color">
                         <span class="ui-color__item tooltip" data-tippy-content="--black-color" style="background-color: var(--black-color);"></span>
                         <span class="ui-color__item light tooltip" data-tippy-content="--white-color" style="background-color: var(--white-color);"></span>
+                        <span class="ui-color__item tooltip" data-tippy-content="--gray1-color" style="background-color: var(--gray1-color);"></span>
                         <span class="ui-color__item tooltip" data-tippy-content="--gray2-color" style="background-color: var(--gray2-color);"></span>
                         <span class="ui-color__item tooltip" data-tippy-content="--gray3-color" style="background-color: var(--gray3-color);"></span>
                         <span class="ui-color__item tooltip" data-tippy-content="--gray4-color" style="background-color: var(--gray4-color);"></span>
@@ -52,6 +53,8 @@
                         <span class="ui-color__item tooltip" data-tippy-content="--orange-color" style="background-color: var(--orange-color);"></span>
                         <span class="ui-color__item tooltip" data-tippy-content="--beige-color" style="background-color: var(--beige-color);"></span>
                         <span class="ui-color__item tooltip" data-tippy-content="--red-color" style="background-color: var(--red-color);"></span>
+                        <span class="ui-color__item tooltip" data-tippy-content="--green-color" style="background-color: var(--green-color);"></span>
+                        <span class="ui-color__item tooltip" data-tippy-content="--blue-color" style="background-color: var(--blue-color);"></span>
                     </div>
                 </div>
             </div>
@@ -180,6 +183,41 @@
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
                                 <use href="img/sprite.svg#bookmarks"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#info">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#info"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#user-square">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#user-square"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#menu-color-credit-card">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#menu-color-credit-card"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#menu-color-newspaper">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#menu-color-newspaper"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#menu-color-wallet">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#menu-color-wallet"></use>
                             </svg>
                             <!--end ui content-->
                         </span>

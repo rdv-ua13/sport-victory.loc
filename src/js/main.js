@@ -29,6 +29,8 @@ application.prototype.init = function () {
     this.initCatalogSidebarFilter();
     this.initCatalogSidebarApplyFilter();
     this.initCatalogContentSort();
+    this.initContactsMap();
+    this.initAccordion();
 };
 
 // Initialization disable scroll
@@ -67,7 +69,7 @@ application.prototype.initHeaderScroll = function () {
     setHeaderScroll();
 
     function setHeaderScroll() {
-        if ($(window).scrollTop() > 120) {
+        if ($(window).scrollTop() > 80) {
             $('.header').addClass('scrolled');
         } else {
             $('.header').removeClass('scrolled');
@@ -839,6 +841,85 @@ application.prototype.initCatalogContentSort = function () {
         function closeCatalogContentSettingsSort () {
             $('.catalog-content-settings__sort-select').removeClass('active');
             $('.catalog-content-settings__sort-options').removeClass('active');
+        }
+    }
+};
+
+// Initialization contacts map
+application.prototype.initContactsMap = function () {
+    if ($('.contacts-map').length) {
+        ymaps.ready(init);
+
+        let myMap;
+        let mapItem = $('.contacts-map-content');
+
+        function init () {
+            mapItem.each(function (i) {
+                mapItem.eq(i).attr('id', 'contactsMap' + i);
+
+                let zoomControl = new ymaps.control.ZoomControl({
+                    options: {
+                        size: 'large',
+                        float: 'none',
+                        position: {
+                            top: 50,
+                            right: 10,
+                            left: 'auto',
+                        },
+                    }
+                });
+
+                // Параметры карты можно задать в конструкторе.
+                myMap = new ymaps.Map(
+                    // ID DOM-элемента, в который будет добавлена карта.
+                    'contactsMap' + i,
+                    // Параметры карты.
+                    {
+                        // Географические координаты центра отображаемой карты.
+                        center: [55.798186, 37.489652],
+                        // Масштаб.
+                        zoom: 15,
+                        controls: ['fullscreenControl'],
+                    }, {
+                        // Поиск по организациям.
+                        searchControlProvider: 'yandex#search'
+                    }
+                );
+                myMap.controls.add(zoomControl);
+            });
+        }
+    }
+};
+
+// Initialization accordion
+application.prototype.initAccordion = function () {
+    if ($(".accordion").length) {
+        initAccordionResponsive();
+        $(window).on("resize", initAccordionResponsive, reloadAccordionResponsive);
+
+        function reloadAccordionResponsive() {
+            setTimeout(function () {
+                location.reload();
+            }, 300);
+        }
+        function initAccordionResponsive() {
+            $(".accordion__collapse").hide();
+
+            $(".js-accordion-btn").on("click", function () {
+                if (!$(this).hasClass("open")) {
+                    $(this).addClass("open");
+                    $(this).closest(".accordion__item").addClass("active");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(160);
+                } else if ($(this).hasClass("open")) {
+                    $(this).removeClass("open");
+                    $(this).closest(".accordion__item").removeClass("active");
+                    $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(160);
+                    setTimeout(function () {
+                        $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
+                    }, 160);
+                }
+            });
         }
     }
 };

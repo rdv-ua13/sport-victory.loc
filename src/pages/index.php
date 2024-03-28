@@ -16,7 +16,7 @@
                                     <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
                                     <div class="main-banner__more">
                                         <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
+                                            <span class="btn__text">Подобрать комплекс</span>
                                             <svg class="icon icon-fill btn__icon">
                                                 <use href="img/sprite.svg#arrow-right"></use>
                                             </svg>
@@ -666,7 +666,7 @@
                                 <span class="svn-trend__text-bg">Спортивные комплексы</span>
                             </span>
                             <span class="svn-trend__more">
-                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
+                                <span class="btn-reset btn btn-md btn-primary">
                                     <span class="btn__text">Купить</span>
                                     <svg class="icon icon-fill btn__icon">
                                         <use href="img/sprite.svg#arrow-right"></use>

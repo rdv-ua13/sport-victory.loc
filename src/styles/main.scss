@@ -16,6 +16,8 @@
 
 .main {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	flex: 1;
 	min-width: 320px;
 	overflow: hidden;
@@ -932,8 +934,6 @@
 	}
 }
 
-
-/* .svn-goal */
 .svn-goal {
 	&__list {
 		display: grid;
@@ -1042,7 +1042,6 @@
 	}
 }
 
-/* .svn-production */
 .svn-production {
 	&__descr {
 		display: flex;
@@ -1164,7 +1163,6 @@
 	}
 }
 
-/* .svn-trend */
 .svn-trend {
 	&__list {
 		gap: 20px;
@@ -1373,7 +1371,6 @@
 	}
 }
 
-/* .svn-benefit */
 @media (min-width: 1200px) {
 	.svn-benefit {
 		.card-benefit {
@@ -1399,7 +1396,6 @@
 	}
 }
 
-/* .svn-brands */
 @media (min-width: 1200px) {
 	.svn-brands {
 		.card-info {
@@ -1441,7 +1437,6 @@
 	}
 }
 
-/* .svn-articles */
 .articles-slider {
 	& ~ .swiper-navigation {
 		top: 30%;
@@ -1477,7 +1472,6 @@
 	}
 }
 
-/* .svn-offer */
 @media (min-width: 1200px) {
 	.svn-offer {
 		.card-sale {
@@ -1810,6 +1804,7 @@
 }
 
 .pre-footer {
+	margin-top: auto;
 	background-color: var(--gray5-color);
 
 	&__container {

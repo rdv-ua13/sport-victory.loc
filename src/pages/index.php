@@ -1521,7 +1521,7 @@
                     </div>
                     <div class="card__descr">
                         <div class="card__caption">
-                            <svg class="icon icon-sm icon-fill">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#timer"></use>
                             </svg>
                             <span class="text-content">Акция до 31 января 2024</span>
@@ -1540,7 +1540,7 @@
                     </div>
                     <div class="card__descr">
                         <div class="card__caption">
-                            <svg class="icon icon-sm icon-fill">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#timer"></use>
                             </svg>
                             <span class="text-content">Бессрочная акция</span>
@@ -1559,7 +1559,7 @@
                     </div>
                     <div class="card__descr">
                         <div class="card__caption">
-                            <svg class="icon icon-sm icon-fill">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#timer"></use>
                             </svg>
                             <span class="text-content">Акция до 20 марта 2024</span>
@@ -1578,7 +1578,7 @@
                     </div>
                     <div class="card__descr">
                         <div class="card__caption">
-                            <svg class="icon icon-sm icon-fill">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#timer"></use>
                             </svg>
                             <span class="text-content">Акция до 31 января 2024</span>

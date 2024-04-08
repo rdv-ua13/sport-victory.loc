@@ -95,29 +95,11 @@
 
 				.icon {
 					transform: rotate(-90deg);
-					/*min-width: 24px;
-					width: 24px;
-					min-height: 24px;
-					height: 24px;
-					fill: var(--white-color);
-					stroke: var(--white-color);*/
 				}
 
 				li {
 					display: flex;
 				}
-
-				/*.link {
-					display: flex;
-					align-items: center;
-					padding-top: 6px;
-					padding-bottom: 6px;
-
-					&:hover {
-						text-decoration: underline;
-						text-underline-offset: 3px;
-					}
-				}*/
 			}
 		}
 		&-preview,
@@ -126,7 +108,6 @@
 			align-items: center;
 			min-height: 40px;
 			height: 40px;
-			/*overflow: hidden;*/
 
 			.link {
 				padding-top: 4px;

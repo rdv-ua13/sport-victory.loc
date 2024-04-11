@@ -1,6 +1,6 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
-<div class="gap-lg content-page">
+<div class="gap-lg">
 	<div class="container">
         <div class="content-page delivery-pay">
             <div class="cp-grid">
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="">
                                     <div class="contacts-map">
-                                        <div class="contacts-map-content"></div>
+                                        <div class="contacts-map-content" data-x="55.798186" data-y="37.489652"></div>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@
         <div class="news">
             <div class="gap-md">
                 <div class="gap-md">
-                    <div class="h2">Новости</span></div>
+                    <div class="h2">Новости</div>
                 </div>
 
                 <div class="card-list">

@@ -1172,13 +1172,13 @@ input.disabled {
 	& .swiper-slide {
 		width: auto;
 
-		& a {
+		&__item {
 			position: relative;
 			display: flex;
 			font-size: 12px;
 			line-height: 1.5;
 		}
-		&:not(:first-child) a {
+		&:not(:first-child) .nav-breadcrumbs__item {
 			padding-left: 20px;
 
 			&::before {
@@ -1195,10 +1195,10 @@ input.disabled {
 				background-color: var(--gray3-color);
 			}
 		}
-		&:not(:last-child) a {
+		&:not(:last-child) .nav-breadcrumbs__item {
 			color: var(--gray2-color);
 		}
-		&:last-child a {
+		&:last-child .nav-breadcrumbs__item {
 			color: var(--black-color);
 		}
 	}

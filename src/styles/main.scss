@@ -1723,6 +1723,37 @@
 	}
 }
 
+.details {
+	&__main-pic {
+		display: flex;
+
+		.image {
+			min-width: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.back-to {
+	.link {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+
+		.icon {
+			fill: var(--gray1-color);
+			stroke: var(--gray1-color);
+		}
+
+		&:hover {
+			.icon {
+				fill: var(--black-color);
+				stroke: var(--black-color);
+			}
+		}
+	}
+}
+
 .contacts {
 	&-map {
 		position: relative;

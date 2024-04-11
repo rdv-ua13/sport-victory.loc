@@ -847,36 +847,43 @@ application.prototype.initCatalogContentSort = function () {
 
 // Initialization contacts map
 application.prototype.initContactsMap = function () {
-    if ($('.contacts-map').length) {
+    if ($('.contacts__map').length) {
         ymaps.ready(init);
 
-        let myMap;
-        let mapItem = $('.contacts-map-content');
+        let map,
+            placemark,
+            mapItem = $('.contacts__map-content');
 
         function init () {
             mapItem.each(function (i) {
                 mapItem.eq(i).attr('id', 'contactsMap' + i);
 
-                let zoomControl = new ymaps.control.ZoomControl({
-                    options: {
-                        size: 'large',
-                        float: 'none',
-                        position: {
-                            top: 50,
-                            right: 10,
-                            left: 'auto',
-                        },
-                    }
-                });
+                let coordX = $(this).data('x'),
+                    coordY = $(this).data('y'),
+                    hint = $(this).data('hint'),
+                    zoomControl = new ymaps.control.ZoomControl({
+                        options: {
+                            size: 'large',
+                            float: 'none',
+                            position: {
+                                top: 50,
+                                right: 10,
+                                left: 'auto',
+                            },
+                        }
+                    });
 
                 // Параметры карты можно задать в конструкторе.
-                myMap = new ymaps.Map(
+                map = new ymaps.Map(
                     // ID DOM-элемента, в который будет добавлена карта.
                     'contactsMap' + i,
                     // Параметры карты.
                     {
                         // Географические координаты центра отображаемой карты.
-                        center: [55.798186, 37.489652],
+                        center: [
+                            coordX,
+                            coordY
+                        ],
                         // Масштаб.
                         zoom: 15,
                         controls: ['fullscreenControl'],
@@ -885,7 +892,11 @@ application.prototype.initContactsMap = function () {
                         searchControlProvider: 'yandex#search'
                     }
                 );
-                myMap.controls.add(zoomControl);
+
+                placemark = new ymaps.Placemark([coordX, coordY]);
+
+                map.geoObjects.add(placemark);
+                map.controls.add(zoomControl);
             });
         }
     }

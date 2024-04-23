@@ -8,10 +8,10 @@
 
 <div class="gap-lg">
 	<div class="container">
-        <div class="news">
+        <div class="blog">
             <div class="gap-md">
                 <div class="gap-md">
-                    <div class="h2">Новости</div>
+                    <div class="h2">Блог</div>
                 </div>
 
                 <div class="card-list">

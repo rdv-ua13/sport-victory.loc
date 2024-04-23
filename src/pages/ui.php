@@ -221,6 +221,13 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#filled-lock">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#filled-lock"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#filled-heart">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
@@ -277,6 +284,20 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#filled-eye">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#filled-eye"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#filled-eye-slash">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#filled-eye-slash"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#double-box">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
@@ -309,6 +330,27 @@
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
                                 <use href="img/sprite.svg#soc-tg"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#soc-vk">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#soc-vk"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#soc-ok">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#soc-ok"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#soc-ya">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#soc-ya"></use>
                             </svg>
                             <!--end ui content-->
                         </span>

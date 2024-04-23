@@ -70,7 +70,7 @@
         <ul>
             <li><a class="ready" href="index.php" target="_blank">Главная</a></li>
             <li><a class="ready" href="catalog.php" target="_blank">Каталог</a></li>
-            <li><a class="ready" href="news.php" target="_blank">Новости</a></li>
+            <li><a class="ready" href="blog.php" target="_blank">Блог</a></li>
             <li><a class="ready" href="delivery-pay.php" target="_blank">Доставка и оплата</a></li>
 
             <br>

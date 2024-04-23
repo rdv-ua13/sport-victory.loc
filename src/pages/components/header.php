@@ -116,7 +116,7 @@
             <div class="header-profile">
                 <ul class="list-reset header-profile__list">
                     <li>
-                        <button class="btn-reset btn btn-header">
+                        <button class="btn-reset btn btn-header" data-fancybox data-src="#modal-auth">
                             <svg class="icon icon-fill btn__icon">
                                 <use href="img/sprite.svg#filled-user-octagon"></use>
                             </svg>

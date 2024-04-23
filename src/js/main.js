@@ -31,6 +31,8 @@ application.prototype.init = function () {
     this.initCatalogContentSort();
     this.initContactsMap();
     this.initAccordion();
+    this.initFancyBehavior();
+    this.initPasswordSwitcher();
 };
 
 // Initialization disable scroll
@@ -932,5 +934,52 @@ application.prototype.initAccordion = function () {
                 }
             });
         }
+    }
+};
+
+// Initialization custom fancy behavior
+application.prototype.initFancyBehavior = function () {
+    const body = $('body');
+    const fancybox = $('[data-fancybox]');
+    const burger = $('[data-menu-spoiler]');
+    const menu = $('[data-menu]');
+    const catalog = $('[data-catalog]');
+    const catalogSpoiler = $('[data-catalog-spoiler]');
+
+    fancybox.on('click', function () {
+        let currentSrc = $(this).data('src');
+
+        menu.removeClass('active');
+        burger.attr('aria-expanded', 'false');
+        burger.attr('aria-label', 'Открыть меню');
+        catalog.removeClass('active');
+        catalogSpoiler.attr('aria-expanded', 'false');
+        catalogSpoiler.attr('aria-label', 'Открыть меню');
+        $('.overlay').remove();
+        $('.overlay-transparent').remove();
+
+        $('.modal').not(currentSrc).closest('.fancybox__container.is-animated').click();
+    });
+
+    $(document).on('click', function (e) {
+        if ($('.fancybox__slide.is-selected.has-inline').is(e.target) || $('.fancybox__slide .carousel__button.is-close').is(e.target)) {
+            body.removeClass('overflow-hidden');
+            return application.prototype.enableScroll();
+        }
+    });
+};
+
+// Initialization password-switcher
+application.prototype.initPasswordSwitcher = function () {
+    if ($('input[type=password]').length) {
+        $(document).on('click', 'input[data-password-switcher]', function(){
+            if ($(this).is(':checked')) {
+                $(this).closest('.form__field').find('input[data-password-target]').attr('type', 'text');
+                $(this).closest('.form__input-btn').addClass('show');
+            } else {
+                $(this).closest('.form__field').find('input[data-password-target]').attr('type', 'password');
+                $(this).closest('.form__input-btn').removeClass('show');
+            }
+        });
     }
 };

@@ -178,7 +178,7 @@
         </div>
     </footer>
 
-    <?php /*include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); */?>
+    <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/modals.php"); ?>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=3d113411-9fb0-4147-bc2f-c9492c6b089a&lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

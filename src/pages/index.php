@@ -749,12 +749,33 @@
             </div>
 
             <div class="svn-production__view media-content media-content--16-10">
-                <img
+                <? /* todo: replace on server */ ?>
+                <a
+                    class="media-content__item media-video"
+                    href="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
+                    data-fancybox=""
+                >
+					<?/*<video
+                            class="media-video__item"
+                            src="demo.mp4"
+                            preload="auto"
+                            poster=""
+                    ></video>*/?>
+                    <iframe
+                            class="media-video__item"
+                            src="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
+                            title="YouTube video player"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                    ></iframe>
+                </a>
+
+                <!--<img
                         loading="lazy"
                         class="media-content__item image"
                         src="img/trend-red.png"
                         alt="Изображение блока"
-                >
+                >-->
             </div>
         </div>
     </div>

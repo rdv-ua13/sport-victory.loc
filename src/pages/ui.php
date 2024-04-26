@@ -18,16 +18,19 @@
     <link rel="stylesheet" href="css/ui.css" type="text/css">
 
 	<?/* Подключение библиотек (отдельно) */?>
-    <script defer src="js/jquery.js"></script>    <!-- jquery -->
-    <script defer src="js/jquery.maskedinput.js"></script>    <!-- maskedinput -->
-    <script defer src="js/jquery.validate.js"></script>    <!-- validate -->
-    <script defer src="js/messages_ru.js"></script>    <!-- validate -->
-    <script defer src="js/popper.js"></script>    <!-- popper -->
-    <script defer src="js/swiper-bundle.js"></script>    <!-- swiper -->
-    <script defer src="js/tippy-bundle.umd.js"></script>    <!-- tippy -->
-    <script defer src="js/fancybox.umd.js"></script>    <!-- fancybox -->
-    <script defer src="js/select2.js"></script>    <!-- select2 -->
-    <script defer src="js/readmore.js"></script>    <!-- readmore -->
+    <script defer src="js/jquery.js"></script>                  <!-- jquery -->
+    <script defer src="js/jquery.maskedinput.js"></script>      <!-- maskedinput -->
+    <script defer src="js/jquery.validate.js"></script>         <!-- validate -->
+    <script defer src="js/messages_ru.js"></script>             <!-- validate -->
+    <script defer src="js/popper.js"></script>                  <!-- popper -->
+    <script defer src="js/swiper-bundle.js"></script>           <!-- swiper -->
+    <script defer src="js/tippy-bundle.umd.js"></script>        <!-- tippy -->
+    <script defer src="js/fancybox.umd.js"></script>            <!-- fancybox -->
+    <script defer src="js/select2.js"></script>                 <!-- select2 -->
+    <script defer src="js/readmore.js"></script>                <!-- readmore -->
+    <script defer src="js/flatpickr.min.js"></script>           <!-- flatpickr -->
+    <script defer src="js/ru.js"></script>                      <!-- flatpickr -->
+    <script defer src="js/nouislider.js"></script>          <!-- nouislider -->
 
 	<?/* Подключение библиотек (объединённо)
     <script defer src="js/libs.min.js"></script> */?>
@@ -165,10 +168,31 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#checkbox-checked">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#checkbox-checked"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#timer">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
                                 <use href="img/sprite.svg#timer"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#hourglass">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#hourglass"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#cancel">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#cancel"></use>
                             </svg>
                             <!--end ui content-->
                         </span>
@@ -197,6 +221,13 @@
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
                                 <use href="img/sprite.svg#user-square"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#order">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#order"></use>
                             </svg>
                             <!--end ui content-->
                         </span>
@@ -913,6 +944,28 @@
                                             alt="Изображение блока"
                                     >
                                 </a>
+                            </span>
+                            <!--end ui content-->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="ui-row">
+                    <div class="ui-title">
+                        <div class="fz-subtitle">input flatpickr (date)</div>
+                    </div>
+                    <div class="ui-tooltip-set">
+                        <span class="tooltip" data-tippy-content="class='input flatpickr">
+                            <!--start ui content-->
+                            <span class="input-wrapper input-wrapper--flatpickr">
+                                <input
+                                        id=""
+                                        class="input-reset input flatpickr"
+                                        type="text"
+                                        name=""
+                                        value=""
+                                        placeholder="Любая дата"
+                                >
                             </span>
                             <!--end ui content-->
                         </span>

@@ -8,6 +8,7 @@
 @import "../../node_modules/@fancyapps/ui/dist/fancybox";
 @import "../../node_modules/tippy.js/dist/tippy";
 @import "../../node_modules/nouislider/dist/nouislider";
+@import "../../node_modules/flatpickr/dist/flatpickr";
 @import "settings";
 
 // подключения компонентов страницы
@@ -1564,11 +1565,31 @@
 			}
 			&__link {
 				display: inline-flex;
+				align-items: center;
+				gap: 6px;
 				line-height: 24px;
 
 				&:not(.active) {
 					color: var(--gray1-color);
 				}
+
+				.content {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					min-width: 16px;
+					width: 16px;
+					min-height: 16px;
+					height: 16px;
+					overflow: hidden;
+					border-radius: 50%;
+					background-color: var(--red-color);
+					color: var(--white-color);
+					font-weight: 700;
+					font-size: 9px;
+					line-height: 1.2;
+				}
+
 				&:hover,
 				&.active {
 					color: var(--black-color);
@@ -1577,9 +1598,40 @@
 					font-weight: 700;
 				}
 			}
+			&__person {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+
+				&-view {
+					min-width: 48px;
+					width: 48px;
+					min-height: 48px;
+					height: 48px;
+					overflow: hidden;
+					border-radius: 50%;
+				}
+				&-name {
+					font-weight: 600;
+				}
+				&-info {
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+
+					li {
+						line-height: 24px;
+					}
+				}
+			}
 		}
 		&-top {
 			background-color: var(--gray5-color);
+		}
+		&-manager {
+			margin-top: 36px;
+			padding: 16px;
+			border: 1px solid var(--gray4-color);
 		}
 	}
 	.cp-item {
@@ -1866,6 +1918,191 @@
 		.card-article {
 			min-width: calc((100% - 40px) / 3);
 			width: calc((100% - 40px) / 3);
+		}
+	}
+}
+
+.personal-acc {
+	&__search {
+		display: flex;
+		gap: 12px;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		&-item {
+			min-width: unset;
+		}
+		&-order {
+			flex: 2;
+		}
+		&-date {
+			flex: 1;
+		}
+		&-btn {
+			min-width: 135px;
+			width: 135px;
+		}
+	}
+	&__orders {
+		display: flex;
+		flex-direction: column;
+
+		&-item {
+			display: flex;
+			border-bottom: 1px solid var(--gray4-color);
+
+			&:first-child {
+				border-top: 1px solid var(--gray4-color);
+			}
+		}
+		&-descr {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		&-header {
+			display: flex;
+			flex-direction: column;
+			gap: 6px;
+
+			&-title {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			&-date {
+				color: var(--gray2-color);
+			}
+		}
+		&-details {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		&-view {
+			display: flex;
+
+			.swiper-slide {
+				display: flex;
+				min-width: 40px;
+				width: 40px;
+				min-height: 40px;
+				height: 40px;
+				overflow: hidden;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: var(--transition);
+
+				&.slide-more {
+					justify-content: center;
+					align-items: center;
+					border: 1px solid var(--gray4-color);
+					color: var(--gray2-color);
+					font-size: 13px;
+					line-height: 1;
+
+					&:hover {
+						border-color: var(--gray3-color);
+					}
+				}
+			}
+			.image {
+				min-width: 40px;
+				width: 40px;
+				min-height: 40px;
+				height: 40px;
+				object-fit: contain;
+			}
+		}
+		&-info {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			font-size: 14px;
+		}
+		&-total {
+			.title-line {
+				color: var(--gray2-color);
+			}
+			.value-line {
+				font-weight: 700;
+				font-size: 15px;
+			}
+		}
+		&-status {
+			color: var(--gray2-color);
+		}
+	}
+}
+@media (min-width: 992px) {
+	.personal-acc {
+		&__orders {
+			&-item {
+				padding-top: 32px;
+				padding-bottom: 32px;
+			}
+			&-info {
+				min-width: 200px;
+			}
+			&-descr {
+				flex: 1;
+			}
+			&-details {
+				.table-descr {
+					min-width: 160px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.personal-acc {
+		&__search {
+			&-date {
+				min-width: 240px;
+			}
+		}
+		&__orders {
+			&-item {
+				gap: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.personal-acc {
+		&__search {
+			flex-wrap: wrap;
+
+			&-order {
+				min-width: 100%;
+			}
+			&-date {
+				min-width: 140px;
+			}
+		}
+		&__orders {
+			&-item {
+				flex-direction: column;
+				gap: 16px;
+			}
+			&-info {
+				padding-top: 16px;
+				border-top: 1px solid var(--gray4-color);
+			}
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.personal-acc {
+		&__orders {
+			&-item {
+				margin-right: -16px;
+				margin-left: -16px;
+				padding: 16px;
+			}
 		}
 	}
 }

@@ -72,6 +72,8 @@
             <li><a class="ready" href="catalog.php" target="_blank">Каталог</a></li>
             <li><a class="ready" href="blog.php" target="_blank">Блог</a></li>
             <li><a class="ready" href="delivery-pay.php" target="_blank">Доставка и оплата</a></li>
+            <br>
+            <li><a class="ready" href="lk-orders.php" target="_blank">ЛК - Заказы</a></li>
 
             <br>
             <li><a class="ready" href="ui.php" target="_blank">ui</a></li>

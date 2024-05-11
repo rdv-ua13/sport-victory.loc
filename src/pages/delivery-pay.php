@@ -276,7 +276,7 @@
                                         <div class="accordion__header">
                                             <div class="accordion__btn js-accordion-btn">
                                                 <div class="accordion__header-title h5">Как оформить заказ?</div>
-                                                <svg class="icon icon-md">
+                                                <svg class="icon icon-md icon-fill">
                                                     <use href="img/sprite.svg#chevron-down"></use>
                                                 </svg>
                                             </div>
@@ -295,7 +295,7 @@
                                         <div class="accordion__header">
                                             <div class="accordion__btn js-accordion-btn">
                                                 <div class="accordion__header-title h5">Как отправляется товар?</div>
-                                                <svg class="icon icon-md">
+                                                <svg class="icon icon-md icon-fill">
                                                     <use href="img/sprite.svg#chevron-down"></use>
                                                 </svg>
                                             </div>

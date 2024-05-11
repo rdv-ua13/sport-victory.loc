@@ -1,6 +1,7 @@
 // базовые подключения
 @import "vars";
 @import "fonts";
+@import "./vendors/normalize";
 @import "./helpers/grid-bootstrap";
 @import "./helpers/ui";
 @import "../../node_modules/swiper/swiper-bundle";
@@ -1523,7 +1524,7 @@
 
 .svn-about {
 	.spoiler {
-		max-height: 136px;
+max-height: 136px;
 
 		&[aria-expanded="false"] {
 			&::before {
@@ -2119,6 +2120,9 @@
 		align-items: center;
 		gap: 20px;
 
+		&-pic {
+			display: flex;
+		}
 		&-info {
 			display: flex;
 			flex-direction: column;

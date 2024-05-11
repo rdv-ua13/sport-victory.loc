@@ -13,9 +13,7 @@
     <link rel="preload" href="fonts/Aeonik Pro TRIAL.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/Aeonik Pro TRIAL.ttf" as="font" type="font/ttf" crossorigin>
 
-    <link rel="stylesheet" href="css/vendors.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/ui.css" type="text/css">
 
 	<?/* Подключение библиотек (отдельно) */?>
     <script defer src="js/jquery.js"></script>                  <!-- jquery -->
@@ -30,10 +28,7 @@
     <script defer src="js/readmore.js"></script>                <!-- readmore -->
     <script defer src="js/flatpickr.min.js"></script>           <!-- flatpickr -->
     <script defer src="js/ru.js"></script>                      <!-- flatpickr -->
-    <script defer src="js/nouislider.js"></script>          <!-- nouislider -->
-
-	<?/* Подключение библиотек (объединённо)
-    <script defer src="js/libs.min.js"></script> */?>
+    <script defer src="js/nouislider.js"></script>              <!-- nouislider -->
 
     <script defer src="js/main.js"></script>
 </head>

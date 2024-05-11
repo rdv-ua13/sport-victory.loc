@@ -7,7 +7,7 @@
                 <div class="index-slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
                                 <div class="main-banner__item main-banner__descr">
                                     <div class="main-banner__title h2">
                                         <div class="link-new">premium–комплекс</div>
@@ -25,16 +25,17 @@
                                 </div>
                                 <div class="main-banner__item main-banner__decor">
                                     <img
-                                            loading="lazy"
                                             src="img/banner-product.png"
                                             class="image"
+                                            width="430"
+                                            height="385"
                                             alt="Изображение блока"
                                     >
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
                                 <div class="main-banner__item main-banner__descr">
                                     <div class="main-banner__title h2">
                                         <div class="link-new">premium–комплекс</div>
@@ -52,16 +53,17 @@
                                 </div>
                                 <div class="main-banner__item main-banner__decor">
                                     <img
-                                            loading="lazy"
                                             src="img/banner-product.png"
                                             class="image"
+                                            width="430"
+                                            height="385"
                                             alt="Изображение блока"
                                     >
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner.png');">
+                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
                                 <div class="main-banner__item main-banner__descr">
                                     <div class="main-banner__title h2">
                                         <div class="link-new">premium–комплекс</div>
@@ -79,9 +81,10 @@
                                 </div>
                                 <div class="main-banner__item main-banner__decor">
                                     <img
-                                            loading="lazy"
                                             src="img/banner-product.png"
                                             class="image"
+                                            width="430"
+                                            height="385"
                                             alt="Изображение блока"
                                     >
                                 </div>
@@ -731,6 +734,8 @@
                         loading="lazy"
                         class="image"
                         src="img/logo-clear.png"
+                        width="73"
+                        height="130"
                         alt="Изображение блока"
                 >
                 <div class="svn-production__title-content link-new">Sport victory  nutrition</div>

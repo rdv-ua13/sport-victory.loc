@@ -37,7 +37,6 @@ const path = {
         php:                "src/pages/**/*.php",
         mainJs:             "src/js/main.js",
         styles:             "src/styles/main.scss",
-        stylesVendor:       "src/styles/vendors/**/*.*",
         img:                "src/img",
         svg:                "src/img/svg/**.svg",
         resources:          "src/resources/**/*.*",
@@ -64,27 +63,6 @@ const phpBuild = () => {
             })
         ))
         .pipe(dest(path.build.build))
-        .pipe(browserSync.stream());
-};
-
-// Сбор стилей вендоров
-const cssVendorBuild = () => {
-    return src(path.src.stylesVendor)
-        .pipe(concat("vendors.css"))
-        .pipe(plumber(
-            notify.onError({
-                title: "CSS",
-                message: "Error: <%= error.message %>"
-            })
-        ))
-        .pipe(sass())
-        .pipe(group_media())
-        .pipe(autoprefixer({
-            cascade: false,
-            grid: true,
-            overrideBrowserslist: ["last 5 versions"]
-        }))
-        .pipe(dest(path.build.styles))
         .pipe(browserSync.stream());
 };
 
@@ -187,18 +165,6 @@ const svgSprites = () => {
                 },
             })
         )
-        /*.pipe(
-            cheerio({
-                run: function ($) {
-                    $("[fill]").removeAttr("fill");
-                    $("[stroke]").removeAttr("stroke");
-                    $("[style]").removeAttr("style");
-                },
-                parserOptions: {
-                    xmlMode: true
-                },
-            })
-        )*/
         .pipe(replace("&gt;", ">"))
         .pipe(svgSprite({
             mode: {
@@ -273,6 +239,6 @@ const toProd = (done) => {
     done();
 };
 
-exports.default = series(clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, includedJsBuild, mainJsBuild, resources, images, /*webpImages,*/ svgSprites, watchFiles);
+exports.default = series(clean, cacheBuild, phpBuild, cssBuild, includedJsBuild, mainJsBuild, resources, images, /*webpImages,*/ svgSprites, watchFiles);
 
-exports.build = series(toProd, clean, cacheBuild, phpBuild, cssVendorBuild, cssBuild, libsJsBuild, mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);
+exports.build = series(toProd, clean, cacheBuild, phpBuild, cssBuild, libsJsBuild, mainJsBuild, resources, images, webpImages, svgSprites, watchFiles);

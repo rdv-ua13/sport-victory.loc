@@ -14,7 +14,6 @@
     <link rel="preload" href="fonts/Aeonik Pro TRIAL.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/Aeonik Pro TRIAL.ttf" as="font" type="font/ttf" crossorigin>
 
-    <link rel="stylesheet" href="css/vendors.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <?/* Подключение библиотек (отдельно) */?>
@@ -539,8 +538,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -549,8 +548,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -559,8 +558,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -569,8 +568,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -579,8 +578,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -644,8 +643,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -654,8 +653,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -664,8 +663,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -674,8 +673,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -684,8 +683,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -753,8 +752,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -763,8 +762,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -773,8 +772,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -783,8 +782,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>
@@ -793,8 +792,8 @@
                                         loading="lazy"
                                         src="img/.png"
                                         class="image"
-                                        width=""
-                                        height=""
+                                        width="273"
+                                        height="200"
                                         alt="Изображение блока"
                                 >
                             </div>

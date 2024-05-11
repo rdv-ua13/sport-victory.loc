@@ -399,7 +399,7 @@ body:not(.is-using-mouse) {
 	font-weight: 700;
 }
 
-fs-italic {
+.fs-italic {
 	font-style: italic;
 }
 
@@ -3537,7 +3537,6 @@ input.disabled {
 	}
 	&__collapse {
 		overflow: hidden;
-		background-color: var(--text10-color);
 
 		&.collapsed {
 			display: none;
@@ -3594,8 +3593,8 @@ input.disabled {
 
 			&:hover,
 			&:focus {
-				border-color: var(--text1-color);
-				background: var(--text1-color);
+				border-color: var(--black-color);
+				background: var(--black-color);
 			}
 		}
 		&.selected,

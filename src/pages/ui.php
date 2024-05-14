@@ -58,6 +58,31 @@
             </div>
 
             <div class="ui-section">
+                <h3 class="h3 ui-title title-bold text-center">Gaps</h3>
+
+                <div class="ui-row">
+<pre>
+@media (min-width: 992px) {
+    .gap-xxs { margin-bottom: 8px !important; }
+    .gap-xs { margin-bottom: 24px !important; }
+    .gap-sm { margin-bottom: 32px !important; }
+    .gap-md { margin-bottom: 40px !important; }
+    .gap-lg { margin-bottom: 60px !important; }
+    .gap-xl { margin-bottom: 80px !important; }
+}
+@media (max-width: 991.98px) {
+    .gap-xxs { margin-bottom: 8px !important; }
+    .gap-xs { margin-bottom: 12px !important; }
+    .gap-sm { margin-bottom: 16px !important; }
+    .gap-md { margin-bottom: 24px !important; }
+    .gap-lg { margin-bottom: 32px !important; }
+    .gap-xl { margin-bottom: 40px !important; }
+}
+</pre>
+                </div>
+            </div>
+
+            <div class="ui-section">
                 <h3 class="h3 ui-title title-bold text-center">Icons</h3>
 
                 <div class="ui-row">
@@ -142,6 +167,20 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#plus">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#plus"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#minus">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#minus"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#filter">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
@@ -223,6 +262,20 @@
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
                                 <use href="img/sprite.svg#order"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#heart">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#heart"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
+                        <span class="tooltip" data-tippy-content="#share">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#share"></use>
                             </svg>
                             <!--end ui content-->
                         </span>

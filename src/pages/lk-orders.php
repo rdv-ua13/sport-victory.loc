@@ -54,7 +54,6 @@
                         <div class="cp-sidebar-item__person">
                             <div class="cp-sidebar-item__person-view">
                                 <img
-                                    loading="lazy"
                                     class="image"
                                     src="img/person.png"
                                     alt="Изображение блока"
@@ -136,15 +135,17 @@
                                     <div class="basic-tabs-content__panel" data-id="all">
                                         <div class="basic-tabs-content__content empty">
                                             <div class="personal-acc__orders">
-                                                <div class="personal-acc__orders-view">
-                                                    <svg class="icon icon-fill">
-                                                        <use href="img/sprite.svg#order"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="personal-acc__orders-descr">
-                                                    <div class="personal-acc__orders-title h4">У вас еще нет заказов</div>
-                                                    <div class="personal-acc__orders-hint caption-color">
-                                                        Воспользуйтесь <a href="javascript:;" class="link link-tdu caption-color">поиском</a> или <a href="javascript:;" class="link link-tdu caption-color">каталогом</a>
+                                                <div class="personal-acc__orders-item">
+                                                    <div class="personal-acc__orders-view">
+                                                        <svg class="icon icon-fill">
+                                                            <use href="img/sprite.svg#order"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="personal-acc__orders-descr">
+                                                        <div class="personal-acc__orders-title h4">У вас еще нет заказов</div>
+                                                        <div class="personal-acc__orders-hint caption-color">
+                                                            Воспользуйтесь <a href="javascript:;" class="link link-tdu caption-color">поиском</a> или <a href="javascript:;" class="link link-tdu caption-color">каталогом</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -501,9 +502,7 @@
                                     </div>
                                 </div>
                             </div>
-
 						</div>
-
 					</div>
 				</div>
 			</div>

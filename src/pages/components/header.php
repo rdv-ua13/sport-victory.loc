@@ -49,7 +49,6 @@
             <div class="header-logo">
                 <a class="logo" href="javascript:;">
                     <img
-                            loading="lazy"
                             class="image"
                             src="img/sprite.svg#logo"
                             width="162"

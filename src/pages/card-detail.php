@@ -1,245 +1,520 @@
 <?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/header.php"); ?>
 
 <div class="gap-md">
-    <div class="container">
-        <div class="slider-out">
-            <div class="index-slider-wrapper">
-                <div class="index-slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
-                                <div class="main-banner__item main-banner__descr">
-                                    <div class="main-banner__title h2">
-                                        <div class="link-new">premium–комплекс</div>
-                                        Для эффективных тренировок
-                                    </div>
-                                    <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
-                                    <div class="main-banner__more">
-                                        <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать комплекс</span>
-                                            <svg class="icon icon-fill btn__icon">
-                                                <use href="img/sprite.svg#arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main-banner__item main-banner__decor">
-                                    <img
-                                            src="img/banner-product.png"
-                                            class="image"
-                                            alt="Изображение блока"
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
-                                <div class="main-banner__item main-banner__descr">
-                                    <div class="main-banner__title h2">
-                                        <div class="link-new">premium–комплекс</div>
-                                        Для эффективных тренировок2
-                                    </div>
-                                    <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
-                                    <div class="main-banner__more">
-                                        <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
-                                            <svg class="icon icon-fill btn__icon">
-                                                <use href="img/sprite.svg#arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main-banner__item main-banner__decor">
-                                    <img
-                                            src="img/banner-product.png"
-                                            class="image"
-                                            alt="Изображение блока"
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="main-banner bg-light" style="background-image: url('img/bg-banner0.png');">
-                                <div class="main-banner__item main-banner__descr">
-                                    <div class="main-banner__title h2">
-                                        <div class="link-new">premium–комплекс</div>
-                                        Для эффективных тренировок3
-                                    </div>
-                                    <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
-                                    <div class="main-banner__more">
-                                        <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
-                                            <svg class="icon icon-fill btn__icon">
-                                                <use href="img/sprite.svg#arrow-right"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main-banner__item main-banner__decor">
-                                    <img
-                                            src="img/banner-product.png"
-                                            class="image"
-                                            alt="Изображение блока"
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-navigation">
-                        <div class="swiper-button-next">
-                            <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
-                                    <use href="img/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
-                                    <use href="img/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="card-detail-breadcrumbs">
+			<?php include($_SERVER["DOCUMENT_ROOT"] . "/build/" . "components/breadcrumbs.php"); ?>
+		</div>
+	</div>
 </div>
 
 <div class="gap-lg">
-    <div class="container">
-        <div class="svn-benefit">
-            <ul class="list-reset card-list">
-                <li class="card card-benefit">
-                    <div class="card__view" href="javascript:;">
-                        <svg class="icon icon-xl icon-fill">
-                            <use href="img/sprite.svg#double-cpu-setting"></use>
-                        </svg>
+	<div class="container">
+		<div class="content-page detail">
+			<div class="cp-grid">
+				<div class="cp-content">
+                    <div class="gap-md card-detail">
+                        <div class="card-detail-main">
+                            <div class="card-detail-main__view">
+                                <div class="details-thumb-slider-wrapper">
+                                    <div class="swiper details-thumb-slider-pointer" thumbsSlider="">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide media-content">
+                                                <div class="media-content__item">
+                                                    <button class="btn-reset btn btn-play">
+                                                        <svg class="icon icon-fill btn__icon">
+                                                            <use href="img/sprite.svg#play"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-4.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-1.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-2.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-3.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-4.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-5.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-1.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-2.png"
+                                                        class="image"
+                                                        width="80"
+                                                        height="80"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper details-thumb-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide media-content">
+                                                <a
+                                                        class="media-content__item media-video"
+                                                        href="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
+                                                        data-fancybox=""
+                                                >
+													<?/*<video
+                                                                class="media-video__item"
+                                                                src="demo.mp4"
+                                                                preload="auto"
+                                                                poster=""
+                                                        ></video>*/?>
+                                                    <iframe
+                                                            class="media-video__item"
+                                                            src="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
+                                                            title="YouTube video player"
+                                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                            allowfullscreen
+                                                    ></iframe>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-4.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-1.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-2.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-3.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-4.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-5.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-1.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img
+                                                        loading="lazy"
+                                                        src="img/prod-2.png"
+                                                        class="image"
+                                                        width="336"
+                                                        height="426"
+                                                        alt="Изображение блока"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="details-thumb-slider__sale-label">
+                                            <span class="sale-label sale-label-red">Новинка</span>
+                                            <span class="sale-label sale-label-green">Для детей</span>
+                                            <span class="sale-label sale-label-blue">Для мозга</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-detail-main__descr">
+                                <div class="card-detail-main__header">
+                                    <div class="h3">Premium Omega-3-6-9 с витамином Е 90, 120 капсул</div>
+                                    <div class="card-detail-main__caption fz-sm">Артикул: 11ASL315KSJ29</div>
+                                </div>
+                                <div class="card-detail-main__description">
+                                    <div class="fz-sm">Упаковка:</div>
+                                    <div class="tag-bar">
+                                        <div class="tag-bar__list">
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="WEIGHT[TAGS][]"
+                                                            value=""
+                                                            checked
+                                                    >
+                                                    <span class="tag">750 гр.</span>
+                                                </label>
+                                            </div>
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="WEIGHT[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <span class="tag">1500 гр.</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-detail-main__description">
+                                    <div class="fz-sm">Вкус:</div>
+                                    <div class="tag-bar">
+                                        <div class="tag-bar__list">
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="TASTE[TAGS][]"
+                                                            value=""
+                                                            checked
+                                                    >
+                                                    <span class="tag">Банан</span>
+                                                </label>
+                                            </div>
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="TASTE[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <span class="tag">Ваниль</span>
+                                                </label>
+                                            </div>
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="TASTE[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <span class="tag">Клубника</span>
+                                                </label>
+                                            </div>
+                                            <div class="tag-bar__item">
+                                                <label class="tag-wrapper">
+                                                    <input
+                                                            class="visually-hidden"
+                                                            type="radio"
+                                                            name="TASTE[TAGS][]"
+                                                            value=""
+                                                    >
+                                                    <span class="tag">Шоколад</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-detail-main__description">
+                                    <table class="table-descr table-descr--sb">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>Форма креатина</span>
+                                            </td>
+                                            <td>
+                                                <span>креатин моногидрат</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Вид транспортной системы</span>
+                                            </td>
+                                            <td>
+                                                <span>креатин</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Диетические особенности</span>
+                                            </td>
+                                            <td>
+                                                <span>без ГМО, без глютена, без мальтозы,  без сукралозы, веганский,  вегетариантский</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Для кого</span>
+                                            </td>
+                                            <td>
+                                                <span>для женщин, для мужчин</span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card__descr">
-                        <div class="card__title">Полностью европейское производство</div>
-                        <div class="card__text-content">C контролем качества на каждом этапе</div>
+
+                    <div class="basic-tabs">
+                        <div class="gap-sm slider-out basic-slider-wrap">
+                            <div class="basic-tabs-container basic-slider swiper" data-tab="card-detail-tabs" data-tabs-slider>
+                                <div class="basic-tabs-slider-list swiper-wrapper reset-slider-list">
+                                    <div class="basic-tabs-item swiper-slide">
+                                        <span class="tab tab--tag basic-tabs-trigger active" data-target="description"><span>Описание</span></span>
+                                    </div>
+                                    <div class="basic-tabs-item swiper-slide">
+                                        <span class="tab tab--tag basic-tabs-trigger" data-target="application"><span>Рекомендации по применению</span></span>
+                                    </div>
+                                    <div class="basic-tabs-item swiper-slide">
+                                        <span class="tab tab--tag basic-tabs-trigger" data-target="compound"><span>Состав</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basic-tabs-content" data-tab-content="card-detail-tabs">
+                            <div class="basic-tabs-content__panel active" data-id="description">
+                                <div class="basic-tabs-content__content">
+                                    <div class="gap-xs">
+                                        <p><b>Мужская формула</b> — витаминно-минеральный комплекс, сбалансирован с учетом суточной потребности мужского организма в витаминах и минералах.</p>
+
+                                        <ul class="list-reset list-default">
+                                            <li>
+                                                <span>Активные компоненты, входящие в состав, оказывают положительное влияние на здоровье мужской репродуктивной системы, способствуют синтезу тестостерона и нормализации эректильной функции, улучшают показатели качества спермы. Повышают либидо и ускоряют восстановление после сексуальной активности.</span>
+                                            </li>
+                                            <li>
+                                                <span>Увеличивают уровень энергии, умственную и физическую работоспособность.</span>
+                                            </li>
+                                            <li>
+                                                <span>Положительно влияют на эмоциональное состояние, снижают влияние стресса на организм, нормализуют настроение, сон, улучшают память и концентрацию внимания.</span>
+                                            </li>
+                                            <li>
+                                                <span>Обладают антиоксидантным действием, способствуют замедлению процессов старения и поддержанию молодости и красоты — Anti-age effect.</span>
+                                            </li>
+                                            <li>
+                                                <span>Укрепляют иммунитет, ускоряют выздоровление, снижают выраженность симптомов, тяжесть течения и риск развития бактериальных и вирусных заболеваний.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="caption-color fz-sm">БАД. Не является лекарственным средством.</div>
+                                </div>
+                            </div>
+                            <div class="basic-tabs-content__panel" data-id="application">
+                                <div class="basic-tabs-content__content">
+                                    2
+                                </div>
+                            </div>
+                            <div class="basic-tabs-content__panel" data-id="compound">
+                                <div class="basic-tabs-content__content">
+                                    3
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="card card-benefit">
-                    <div class="card__view" href="javascript:;">
-                        <svg class="icon icon-xl icon-fill">
-                            <use href="img/sprite.svg#double-category"></use>
-                        </svg>
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__title">Высокое содержание активных компонентов</div>
-                        <div class="card__text-content">Позволяет достигать результатов быстрее</div>
-                    </div>
-                </li>
-                <li class="card card-benefit">
-                    <div class="card__view" href="javascript:;">
-                        <svg class="icon icon-xl icon-fill">
-                            <use href="img/sprite.svg#double-box"></use>
-                        </svg>
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__title">Быстрая и удобная доставка товаров </div>
-                        <div class="card__text-content">В удобное время и место</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+				</div>
+
+				<div class="cp-sidebar">
+					<div class="cp-sidebar-action">
+						<button class="btn-reset btn btn-sm" type="button">
+						    <svg class="icon icon-fill">
+						        <use href="img/sprite.svg#heart"></use>
+						    </svg>
+						    <span class="text-content">В избранное</span>
+						</button>
+						<button class="btn-reset btn btn-sm" type="button">
+						    <svg class="icon icon-fill">
+						        <use href="img/sprite.svg#share"></use>
+						    </svg>
+						    <span class="text-content">Поделиться</span>
+						</button>
+					</div>
+
+					<div class="cp-sidebar-item cp-sidebar-top">
+                        <div class="card-detail-price">
+                            <div class="card-detail-price__main">
+                                <div class="card-detail-price__current h3 fw-bold fs-italic">3 850 ₽</div>
+                                <div class="card-detail-price__discount">
+                                    <span class="chip chip-green chip--sale">–15%</span>
+                                </div>
+                            </div>
+                            <div class="card-detail-price__origin fz-subtitle">4 100 ₽</div>
+                        </div>
+						<div class="card-detail-delivery">
+                            <div class="card-detail-delivery__item">
+                                <span><b>13 января</b>, курьером</span>
+                                <span>от 150 ₽</span>
+                            </div>
+                            <div class="card-detail-delivery__item">
+                                <span><b>11 января</b>, в ПВЗ СДЭКм</span>
+                                <span class="success-color">бесплатно</span>
+                            </div>
+                        </div>
+
+                        <div class="cart-buy">
+                            <div class="cart-quantity">
+                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
+                                    <svg class="icon icon-sm btn__icon">
+                                        <use href="img/sprite.svg#minus"></use>
+                                    </svg>
+                                </button>
+                                <input
+                                        class="input-reset cart-quantity-input"
+                                        type="text"
+                                        placeholder="999"
+                                        value="1"
+                                        max="999"
+                                        data-mult="1"
+                                >
+                                <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
+                                    <svg class="icon icon-sm btn__icon">
+                                        <use href="img/sprite.svg#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="btn-reset btn btn-md btn-secondary cart-in" type="button">
+                                <svg class="icon icon-fill btn__icon">
+                                    <use href="img/sprite.svg#cart-add"></use>
+                                </svg>
+                                <span class="btn__text">В корзину</span>
+                            </button>
+                        </div>
+					</div>
+
+					<div class="cp-sidebar-item cp-sidebar-promocode">
+						<div class="cp-sidebar-item__heading">
+							<img
+							    loading="lazy"
+							    class="image"
+							    src="img/ticket-discount.svg"
+							    width="24"
+							    height="24"
+							    alt="Изображение блока"
+							>
+							<div class="cp-sidebar-item__title">
+                                <span>-15% по промокоду</span>
+                                <span class="clipboard" data-clipboard>
+                                    <span class="clipboard-target">VESNA2024</span>
+                                    <span class="clipboard-trigger">
+                                        <svg class="icon icon-sm icon-fill">
+                                            <use href="img/sprite.svg#copy"></use>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>
+						</div>
+						<div class="caption-color fz-caption">на заказ от 1500 ₽ и на скидку не более 500 ₽. До 31 мая 2024</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="gap-lg">
+    <div class="hr"></div>
 </div>
 
 <div class="gap-lg">
     <div class="container">
         <div class="svn-pop">
             <div class="gap-md">
-                <div class="h3">Популярные товары</div>
-            </div>
-            <div class="gap-md">
-                <div class="slider-out">
-                    <div class="tag-bar swiper" data-tag-bar-slider>
-                        <div class="swiper-wrapper tag-bar__list">
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Витамины</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Добавки</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Для фитнеса</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Для выносливости</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Коллаген</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Красота</span>
-                                </label>
-                            </div>
-                            <div class="swiper-slide tag-bar__item">
-                                <label class="tag-wrapper">
-                                    <input
-                                            class="visually-hidden"
-                                            type="checkbox"
-                                            name="POP_PRODUCT[TAGS][]"
-                                            value=""
-                                    >
-                                    <span class="tag">Для силы</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="h3">Еще может подойти</div>
             </div>
             <div class="slider-out">
                 <div class="basic-slider-wrap">
@@ -249,64 +524,13 @@
                                 <div class="card card-product" data-card-product>
                                     <div class="card__view">
                                         <img
-                                            loading="lazy"
-                                            class="image"
-                                            src="img/prod-1.png"
-                                            alt="Изображение блока"
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/prod-4.png"
+                                                alt="Изображение блока"
                                         >
                                         <div class="card__sale-label">
-                                            <span class="sale-label sale-label-red">Новинка</span>
-                                        </div>
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__descr-top">
-                                            <a class="caption-color fz-sm" href="javascript:;">61 отзыв</a>
-                                        </div>
-                                        <div class="card__descr-info">
-                                            <a class="card__title" href="javascript:;">Premium Multivitamin Daily</a>
-                                            <div class="card__dose">60 капсул</div>
-                                            <div class="card__stock product-stock coming-soon">
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#filled-car"></use>
-                                                </svg>
-                                                <span>В наличии с 5 февраля</span>
-                                            </div>
-                                        </div>
-                                        <div class="card__bottom">
-                                            <div class="card__msg">
-                                                <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="card__act">
-                                            <div class="card__act-list">
-                                                <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
-                                                        <use href="img/sprite.svg#filled-heart"></use>
-                                                    </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
-                                                        <use href="img/sprite.svg#filled-heart"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card card-product" data-card-product>
-                                    <div class="card__view">
-                                        <img
-                                            loading="lazy"
-                                            class="image"
-                                            src="img/prod-2.png"
-                                            alt="Изображение блока"
-                                        >
-                                        <div class="card__sale-label">
-                                            <span class="sale-label sale-label-red">Новинка</span>
-                                            <span class="sale-label sale-label-green">Для детей</span>
-                                            <span class="sale-label sale-label-blue">Для мозга</span>
+                                            <span class="sale-label sale-label-orange">Выносливость</span>
                                         </div>
                                     </div>
                                     <div class="card__descr">
@@ -314,8 +538,8 @@
                                             <a class="caption-color fz-sm" href="javascript:;">Sport Victory Nutririon</a>
                                         </div>
                                         <div class="card__descr-info">
-                                            <a class="card__title" href="javascript:;">Premium Pump Complex 210 гр</a>
-                                            <div class="card__dose">30 капсул</div>
+                                            <a class="card__title" href="javascript:;">Premium Gainer</a>
+                                            <div class="card__dose">1000 гр</div>
                                             <div class="card__stock product-stock in-stock">
                                                 <svg class="icon icon-fill">
                                                     <use href="img/sprite.svg#filled-check"></use>
@@ -326,7 +550,7 @@
                                         <div class="card__bottom">
                                             <div class="card__total">
                                                 <div class="card__price">
-                                                    <div class="card__price-current">4 500 ₽</div>
+                                                    <div class="card__price-current">3 440 ₽</div>
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
@@ -356,10 +580,10 @@
                                 <div class="card card-product" data-card-product>
                                     <div class="card__view">
                                         <img
-                                            loading="lazy"
-                                            class="image"
-                                            src="img/prod-3.png"
-                                            alt="Изображение блока"
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/prod-3.png"
+                                                alt="Изображение блока"
                                         >
                                         <div class="card__sale-label">
                                             <span class="sale-label sale-label-red">Новинка</span>
@@ -369,7 +593,7 @@
                                     </div>
                                     <div class="card__descr">
                                         <div class="card__descr-top">
-                                            <a class="caption-color fz-sm" href="javascript:;">Нет отзывов</a>
+                                            <a class="caption-color fz-sm" href="javascript:;">Sport Victory Nutririon</a>
                                         </div>
                                         <div class="card__descr-info">
                                             <a class="card__title" href="javascript:;">Premium Omega-3-6-9 с витамином Е 90</a>
@@ -417,32 +641,40 @@
                                         <img
                                                 loading="lazy"
                                                 class="image"
-                                                src="img/prod-4.png"
+                                                src="img/prod-1.png"
                                                 alt="Изображение блока"
                                         >
                                         <div class="card__sale-label">
-                                            <span class="sale-label sale-label-orange">Выносливость</span>
+                                            <span class="sale-label sale-label-red">Новинка</span>
                                         </div>
                                     </div>
                                     <div class="card__descr">
                                         <div class="card__descr-top">
-                                            <a class="caption-color fz-sm" href="javascript:;">Sport Victory Nutririon</a>
+                                            <a class="caption-color fz-sm" href="javascript:;">61 отзыв</a>
                                         </div>
                                         <div class="card__descr-info">
-                                            <a class="card__title" href="javascript:;">Premium Gainer</a>
-                                            <div class="card__dose">1000 гр</div>
-                                            <div class="card__stock product-stock on-order">
+                                            <a class="card__title" href="javascript:;">Premium Multivitamin Daily</a>
+                                            <div class="card__dose">60 капсул</div>
+                                            <div class="card__stock product-stock in-stock">
                                                 <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#filled-hourglass"></use>
+                                                    <use href="img/sprite.svg#filled-check"></use>
                                                 </svg>
-                                                <span>Под заказ до 20 дней</span>
+                                                <span>В наличии</span>
                                             </div>
                                         </div>
                                         <div class="card__bottom">
-                                            <div class="card__msg">
-                                                <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
-                                                </button>
+                                            <div class="card__total">
+                                                <div class="card__price">
+                                                    <div class="card__price-current">1 760 ₽</div>
+                                                    <div class="card__price-origin">2 400 ₽</div>
+                                                </div>
+                                                <div class="card__cart">
+                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                        <svg class="icon icon-fill btn__icon">
+                                                            <use href="img/sprite.svg#cart-add"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card__act">
@@ -523,55 +755,6 @@
                                         <img
                                                 loading="lazy"
                                                 class="image"
-                                                src="img/prod-1.png"
-                                                alt="Изображение блока"
-                                        >
-                                        <div class="card__sale-label">
-                                            <span class="sale-label sale-label-red">Новинка</span>
-                                        </div>
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__descr-top">
-                                            <a class="caption-color fz-sm" href="javascript:;">61 отзыв</a>
-                                        </div>
-                                        <div class="card__descr-info">
-                                            <a class="card__title" href="javascript:;">Premium Multivitamin Daily</a>
-                                            <div class="card__dose">60 капсул</div>
-                                            <div class="card__stock product-stock coming-soon">
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#filled-car"></use>
-                                                </svg>
-                                                <span>В наличии с 5 февраля</span>
-                                            </div>
-                                        </div>
-                                        <div class="card__bottom">
-                                            <div class="card__msg">
-                                                <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="card__act">
-                                            <div class="card__act-list">
-                                                <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
-                                                        <use href="img/sprite.svg#filled-heart"></use>
-                                                    </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
-                                                        <use href="img/sprite.svg#filled-heart"></use>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card card-product" data-card-product>
-                                    <div class="card__view">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
                                                 src="img/prod-2.png"
                                                 alt="Изображение блока"
                                         >
@@ -624,6 +807,120 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-card-product>
+                                    <div class="card__view">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/prod-1.png"
+                                                alt="Изображение блока"
+                                        >
+                                        <div class="card__sale-label">
+                                            <span class="sale-label sale-label-red">Новинка</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__descr">
+                                        <div class="card__descr-top">
+                                            <a class="caption-color fz-sm" href="javascript:;">61 отзыв</a>
+                                        </div>
+                                        <div class="card__descr-info">
+                                            <a class="card__title" href="javascript:;">Premium Multivitamin Daily</a>
+                                            <div class="card__dose">60 капсул</div>
+                                            <div class="card__stock product-stock in-stock">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#filled-check"></use>
+                                                </svg>
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__bottom">
+                                            <div class="card__total">
+                                                <div class="card__price">
+                                                    <div class="card__price-current">1 760 ₽</div>
+                                                    <div class="card__price-origin">2 400 ₽</div>
+                                                </div>
+                                                <div class="card__cart">
+                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                        <svg class="icon icon-fill btn__icon">
+                                                            <use href="img/sprite.svg#cart-add"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__act-list">
+                                                <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
+                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                        <use href="img/sprite.svg#filled-heart"></use>
+                                                    </svg>
+                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                        <use href="img/sprite.svg#filled-heart"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-card-product>
+                                    <div class="card__view">
+                                        <img
+                                                loading="lazy"
+                                                class="image"
+                                                src="img/prod-5.png"
+                                                alt="Изображение блока"
+                                        >
+                                        <div class="card__sale-label">
+                                            <span class="sale-label sale-label-red">Новинка</span>
+                                            <span class="sale-label sale-label-blue">Для мозга</span>
+                                        </div>
+                                    </div>
+                                    <div class="card__descr">
+                                        <div class="card__descr-top">
+                                            <a class="caption-color fz-sm" href="javascript:;">Sport Victory Nutririon</a>
+                                        </div>
+                                        <div class="card__descr-info">
+                                            <a class="card__title" href="javascript:;">Premium Creatine</a>
+                                            <div class="card__dose">120 капсул</div>
+                                            <div class="card__stock product-stock in-stock">
+                                                <svg class="icon icon-fill">
+                                                    <use href="img/sprite.svg#filled-check"></use>
+                                                </svg>
+                                                <span>В наличии</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__bottom">
+                                            <div class="card__total">
+                                                <div class="card__price">
+                                                    <div class="card__price-current">1 360 ₽</div>
+                                                </div>
+                                                <div class="card__cart">
+                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                        <svg class="icon icon-fill btn__icon">
+                                                            <use href="img/sprite.svg#cart-add"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__act">
+                                            <div class="card__act-list">
+                                                <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
+                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                        <use href="img/sprite.svg#filled-heart"></use>
+                                                    </svg>
+                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                        <use href="img/sprite.svg#filled-heart"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-navigation">
@@ -650,145 +947,9 @@
 
 <div class="gap-lg">
     <div class="container">
-        <div class="svn-trend">
-            <ul class="list-reset svn-trend__list">
-                <li class="svn-trend__item">
-                    <a class="svn-trend__card bg-red dark-theme" href="javascript:;" style="background-image: url('img/trend-red.png');">
-                        <span class="svn-trend__view" style="background-image: url('img/trend-1.png');"></span>
-                        <span class="svn-trend__descr">
-                            <span class="svn-trend__title">
-                                <span class="svn-trend__text-bg">Выносливость</span>
-                            </span>
-                            <span class="svn-trend__text-content">
-                                <span class="svn-trend__text-bg">Спортивные комплексы</span>
-                            </span>
-                            <span class="svn-trend__more">
-                                <span class="btn-reset btn btn-md btn-primary">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
-                                        <use href="img/sprite.svg#arrow-right"></use>
-                                    </svg>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="svn-trend__item">
-                    <a class="svn-trend__card bg-blue dark-theme" href="javascript:;" style="background-image: url('img/trend-blue.png');">
-                        <span class="svn-trend__view" style="background-image: url('img/trend-2.png');"></span>
-                        <span class="svn-trend__descr">
-                            <span class="svn-trend__title">
-                                <span class="svn-trend__text-bg">Иммунитет</span>
-                            </span>
-                            <span class="svn-trend__text-content">
-                                <span class="svn-trend__text-bg">Восстановление и защита</span>
-                            </span>
-                            <span class="svn-trend__more">
-                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
-                                        <use href="img/sprite.svg#arrow-right"></use>
-                                    </svg>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="svn-trend__item">
-                    <a class="svn-trend__card bg-yellow dark-theme" href="javascript:;" style="background-image: url('img/trend-yellow.png');">
-                        <span class="svn-trend__view" style="background-image: url('img/trend-3.png');"></span>
-                        <span class="svn-trend__descr">
-                            <span class="svn-trend__title h3">
-                                <span class="svn-trend__text-bg">Коллаген</span>
-                            </span>
-                            <span class="svn-trend__text-content">
-                                <span class="svn-trend__text-bg">Молодость кожи</span>
-                            </span>
-                            <span class="svn-trend__more">
-                                <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
-                                        <use href="img/sprite.svg#arrow-right"></use>
-                                    </svg>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="container">
-        <div class="svn-production">
-            <div class="svn-production__title flex-start-start">
-                <img
-                        loading="lazy"
-                        class="image"
-                        src="img/logo-clear.png"
-                        width="73"
-                        height="130"
-                        alt="Изображение блока"
-                >
-                <div class="svn-production__title-content link-new">Sport victory  nutrition</div>
-            </div>
-
-            <div class="svn-production__descr">
-                <div class="svn-production__text-content">SPORT VICTORY NUTRITION — российская инновационная фармацевтическая компания, использующая современные технологии для создания уникальных продуктов. Наша продукция выпускается на современном заводе в московской области — GLOBAL HEALTH CARE</div>
-                <div class="svn-production__more">
-                    <a class="btn-reset btn btn-primary" href="javascript:;">
-                        <span class="btn__text">Подробнее <span class="desktop-only">о производстве</span></span>
-                        <svg class="icon icon-fill btn__icon">
-                            <use href="img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="svn-production__view media-content media-content--16-10">
-                <? /* todo: replace on server */ ?>
-                <a
-                    class="media-content__item media-video"
-                    href="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
-                    data-fancybox=""
-                >
-					<?/*<video
-                            class="media-video__item"
-                            src="demo.mp4"
-                            preload="auto"
-                            poster=""
-                    ></video>*/?>
-                    <iframe
-                            class="media-video__item"
-                            src="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
-                            title="YouTube video player"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                    ></iframe>
-                </a>
-
-                <!--<img
-                        loading="lazy"
-                        class="media-content__item image"
-                        src="img/trend-red.png"
-                        alt="Изображение блока"
-                >-->
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="hr-logo"></div>
-</div>
-
-<div class="gap-lg">
-    <div class="container">
         <div class="svn-pop">
             <div class="gap-md">
-                <div class="h3">Новинки</div>
+                <div class="h3">Аксессуары</div>
             </div>
             <div class="slider-out">
                 <div class="basic-slider-wrap">
@@ -1223,7 +1384,7 @@
     <div class="container">
         <div class="svn-goal">
             <div class="gap-md">
-                <div class="h3">Выбери свою цель</div>
+                <div class="h3">Спортивное питание</div>
             </div>
             <ul class="list-reset svn-goal__list">
                 <li class="svn-goal__item">
@@ -1257,377 +1418,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="container">
-        <div class="svn-brands">
-            <div class="gap-md">
-                <div class="h3">Бренды</div>
-            </div>
-            <ul class="list-reset card-list">
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-1.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-2.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-3.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-4.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-5.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-6.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-7.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-8.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-9.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-10.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-11.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-                <li class="card card-info">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/brand-1.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="block bg-gray5">
-        <div class="container">
-            <div class="svn-articles">
-                <div class="gap-md">
-                    <div class="h3">Полезные статьи</div>
-                </div>
-                <div class="basic-slider-wrap slider-out">
-                    <div class="basic-slider nav-out view-less swiper articles-slider" data-basic-slider data-basic-slider-gap>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a class="card card-article" href="javascript:;">
-                                    <div class="card__view">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
-                                                src="img/card-sale-4.png"
-                                                alt="Изображение блока"
-                                        >
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__title">Почему зимой так сложно справляться с холодом?</div>
-                                        <div class="card__text-content">Мерзлявость - это дискомфортное ощущение внутреннего холода, которое может возникать периодами. Но если вы из тех, кто не любит холодно</div>
-                                        <div class="card__more">
-                                            <div class="link link-primary link-dropdown">
-                                                <span class="text-content">Читать полностью</span>
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#arrow-right"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="card card-article" href="javascript:;">
-                                    <div class="card__view">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
-                                                src="img/card-sale-5.png"
-                                                alt="Изображение блока"
-                                        >
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__title">Кальций - важнейший макроэлимент в организме человека</div>
-                                        <div class="card__text-content">Кальций входит в состав костей, зубов, участвует в свертывании крови, сокращении мышц, в том числе сердечной. По статистике, более 50%</div>
-                                        <div class="card__more">
-                                            <div class="link link-primary link-dropdown">
-                                                <span class="text-content">Читать полностью</span>
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#arrow-right"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="card card-article" href="javascript:;">
-                                    <div class="card__view">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
-                                                src="img/card-sale-6.png"
-                                                alt="Изображение блока"
-                                        >
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__title">ТОП добавок для иммунитета</div>
-                                        <div class="card__text-content">Эхинацея Обладает антибактериальным, противовирусным и антигрибковым свойствами. Эхинацею рекомендуют начинать применять при первых симптомах заболеваний. Разрешена детям. у Цинк При..</div>
-                                        <div class="card__more">
-                                            <div class="link link-primary link-dropdown">
-                                                <span class="text-content">Читать полностью</span>
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#arrow-right"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="card card-article" href="javascript:;">
-                                    <div class="card__view">
-                                        <img
-                                                loading="lazy"
-                                                class="image"
-                                                src="img/card-sale-5.png"
-                                                alt="Изображение блока"
-                                        >
-                                    </div>
-                                    <div class="card__descr">
-                                        <div class="card__title">Кальций - важнейший макроэлимент в организме человека</div>
-                                        <div class="card__text-content">Кальций входит в состав костей, зубов, участвует в свертывании крови, сокращении мышц, в том числе сердечной. По статистике, более 50%</div>
-                                        <div class="card__more">
-                                            <div class="link link-primary link-dropdown">
-                                                <span class="text-content">Читать полностью</span>
-                                                <svg class="icon icon-fill">
-                                                    <use href="img/sprite.svg#arrow-right"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-navigation">
-                        <div class="swiper-button-next">
-                            <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
-                                    <use href="img/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
-                                    <use href="img/sprite.svg#arrow-right"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="container">
-        <div class="svn-offer">
-            <div class="gap-md">
-                <div class="h3">Выгодные предложения</div>
-            </div>
-            <div class="card-list">
-                <a class="card card-sale" href="javascript:;">
-                    <div class="card__view">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/card-sale-1.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__caption">
-                            <svg class="icon icon-fill">
-                                <use href="img/sprite.svg#timer"></use>
-                            </svg>
-                            <span class="text-content">Акция до 31 января 2024</span>
-                        </div>
-                        <div class="card__title" href="javascript:;">Распродажа витаминов!</div>
-                    </div>
-                </a>
-                <a class="card card-sale" href="javascript:;">
-                    <div class="card__view">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/card-sale-2.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__caption">
-                            <svg class="icon icon-fill">
-                                <use href="img/sprite.svg#timer"></use>
-                            </svg>
-                            <span class="text-content">Бессрочная акция</span>
-                        </div>
-                        <div class="card__title" href="javascript:;">Программа лояльности</div>
-                    </div>
-                </a>
-                <a class="card card-sale">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/card-sale-3.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__caption">
-                            <svg class="icon icon-fill">
-                                <use href="img/sprite.svg#timer"></use>
-                            </svg>
-                            <span class="text-content">Акция до 20 марта 2024</span>
-                        </div>
-                        <div class="card__title" href="javascript:;">Подарок за регистрацию в онлайн-магазине</div>
-                    </div>
-                </a>
-                <a class="card card-sale">
-                    <div class="card__view" href="javascript:;">
-                        <img
-                                loading="lazy"
-                                class="image"
-                                src="img/card-sale-4.png"
-                                alt="Изображение блока"
-                        >
-                    </div>
-                    <div class="card__descr">
-                        <div class="card__caption">
-                            <svg class="icon icon-fill">
-                                <use href="img/sprite.svg#timer"></use>
-                            </svg>
-                            <span class="text-content">Акция до 31 января 2024</span>
-                        </div>
-                        <div class="card__title" href="javascript:;">Скидки на новинки 2024</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="gap-lg">
-    <div class="container">
-        <div class="svn-about">
-            <div class="gap-md">
-                <div class="h3">Производитель спортивного питания и пищевых добавок Sport Victory Nutrition</div>
-            </div>
-            <div class="spoiler-wrapper">
-                <div
-                        class="spoiler"
-                        data-spoiler
-                >
-                    <div class="spoiler-content">
-                        <p>Магазин не взимает никаких дополнительных комиссий. Все комиссии оплачиваются нашим магазином. Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL.</p>
-                        <p>В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa Int., MasterCard Europe Sprl, JCB.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>

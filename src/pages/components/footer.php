@@ -3,7 +3,6 @@
                 <div class="pre-footer__descr">
                     <div class="pre-footer__descr-pic">
                         <img
-                            loading="lazy"
                             class="image"
                             src="img/mail-glass.svg#mail-glass"
                             width="80"

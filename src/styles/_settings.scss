@@ -157,7 +157,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .title {
 	font-weight: 400;
-	text-transform: uppercase;
 
 	&-bold {
 		font-weight: 700;
@@ -558,19 +557,18 @@ body:not(.is-using-mouse) {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
-	letter-spacing: 0.42px;
 	cursor: pointer;
 	transition: var(--transition);
 
-	&__text,
-	&__icon {
+	.text-content,
+	.icon {
 		pointer-events: none;
 		user-select: none;
 	}
-	&__text {
+	.text-content {
 		white-space: nowrap;
 	}
-	&__icon {
+	.icon {
 		min-width: 24px;
 		width: 24px;
 		min-height: 24px;
@@ -601,7 +599,7 @@ body:not(.is-using-mouse) {
 	}
 	&-md,
 	&-sm {
-		.btn__icon {
+		.icon {
 			min-width: 20px;
 			width: 20px;
 			min-height: 20px;
@@ -620,7 +618,7 @@ body:not(.is-using-mouse) {
 			background-color: var(--gray1-color);
 			color: var(--white-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--white-color);
 				stroke: var(--white-color);
 			}
@@ -630,7 +628,7 @@ body:not(.is-using-mouse) {
 		background-color: var(--red-color);
 		color: var(--white-color);
 
-		.btn__icon {
+		.icon {
 			fill: var(--white-color);
 			stroke: var(--white-color);
 		}
@@ -641,7 +639,7 @@ body:not(.is-using-mouse) {
 			background-color: var(--orange-color);
 			color: var(--white-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--white-color);
 				stroke: var(--white-color);
 			}
@@ -652,7 +650,7 @@ body:not(.is-using-mouse) {
 		color: var(--black-color);
 		font-weight: 400;
 
-		.btn__icon {
+		.icon {
 			fill: var(--black-color);
 			stroke: var(--black-color);
 		}
@@ -663,7 +661,7 @@ body:not(.is-using-mouse) {
 			background-color: var(--gray3-color);
 			color: var(--black-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--black-color);
 				stroke: var(--black-color);
 			}
@@ -683,7 +681,7 @@ body:not(.is-using-mouse) {
 		line-height: 1.5;
 		text-transform: unset;
 
-		.btn__icon {
+		.icon {
 			fill: var(--red-color);
 			stroke: var(--red-color);
 		}
@@ -694,7 +692,7 @@ body:not(.is-using-mouse) {
 			background-color: transparent;
 			color: var(--gray2-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--orange-color);
 				stroke: var(--orange-color);
 			}
@@ -711,10 +709,10 @@ body:not(.is-using-mouse) {
 		background-color: var(--black-color-30);
 		color: transparent;
 
-		.btn__text {
+		.text-content {
 			display: none;
 		}
-		.btn__icon {
+		.icon {
 			fill: var(--white-color);
 			stroke: var(--white-color);
 
@@ -729,7 +727,7 @@ body:not(.is-using-mouse) {
 			background-color: var(--white-color);
 			box-shadow: var(--shadow);
 
-			.btn__icon {
+			.icon {
 				fill: var(--red-color);
 				stroke: var(--red-color);
 			}
@@ -745,10 +743,10 @@ body:not(.is-using-mouse) {
 		background-color: transparent;
 		color: transparent;
 
-		.btn__text {
+		.text-content {
 			display: none;
 		}
-		.btn__icon {
+		.icon {
 			fill: var(--gray2-color);
 			stroke: var(--gray2-color);
 
@@ -762,7 +760,7 @@ body:not(.is-using-mouse) {
 		&.active {
 			background-color: var(--gray2-color-20);
 
-			.btn__icon {
+			.icon {
 				fill: var(--gray2-color);
 				stroke: var(--gray2-color);
 			}
@@ -779,10 +777,10 @@ body:not(.is-using-mouse) {
 		background-color: var(--red-color);
 		color: transparent;
 
-		.btn__text {
+		.text-content {
 			display: none;
 		}
-		.btn__icon {
+		.icon {
 			min-width: 32px;
 			width: 32px;
 			min-height: 32px;
@@ -802,7 +800,7 @@ body:not(.is-using-mouse) {
 		&.active {
 			background-color: var(--orange-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--white-color);
 				stroke: var(--white-color);
 			}
@@ -817,10 +815,10 @@ body:not(.is-using-mouse) {
 		background-color: var(--red-color);
 		color: transparent;
 
-		.btn__text {
+		.text-content {
 			display: none;
 		}
-		.btn__icon {
+		.icon {
 			min-width: 20px;
 			width: 20px;
 			min-height: 20px;
@@ -839,7 +837,7 @@ body:not(.is-using-mouse) {
 		&.active {
 			background-color: var(--orange-color);
 
-			.btn__icon {
+			.icon {
 				fill: var(--white-color);
 				stroke: var(--white-color);
 			}
@@ -850,6 +848,7 @@ body:not(.is-using-mouse) {
 .link {
 	color: var(--black-color);
 	line-height: 24px;
+	cursor: pointer;
 	transition: var(--transition);
 
 	&-tdu {
@@ -1409,10 +1408,10 @@ input.disabled {
 		border-radius: 50%;
 	}
 	&__input::before {
-		min-width: 8px;
-		width: 8px;
-		min-height: 8px;
-		height: 8px;
+		min-width: 7px;
+		width: 7px;
+		min-height: 7px;
+		height: 7px;
 		border-radius: 50%;
 		background-image: none;
 		background-color: var(--white-color);
@@ -1422,7 +1421,7 @@ input.disabled {
 .titled-input {
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 8px;
 	min-width: 100%;
 	width: 100%;
 }
@@ -3118,7 +3117,7 @@ input.disabled {
 			background-color: var(--gray1-color);
 			color: var(--white-color);
 
-			& .btn__icon {
+			.icon {
 				fill: var(--white-color);
 			}
 
@@ -3127,7 +3126,7 @@ input.disabled {
 				background-color: var(--gray2-color);
 				color: var(--white-color);
 
-				& .btn__icon {
+				.icon {
 					fill: var(--white-color);
 				}
 			}

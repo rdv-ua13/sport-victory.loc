@@ -82,12 +82,12 @@
                         </label>
                         <label for="header-search" class="input-search-action">
                             <button class="btn-reset btn btn-icon input-delete-btn" type="button">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#filled-tag-cross"></use>
                                 </svg>
                             </button>
                             <button class="btn-reset btn btn-sm input-search-btn" type="submit">
-                                <span class="btn__text">Найти</span>
+                                <span class="text-content">Найти</span>
                             </button>
                         </label>
                     </div>
@@ -123,26 +123,26 @@
                 <ul class="list-reset header-profile__list">
                     <li>
                         <button class="btn-reset btn btn-header" data-fancybox data-src="#modal-auth">
-                            <svg class="icon icon-fill btn__icon">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#filled-user-octagon"></use>
                             </svg>
-                            <span class="btn__text">Кабинет</span>
+                            <span class="text-content">Кабинет</span>
                         </button>
                     </li>
                     <li>
                         <button class="btn-reset btn btn-header">
-                            <svg class="icon icon-fill btn__icon">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#filled-heart"></use>
                             </svg>
-                            <span class="btn__text">Избранное</span>
+                            <span class="text-content">Избранное</span>
                         </button>
                     </li>
                     <li>
                         <button class="btn-reset btn btn-header">
-                            <svg class="icon icon-fill btn__icon">
+                            <svg class="icon icon-fill">
                                 <use href="img/sprite.svg#filled-bag"></use>
                             </svg>
-                            <span class="btn__text">Корзина</span>
+                            <span class="text-content">Корзина</span>
                         </button>
                     </li>
                 </ul>
@@ -157,13 +157,13 @@
                             data-catalog-spoiler
                             data-overlay-transparent
                     >
-                        <svg class="icon icon-fill btn__icon icon-default">
+                        <svg class="icon icon-fill icon-default">
                             <use href="img/sprite.svg#menu"></use>
                         </svg>
-                        <svg class="icon icon-fill btn__icon icon-active">
+                        <svg class="icon icon-fill icon-active">
                             <use href="img/sprite.svg#cross"></use>
                         </svg>
-                        <span class="btn__text">Каталог</span>
+                        <span class="text-content">Каталог</span>
                     </button>
                 </div>
 
@@ -338,10 +338,10 @@
                 data-catalog-spoiler
                 data-overlay-transparent
         >
-            <svg class="icon icon-fill btn__icon">
+            <svg class="icon icon-fill">
                 <use href="img/sprite.svg#menu"></use>
             </svg>
-            <span class="btn__text">Каталог</span>
+            <span class="text-content">Каталог</span>
         </button>
     </div>
 
@@ -352,26 +352,26 @@
         <li><a class="mobile-menu__item mobile-menu__link" href="javascript:;">Контакты</a></li>
         <li>
             <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
-                <svg class="icon icon-fill btn__icon">
+                <svg class="icon icon-fill">
                     <use href="img/sprite.svg#filled-user-octagon"></use>
                 </svg>
-                <span class="btn__text">Кабинет</span>
+                <span class="text-content">Кабинет</span>
             </a>
         </li>
         <li>
             <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
-                <svg class="icon icon-fill btn__icon">
+                <svg class="icon icon-fill">
                     <use href="img/sprite.svg#filled-heart"></use>
                 </svg>
-                <span class="btn__text">Избранное</span>
+                <span class="text-content">Избранное</span>
             </a>
         </li>
         <li>
             <a class="mobile-menu__item mobile-menu__link mobile-menu__link--user btn-reset btn btn-header">
-                <svg class="icon icon-fill btn__icon">
+                <svg class="icon icon-fill">
                     <use href="img/sprite.svg#filled-bag"></use>
                 </svg>
-                <span class="btn__text">Корзина</span>
+                <span class="text-content">Корзина</span>
             </a>
         </li>
     </ul>
@@ -380,10 +380,10 @@
         <?/* todo - стилизовать модалки */?>
         <div class="mobile-menu__item mobile-menu-login">
             <button class="btn-reset btn btn-md btn-primary" data-fancybox data-src="#modal-auth">
-                <span class="btn__text">Войти</span>
+                <span class="text-content">Войти</span>
             </button>
             <button class="btn-reset btn btn-md btn-primary" data-fancybox data-src="#modal-reg">
-                <span class="btn__text">Регистрация</span>
+                <span class="text-content">Регистрация</span>
             </button>
         </div>
 

@@ -107,7 +107,7 @@
                                     >
                                 </div>
                                 <button class="personal-acc__search-item personal-acc__search-btn btn-reset btn btn-md btn-primary" type="submit">
-                                    <span class="btn__text">Найти заказ</span>
+                                    <span class="text-content">Найти заказ</span>
                                 </button>
                             </form>
 

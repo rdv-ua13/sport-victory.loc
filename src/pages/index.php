@@ -16,8 +16,8 @@
                                     <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
                                     <div class="main-banner__more">
                                         <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать комплекс</span>
-                                            <svg class="icon icon-fill btn__icon">
+                                            <span class="text-content">Подобрать комплекс</span>
+                                            <svg class="icon icon-fill">
                                                 <use href="img/sprite.svg#arrow-right"></use>
                                             </svg>
                                         </a>
@@ -42,8 +42,8 @@
                                     <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
                                     <div class="main-banner__more">
                                         <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
-                                            <svg class="icon icon-fill btn__icon">
+                                            <span class="text-content">Подобрать <span class="desktop-only">комплекс</span></span>
+                                            <svg class="icon icon-fill">
                                                 <use href="img/sprite.svg#arrow-right"></use>
                                             </svg>
                                         </a>
@@ -68,8 +68,8 @@
                                     <div class="main-banner__subtitle">Используйте самые лучшие продукты для высокоэффективных спортивных тренировок</div>
                                     <div class="main-banner__more">
                                         <a class="btn-reset btn btn-primary" href="javascript:;">
-                                            <span class="btn__text">Подобрать <span class="desktop-only">комплекс</span></span>
-                                            <svg class="icon icon-fill btn__icon">
+                                            <span class="text-content">Подобрать <span class="desktop-only">комплекс</span></span>
+                                            <svg class="icon icon-fill">
                                                 <use href="img/sprite.svg#arrow-right"></use>
                                             </svg>
                                         </a>
@@ -88,14 +88,14 @@
                     <div class="swiper-navigation">
                         <div class="swiper-button-next">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
                         <div class="swiper-button-prev">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -275,17 +275,17 @@
                                         <div class="card__bottom">
                                             <div class="card__msg">
                                                 <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
+                                                    <span class="text-content">Сообщить о поступлении</span>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -330,7 +330,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -340,10 +340,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -389,7 +389,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -399,10 +399,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -441,17 +441,17 @@
                                         <div class="card__bottom">
                                             <div class="card__msg">
                                                 <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
+                                                    <span class="text-content">Сообщить о поступлении</span>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -495,7 +495,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -505,10 +505,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -547,17 +547,17 @@
                                         <div class="card__bottom">
                                             <div class="card__msg">
                                                 <button class="btn-reset btn btn-md btn-light">
-                                                    <span class="btn__text">Сообщить о поступлении</span>
+                                                    <span class="text-content">Сообщить о поступлении</span>
                                                 </button>
                                             </div>
                                         </div>
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -602,7 +602,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -612,10 +612,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -629,14 +629,14 @@
                     <div class="swiper-navigation">
                         <div class="swiper-button-next">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
                         <div class="swiper-button-prev">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -664,8 +664,8 @@
                             </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
+                                    <span class="text-content">Купить</span>
+                                    <svg class="icon icon-fill">
                                         <use href="img/sprite.svg#arrow-right"></use>
                                     </svg>
                                 </span>
@@ -685,8 +685,8 @@
                             </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
+                                    <span class="text-content">Купить</span>
+                                    <svg class="icon icon-fill">
                                         <use href="img/sprite.svg#arrow-right"></use>
                                     </svg>
                                 </span>
@@ -706,8 +706,8 @@
                             </span>
                             <span class="svn-trend__more">
                                 <span class="btn-reset btn btn-md btn-primary" href="javascript:;">
-                                    <span class="btn__text">Купить</span>
-                                    <svg class="icon icon-fill btn__icon">
+                                    <span class="text-content">Купить</span>
+                                    <svg class="icon icon-fill">
                                         <use href="img/sprite.svg#arrow-right"></use>
                                     </svg>
                                 </span>
@@ -739,8 +739,8 @@
                 <div class="svn-production__text-content">SPORT VICTORY NUTRITION — российская инновационная фармацевтическая компания, использующая современные технологии для создания уникальных продуктов. Наша продукция выпускается на современном заводе в московской области — GLOBAL HEALTH CARE</div>
                 <div class="svn-production__more">
                     <a class="btn-reset btn btn-primary" href="javascript:;">
-                        <span class="btn__text">Подробнее <span class="desktop-only">о производстве</span></span>
-                        <svg class="icon icon-fill btn__icon">
+                        <span class="text-content">Подробнее <span class="desktop-only">о производстве</span></span>
+                        <svg class="icon icon-fill">
                             <use href="img/sprite.svg#arrow-right"></use>
                         </svg>
                     </a>
@@ -828,7 +828,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -838,10 +838,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -887,7 +887,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -897,10 +897,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -944,7 +944,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -954,10 +954,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -1001,7 +1001,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -1011,10 +1011,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -1059,7 +1059,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -1069,10 +1069,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -1116,7 +1116,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -1126,10 +1126,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -1173,7 +1173,7 @@
                                                 </div>
                                                 <div class="card__cart">
                                                     <button class="btn-reset btn btn-cart cart-in">
-                                                        <svg class="icon icon-fill btn__icon">
+                                                        <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
                                                     </button>
@@ -1183,10 +1183,10 @@
                                         <div class="card__act">
                                             <div class="card__act-list">
                                                 <button class="btn-reset btn switch-content" data-notice="favorites" title="В избранное">
-                                                    <svg class="btn__icon icon icon-stroke icon-default">
+                                                    <svg class="icon icon-stroke icon-default">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
-                                                    <svg class="btn__icon icon icon-fill icon-active">
+                                                    <svg class="icon icon-fill icon-active">
                                                         <use href="img/sprite.svg#filled-heart"></use>
                                                     </svg>
                                                 </button>
@@ -1200,14 +1200,14 @@
                     <div class="swiper-navigation">
                         <div class="swiper-button-next">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
                         <div class="swiper-button-prev">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -1504,14 +1504,14 @@
                     <div class="swiper-navigation">
                         <div class="swiper-button-next">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
                         <div class="swiper-button-prev">
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>

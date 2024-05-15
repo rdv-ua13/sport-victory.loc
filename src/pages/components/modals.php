@@ -65,7 +65,7 @@
                 </div>
                 <div class="form__field-btn form__field-btn--single">
                     <button class="btn-reset btn btn-secondary" type="submit">
-                        <span class="btn__text">Войти</span>
+                        <span class="text-content">Войти</span>
                     </button>
                 </div>
             </form>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="form__field-btn form__field-btn--single">
                     <button class="btn-reset btn btn-secondary" type="submit">
-                        <span class="btn__text">Зарегистрироваться</span>
+                        <span class="text-content">Зарегистрироваться</span>
                     </button>
                 </div>
                 <div class="form__field-agree fz-caption">
@@ -231,7 +231,7 @@
                             data-fancybox
                             data-src="#modal-restore-final"
                     >
-                        <span class="btn__text">Отправить пароль</span>
+                        <span class="text-content">Отправить пароль</span>
                     </button>
                 </div>
             </form>

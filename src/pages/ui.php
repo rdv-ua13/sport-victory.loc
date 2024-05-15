@@ -181,6 +181,13 @@
                             </svg>
                             <!--end ui content-->
                         </span>
+                        <span class="tooltip" data-tippy-content="#trash">
+                            <!--start ui content-->
+                            <svg class="icon icon-md icon-fill">
+                                <use href="img/sprite.svg#trash"></use>
+                            </svg>
+                            <!--end ui content-->
+                        </span>
                         <span class="tooltip" data-tippy-content="#filter">
                             <!--start ui content-->
                             <svg class="icon icon-md icon-fill">
@@ -448,11 +455,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-primary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -461,11 +468,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-secondary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -474,11 +481,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-light">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -495,11 +502,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-primary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -508,11 +515,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-secondary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -521,11 +528,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-md btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-md btn-light">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -542,11 +549,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-primary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-primary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -555,11 +562,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-secondary'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-secondary">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -568,11 +575,11 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-sm btn-light'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-sm btn-light">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
-                                <span class="btn__text">Кнопка</span>
-                                <svg class="icon icon-fill btn__icon">
+                                <span class="text-content">Кнопка</span>
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -589,17 +596,17 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-header'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-header">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#filled-user-octagon"></use>
                                 </svg>
-                                <span class="btn__text">Кабинет</span>
+                                <span class="text-content">Кабинет</span>
                             </button>
                             <!--end ui content-->
                         </span>
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-square'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-square">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#arrow-right"></use>
                                 </svg>
                             </button>
@@ -608,7 +615,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-cart'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-cart">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#cart-add"></use>
                                 </svg>
                             </button>
@@ -617,7 +624,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-icon'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-icon">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#filled-tag-cross"></use>
                                 </svg>
                             </button>
@@ -626,7 +633,7 @@
                         <span class="tooltip" data-tippy-content="class='btn-reset btn btn-play'">
                             <!--start ui content-->
                             <button class="btn-reset btn btn-play">
-                                <svg class="icon icon-fill btn__icon">
+                                <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#play"></use>
                                 </svg>
                             </button>
@@ -957,12 +964,12 @@
                                     </label>
                                     <label for="ui-input-search-example-2" class="input-search-action">
                                         <button class="btn-reset btn btn-icon input-delete-btn" type="button">
-                                            <svg class="icon icon-fill btn__icon">
+                                            <svg class="icon icon-fill">
                                                 <use href="img/sprite.svg#filled-tag-cross"></use>
                                             </svg>
                                         </button>
                                         <button class="btn-reset btn btn-sm input-search-btn" type="submit">
-                                            <span class="btn__text">Найти</span>
+                                            <span class="text-content">Найти</span>
                                         </button>
                                     </label>
                                 </div>

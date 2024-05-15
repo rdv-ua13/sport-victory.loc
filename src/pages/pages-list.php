@@ -75,6 +75,7 @@
             <li><a class="ready" href="delivery-pay.php" target="_blank">Доставка и оплата</a></li>
             <br>
             <li><a class="ready" href="lk-orders.php" target="_blank">ЛК - Заказы</a></li>
+            <li><a class="ready" href="lk-profile.php" target="_blank">ЛК - Профиль</a></li>
 
             <br>
             <li><a class="ready" href="ui.php" target="_blank">ui</a></li>

@@ -530,7 +530,7 @@
                                                     <div class="card__price-current">4 500 ₽</div>
                                                 </div>
                                                 <div class="card__cart">
-                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                    <button class="btn-reset btn btn-cart success cart-in">
                                                         <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>

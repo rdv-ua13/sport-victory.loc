@@ -14,105 +14,11 @@
 			<div class="cp-grid">
 				<div class="cp-content">
                     <div class="gap-md card-detail">
-                        <div class="card-detail-main">
-                            <div class="card-detail-main__view">
-                                <div class="details-thumb-slider-wrapper">
-                                    <div class="swiper details-thumb-slider-pointer" thumbsSlider="">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide media-content">
-                                                <div class="media-content__item">
-                                                    <button class="btn-reset btn btn-play">
-                                                        <svg class="icon icon-fill">
-                                                            <use href="img/sprite.svg#play"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-4.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-1.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-2.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-3.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-4.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-5.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-1.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-2.png"
-                                                        class="image"
-                                                        width="80"
-                                                        height="80"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper details-thumb-slider">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide media-content">
+                        <div class="card-detail__view">
+                            <div class="details-thumb-slider-wrapper">
+                                <div class="swiper details-thumb-slider">
+                                    <div class="swiper-wrapper">
+										<div class="swiper-slide media-content">
                                                 <a
                                                         class="media-content__item media-video"
                                                         href="https://www.youtube.com/embed/K4TOrB7at0Y?si=QJ3_usB2qI1loWQR"
@@ -133,220 +39,326 @@
                                                     ></iframe>
                                                 </a>
                                             </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-4.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-1.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-2.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-3.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-4.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-5.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-1.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <img
-                                                        loading="lazy"
-                                                        src="img/prod-2.png"
-                                                        class="image"
-                                                        width="336"
-                                                        height="426"
-                                                        alt="Изображение блока"
-                                                >
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-4.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-1.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-2.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-3.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-4.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-5.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-1.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-2.png"
+                                                    class="image"
+                                                    width="336"
+                                                    height="426"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="details-thumb-slider__sale-label">
+                                        <span class="sale-label sale-label-red">Новинка</span>
+                                        <span class="sale-label sale-label-green">Для детей</span>
+                                        <span class="sale-label sale-label-blue">Для мозга</span>
+                                    </div>
+                                </div>
+                                <div class="swiper details-thumb-slider-pointer" thumbsSlider="">
+                                    <div class="swiper-wrapper">
+										<div class="swiper-slide media-content">
+                                            <div class="media-content__item">
+                                                <button class="btn-reset btn btn-play">
+                                                    <svg class="icon icon-fill">
+                                                        <use href="img/sprite.svg#play"></use>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
-                                        <div class="details-thumb-slider__sale-label">
-                                            <span class="sale-label sale-label-red">Новинка</span>
-                                            <span class="sale-label sale-label-green">Для детей</span>
-                                            <span class="sale-label sale-label-blue">Для мозга</span>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-4.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-1.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-2.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-3.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-4.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-5.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-1.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img
+                                                    loading="lazy"
+                                                    src="img/prod-2.png"
+                                                    class="image"
+                                                    width="80"
+                                                    height="80"
+                                                    alt="Изображение блока"
+                                            >
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-detail-main__descr">
-                                <div class="card-detail-main__header">
-                                    <div class="h3">Premium Omega-3-6-9 с витамином Е 90, 120 капсул</div>
-                                    <div class="card-detail-main__caption fz-sm">Артикул: 11ASL315KSJ29</div>
-                                </div>
-                                <div class="card-detail-main__description">
-                                    <div class="fz-sm">Упаковка:</div>
-                                    <div class="tag-bar">
-                                        <div class="tag-bar__list">
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="WEIGHT[TAGS][]"
-                                                            value=""
-                                                            checked
-                                                    >
-                                                    <span class="tag">750 гр.</span>
-                                                </label>
-                                            </div>
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="WEIGHT[TAGS][]"
-                                                            value=""
-                                                    >
-                                                    <span class="tag">1500 гр.</span>
-                                                </label>
-                                            </div>
+                        </div>
+                        <div class="card-detail__descr">
+                            <div class="card-detail__header">
+                                <div class="h3">Premium Omega-3-6-9 с витамином Е 90, 120 капсул</div>
+                                <div class="card-detail__caption fz-sm">Артикул: 11ASL315KSJ29</div>
+                            </div>
+                            <div class="card-detail__description">
+                                <div class="fz-sm">Упаковка:</div>
+                                <div class="tag-bar">
+                                    <div class="tag-bar__list">
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="WEIGHT[TAGS][]"
+                                                        value=""
+                                                        checked
+                                                >
+                                                <span class="tag">750 гр.</span>
+                                            </label>
+                                        </div>
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="WEIGHT[TAGS][]"
+                                                        value=""
+                                                >
+                                                <span class="tag">1500 гр.</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-detail-main__description">
-                                    <div class="fz-sm">Вкус:</div>
-                                    <div class="tag-bar">
-                                        <div class="tag-bar__list">
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="TASTE[TAGS][]"
-                                                            value=""
-                                                            checked
-                                                    >
-                                                    <span class="tag">Банан</span>
-                                                </label>
-                                            </div>
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="TASTE[TAGS][]"
-                                                            value=""
-                                                    >
-                                                    <span class="tag">Ваниль</span>
-                                                </label>
-                                            </div>
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="TASTE[TAGS][]"
-                                                            value=""
-                                                    >
-                                                    <span class="tag">Клубника</span>
-                                                </label>
-                                            </div>
-                                            <div class="tag-bar__item">
-                                                <label class="tag-wrapper">
-                                                    <input
-                                                            class="visually-hidden"
-                                                            type="radio"
-                                                            name="TASTE[TAGS][]"
-                                                            value=""
-                                                    >
-                                                    <span class="tag">Шоколад</span>
-                                                </label>
-                                            </div>
+                            </div>
+                            <div class="card-detail__description">
+                                <div class="fz-sm">Вкус:</div>
+                                <div class="tag-bar">
+                                    <div class="tag-bar__list">
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="TASTE[TAGS][]"
+                                                        value=""
+                                                        checked
+                                                >
+                                                <span class="tag">Банан</span>
+                                            </label>
+                                        </div>
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="TASTE[TAGS][]"
+                                                        value=""
+                                                >
+                                                <span class="tag">Ваниль</span>
+                                            </label>
+                                        </div>
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="TASTE[TAGS][]"
+                                                        value=""
+                                                >
+                                                <span class="tag">Клубника</span>
+                                            </label>
+                                        </div>
+                                        <div class="tag-bar__item">
+                                            <label class="tag-wrapper">
+                                                <input
+                                                        class="visually-hidden"
+                                                        type="radio"
+                                                        name="TASTE[TAGS][]"
+                                                        value=""
+                                                >
+                                                <span class="tag">Шоколад</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-detail-main__description">
-                                    <table class="table-descr table-descr--sb">
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                <span>Форма креатина</span>
-                                            </td>
-                                            <td>
-                                                <span>креатин моногидрат</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Вид транспортной системы</span>
-                                            </td>
-                                            <td>
-                                                <span>креатин</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Диетические особенности</span>
-                                            </td>
-                                            <td>
-                                                <span>без ГМО, без глютена, без мальтозы,  без сукралозы, веганский,  вегетариантский</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span>Для кого</span>
-                                            </td>
-                                            <td>
-                                                <span>для женщин, для мужчин</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                            </div>
+                            <div class="card-detail__description">
+                                <table class="table-descr table-descr--sb">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>Форма креатина</span>
+                                        </td>
+                                        <td>
+                                                <span>
+                                                    <a class="link link-primary" href="javascript:;">креатин моногидрат</a>
+                                                </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Вид транспортной системы</span>
+                                        </td>
+                                        <td>
+                                                <span>
+                                                    <a class="link link-primary" href="javascript:;">креатин</a>
+                                                </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Диетические особенности</span>
+                                        </td>
+                                        <td>
+                                                <span>
+                                                    <a class="link link-primary" href="javascript:;">без ГМО</a>,
+                                                    <a class="link link-primary" href="javascript:;">без глютена</a>,
+                                                    <a class="link link-primary" href="javascript:;">без мальтозы</a>,
+                                                    <a class="link link-primary" href="javascript:;">без сукралозы</a>,
+                                                    <a class="link link-primary" href="javascript:;">веганский</a>,
+                                                    <a class="link link-primary" href="javascript:;">вегетариантский</a>
+                                                </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Для кого</span>
+                                        </td>
+                                        <td>
+                                                <span>
+                                                    <a class="link link-primary" href="javascript:;">для женщин</a>,
+                                                    <a class="link link-primary" href="javascript:;">для мужчин</a>
+                                                </span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -467,7 +479,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <button class="btn-reset btn btn-md btn-secondary cart-in" type="button">
+                            <button class="btn-reset btn btn-md btn-secondary cart-in" type="button"> <?// can be ".success"?>
                                 <svg class="icon icon-fill">
                                     <use href="img/sprite.svg#cart-add"></use>
                                 </svg>
@@ -553,7 +565,7 @@
                                                     <div class="card__price-current">3 440 ₽</div>
                                                 </div>
                                                 <div class="card__cart">
-                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                    <button class="btn-reset btn btn-cart cart-in success">
                                                         <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>
@@ -988,7 +1000,7 @@
                                                     <div class="card__price-current">3 440 ₽</div>
                                                 </div>
                                                 <div class="card__cart">
-                                                    <button class="btn-reset btn btn-cart cart-in">
+                                                    <button class="btn-reset btn btn-cart success cart-in">
                                                         <svg class="icon icon-fill">
                                                             <use href="img/sprite.svg#cart-add"></use>
                                                         </svg>

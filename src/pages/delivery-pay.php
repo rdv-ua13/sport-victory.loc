@@ -266,46 +266,36 @@
                     </div>
 
                     <div class="">
-                        <div class="gap-md content-wrapper-mobile-section-row">
+                        <div class="gap-md">
                             <div class="h3">Частые вопросы</div>
                         </div>
                         <div class="">
                             <div class="delivery-pay-faq">
-                                <div class="accordion" data-id="delivery-pay-faq">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header">
-                                            <div class="accordion__btn js-accordion-btn">
-                                                <div class="accordion__header-title h5">Как оформить заказ?</div>
-                                                <svg class="icon icon-md icon-fill">
-                                                    <use href="img/sprite.svg#chevron-down"></use>
-                                                </svg>
-                                            </div>
+                                <div class="accordion-container">
+                                    <div class="ac">
+                                        <div class="ac-header">
+                                            <button class="btn-reset ac-trigger" type="button">
+                                                <span class="text-content h5">Как оформить заказ?</span>
+                                            </button>
                                         </div>
-                                        <div class="accordion__collapse collapsed">
-                                            <div class="accordion__collapse-content">
-                                                <div class="accordion__collapse-item">
-                                                    <div class="gap-xs">Сформируйте заказ, который Вы хотите приобрести в нашем интернет-магазине, затем положите выбранный товар в корзину и подтвердите заказ через корзину. При оформлении заказа можно выбрать тип доставки и разные варианты доставки. После оформления заказа с вами свяжется менеджер для подтверждения заказа и расскажет про время доставки.</div>
-                                                    <div class="gap-xs">Проконсультироваться по вопросам доставки в регионы можно по телефону 8 800 555-38-29 с 9:00 до 18:00 московского времени или по e-mail <a class="link-dark link-tdu" href="mailto:sales@sportvictorynutrition.ru">sales@sportvictorynutrition.ru</a>. Услуги транспортной компании оплачивает клиент, мы осуществляем только отправку товара в Ваш регион.</div>
-                                                    <div class="">Стоимость доставки до транспортной компании от 10000 руб. – бесплатно, до 10000 руб. – 500 руб.</div>
-                                                </div>
+                                        <div class="ac-panel">
+                                            <div class="ac-content">
+                                                <div class="gap-xs">Сформируйте заказ, который Вы хотите приобрести в нашем интернет-магазине, затем положите выбранный товар в корзину и подтвердите заказ через корзину. При оформлении заказа можно выбрать тип доставки и разные варианты доставки. После оформления заказа с вами свяжется менеджер для подтверждения заказа и расскажет про время доставки.</div>
+                                                <div class="gap-xs">Проконсультироваться по вопросам доставки в регионы можно по телефону 8 800 555-38-29 с 9:00 до 18:00 московского времени или по e-mail <a class="link-dark link-tdu" href="mailto:sales@sportvictorynutrition.ru">sales@sportvictorynutrition.ru</a>. Услуги транспортной компании оплачивает клиент, мы осуществляем только отправку товара в Ваш регион.</div>
+                                                <div class="">Стоимость доставки до транспортной компании от 10000 руб. – бесплатно, до 10000 руб. – 500 руб.</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header">
-                                            <div class="accordion__btn js-accordion-btn">
-                                                <div class="accordion__header-title h5">Как отправляется товар?</div>
-                                                <svg class="icon icon-md icon-fill">
-                                                    <use href="img/sprite.svg#chevron-down"></use>
-                                                </svg>
-                                            </div>
+                                    <div class="ac">
+                                        <div class="ac-header">
+                                            <button class="btn-reset ac-trigger" type="button">
+                                                <span class="text-content h5">Как отправляется товар?</span>
+                                            </button>
                                         </div>
-                                        <div class="accordion__collapse collapsed">
-                                            <div class="accordion__collapse-content">
-                                                <div class="accordion__collapse-item">
-                                                    <div class="gap-xs">Мы собираем ваш заказ на нашем складе в день заказа и передаем его в транспортную компанию или в наш пункт выдачи.</div>
-                                                    <div class="">Если товара нет в наличии на нашем складе, мы формируем запрос поставщику и, как только товар готов, он отправляется напрямую в транспортную компанию или в наш пункт выдачи.</div>
-                                                </div>
+                                        <div class="ac-panel">
+                                            <div class="ac-content">
+                                                <div class="gap-xs">Мы собираем ваш заказ на нашем складе в день заказа и передаем его в транспортную компанию или в наш пункт выдачи.</div>
+                                                <div class="">Если товара нет в наличии на нашем складе, мы формируем запрос поставщику и, как только товар готов, он отправляется напрямую в транспортную компанию или в наш пункт выдачи.</div>
                                             </div>
                                         </div>
                                     </div>

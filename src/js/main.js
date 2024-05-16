@@ -481,7 +481,7 @@ application.prototype.initSliders = function () {
         let detailsThumbSliderPointer = new Swiper('.details-thumb-slider-pointer', {
             slidesPerView: 'auto',
             spaceBetween: 8,
-            direction: "vertical",
+            direction: "horizontal",
             freeMode: true,
             watchSlidesProgress: true
         });
@@ -941,12 +941,12 @@ application.prototype.initCatalogContentSort = function () {
 
 // Initialization contacts map
 application.prototype.initContactsMap = function () {
-    if ($('.contacts__map').length) {
+    if ($('.contacts-map').length) {
         ymaps.ready(init);
 
         let map,
             placemark,
-            mapItem = $('.contacts__map-content');
+            mapItem = $('.contacts-map-content');
 
         function init () {
             mapItem.each(function (i) {
@@ -1018,34 +1018,13 @@ application.prototype.initBasicTabs = function () {
 
 // Initialization accordion
 application.prototype.initAccordion = function () {
-    if ($(".accordion").length) {
-        initAccordionResponsive();
-        $(window).on("resize", initAccordionResponsive, reloadAccordionResponsive);
-
-        function reloadAccordionResponsive() {
-            setTimeout(function () {
-                location.reload();
-            }, 300);
-        }
-        function initAccordionResponsive() {
-            $(".accordion__collapse").hide();
-
-            $(".js-accordion-btn").on("click", function () {
-                if (!$(this).hasClass("open")) {
-                    $(this).addClass("open");
-                    $(this).closest(".accordion__item").addClass("active");
-                    $(this).closest(".accordion__item").find(".accordion__collapse").removeClass("collapsed");
-                    $(this).closest(".accordion__item").find(".accordion__collapse").slideDown(160);
-                } else if ($(this).hasClass("open")) {
-                    $(this).removeClass("open");
-                    $(this).closest(".accordion__item").removeClass("active");
-                    $(this).closest(".accordion__item").find(".accordion__collapse").slideUp(160);
-                    setTimeout(function () {
-                        $(this).closest(".accordion__item").find(".accordion__collapse").addClass("collapsed");
-                    }, 160);
-                }
-            });
-        }
+    if ($(".accordion-container").length) {
+        let accordions = Array.from(document.querySelectorAll('.accordion-container'));
+        let accordion = new Accordion(accordions, {
+            duration: 200,
+            /*showMultiple: true,*/
+            onlyChildNodes: false,
+        });
     }
 };
 
@@ -1062,6 +1041,7 @@ application.prototype.initFancyBehavior = function () {
         let currentSrc = $(this).data('src');
 
         menu.removeClass('active');
+        burger.removeClass('active');
         burger.attr('aria-expanded', 'false');
         burger.attr('aria-label', 'Открыть меню');
         catalog.removeClass('active');
@@ -1112,27 +1092,6 @@ application.prototype.initDatepicker = function () {
 // Initialization cart quantity
 application.prototype.initCartQuantity = function () {
     if ($('.cart-quantity').length) {
-        /*$('.cart-buy .cart-in').on("click", function() {
-            if(!$(this).hasClass('active')) {
-                $(this).addClass('active');
-                $(this).closest('.cart-buy').find('.cart-quantity').removeClass('disabled');
-                $(this).closest('.cart-buy').find('.cart-quantity-btn--remove').addClass('selected');
-            } else {
-                $(this).removeClass('active');
-                $(this).closest('.cart-buy').find('.cart-quantity').addClass('disabled');
-                $(this).closest('.cart-buy').find('.cart-quantity-btn--remove').removeClass('selected');
-                $(this).closest('.cart-buy').find('input.cart-quantity-input').val(1);
-            }
-        });*/
-
-        /*$(document).on('click','.cart-quantity-btn--remove', function() {
-            if ($(this).hasClass('selected')) {
-                $(this).removeClass('selected');
-                $(this).closest('.cart-buy').find('.cart-in').removeClass('active');
-                $(this).closest('.cart-quantity').addClass('disabled');
-            }
-        });*/
-
         $(document).on('click', '.cart-quantity-btn', function(e) {
             let $button = $(this);
             let oldValue = $button.closest('.cart-quantity').find('input.cart-quantity-input').val();
@@ -1145,20 +1104,9 @@ application.prototype.initCartQuantity = function () {
 
             if($button.data('value') === 'qty-add') {
                 newVal = parseInt(oldValue) + mult;
-
-                if(newVal > 1) {
-                    $(this).closest('.cart-quantity').find('.cart-quantity-btn--remove').removeClass('selected');
-                } else {
-                    $(this).closest('.cart-quantity').find('.cart-quantity-btn--remove').addClass('selected');
-                }
             } else {
                 if (oldValue > 0) {
                     newVal = parseInt(oldValue) - mult;
-                    $(this).closest('.cart-quantity').find('.cart-quantity-btn--remove').removeClass('selected');
-
-                    if(oldValue > 1 && oldValue < 3) {
-                        $(this).closest('.cart-quantity').find('.cart-quantity-btn--remove').addClass('selected');
-                    }
                 } else {
                     newVal = 0;
                 }
@@ -1184,15 +1132,6 @@ application.prototype.initDropfiles = function () {
         reader.readAsDataURL(this);
     };
 
-    File.prototype.convertToSvgHtml = function (callback) {
-        let reader = new FileReader();
-
-        reader.onloadend = function(e) {
-            callback(e.target.result, e.target.error);
-        };
-        reader.readAsText(this);
-    };
-
     const getDataImage = (file, callback) => {
         let filename = file.name,
             idxDot = filename.lastIndexOf(".") + 1,
@@ -1203,28 +1142,8 @@ application.prototype.initDropfiles = function () {
                 callback(base64, false);
             });
         }
-        /*else if(extFile === "svg") {
-            file.convertToSvgHtml((svgHtml) => {
-                callback(svgHtml, true);
-            })
-        }*/
         else {
-            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png)');
-        }
-    };
-
-    const getDataDocs = (file, callback) => {
-        let filename = file.name,
-            idxDot = filename.lastIndexOf(".") + 1,
-            extFile = filename.substr(idxDot, filename.length).toLowerCase();
-
-        if (extFile === "jpg" || extFile === "jpeg" || extFile === "png") {
-            file.convertToBase64((base64) => {
-                callback(base64, false);
-            });
-        }
-        else {
-            alert('Неверный формат файла (Поддерживаемые форматы: jpg, jpeg, png)');
+            alert('Неверный формат файла (Поддерживаемые форматы: PNG, JPG, JPEG)');
         }
     };
 
@@ -1248,15 +1167,12 @@ application.prototype.initDropfiles = function () {
             for (let i in e.originalEvent.dataTransfer.files) {
                 if (e.originalEvent.dataTransfer.files.hasOwnProperty(i)) {
                     let file = e.originalEvent.dataTransfer.files[i];
-                    getDataImage(file, (data, isSvg) => {
-                        appendImage($(this), data, isSvg);
+                    getDataImage(file, (data) => {
+                        appendImage($(this), data);
                     });
                 }
             }
         }
-        /*else if (type === 'document') {
-            appendDocument($(this), e.originalEvent.dataTransfer.files);
-        }*/
     });
 
     $('.js-drop-file').on('change', '.js-change-file', function () {
@@ -1267,33 +1183,18 @@ application.prototype.initDropfiles = function () {
                 if ($(this)[0].files.hasOwnProperty(i)) {
                     let file = $(this)[0].files[i];
                     if (type === 'image') {
-                        getDataImage(file, (data, isSvg) => {
-                            appendImage($(this), data, isSvg);
+                        getDataImage(file, (data) => {
+                            appendImage($(this), data);
                         });
                     }
-                    /*else if (type === 'document') {
-                        getDataDocs(file, (data) => {
-                            appendImage($(this), data, isSvg);
-                        });
-                    }*/
                 }
             }
         }
-        /*else if (type === 'document') {
-            appendDocument($(this), $(this)[0].files);
-        }*/
     });
 
-    function appendImage($input, data, isSvg) {
-        let image = '',
+    function appendImage($input, data) {
+        let image = `<img class="image" width="100" height="100" src="` + data + `">`,
             $parent = $input.closest('.dropfile');
-
-        if(isSvg) {
-            image = data;
-        }
-        else {
-            image = `<img class="image" width="100" height="100" src="` + data + `">`;
-        }
 
         let html = `
                     <div class="dropfile-image__item">
@@ -1307,24 +1208,6 @@ application.prototype.initDropfiles = function () {
                     </div>
                     `;
 
-        /*if($parent.hasClass('js-upload-cover')) {
-            $parent
-                .find('.dropfile-image')
-                .html(html);
-        }
-        else if($parent.hasClass('js-upload-avatar')) {
-            $parent
-                .find('.dropfile-area')
-                .addClass('dropfile-image')
-                .html(html);
-        }
-        else if($parent.hasClass('js-upload-photos')) {
-            $parent
-                .find('.dropfile-gallery')
-                .show()
-                .append(html);
-        }*/
-
         if($parent.hasClass('js-upload-avatar')) {
             $parent
                 .find('.dropfile-area')
@@ -1332,75 +1215,6 @@ application.prototype.initDropfiles = function () {
                 .html(html);
         }
     }
-
-    /*function appendDocument($input, files) {
-        let $parent = $input.closest('.dropfile'),
-            $inputFile = $('<input/>')
-                .attr('type', "file")
-                .attr('multiple', true)
-                .attr('name', $parent.attr('data-input-name'))
-                .hide();
-
-        $inputFile.get(0).files = files;
-
-        for (let i in files) {
-            if (files.hasOwnProperty(i)) {
-                let filename = files[i].name,
-                    idxDot = filename.lastIndexOf(".") + 1,
-                    extFile = filename.substr(idxDot, filename.length).toLowerCase();
-
-                if (extFile === "doc" || extFile === "docx" || extFile === "xls" ||
-                    extFile === "xlsx" || extFile === "ppt" || extFile === "pptx" ||
-                    extFile === "txt" || extFile === "pdf"
-                ) {
-                } else {
-                    alert('Неверный формат файла (Поддерживаемые форматы: doc, docx, xls, xlsx, ppt, pptx, txt, pdf)');
-
-                    return false;
-                }
-            }
-        }
-
-        let html = ``;
-        for (let i in files) {
-            if (files.hasOwnProperty(i)) {
-                let filename = files[i].name;
-
-                let $parent = $input.closest('.dropfile'),
-                    $inputFile = $('<input/>')
-                        .attr('type', "file")
-                        .attr('multiple', true)
-                        .attr('name', $parent.attr('data-input-name'))
-                        .hide();
-
-                const dataTransfer = new DataTransfer();
-                dataTransfer.items.add(files[i]);
-                $inputFile.get(0).files = dataTransfer.files;
-
-                if ($inputFile.get(0).webkitEntries.length) {
-                    $inputFile.get(0).dataset.file = `${dataTransfer.files[0].name}`;
-                }
-
-                console.log($inputFile.get(0).files)
-
-                $html = $('<div/>')
-                    .addClass('dropfile-documents__item')
-                    .html(`<svg class="icon">
-                                <use href="img/sprite.svg#file"></use>
-                            </svg>
-                            <div class="dropfile-documents__name">` + filename + `</div>
-                            <button class="btn-reset btn btn-primary btn-square dropfile-documents__remove js-remove-document">
-                                <svg class="icon icon-sm icon-fill">
-                                    <use href="img/sprite.svg#cross"></use>
-                                </svg>
-                            </button>`)
-                    .append($inputFile)
-
-                $parent.find('.dropfile-documents').append($html);
-            }
-        }
-    }*/
-
 
     $('body').on('click', '.dropfile-image', function (e) {
         e.preventDefault();
@@ -1412,30 +1226,6 @@ application.prototype.initDropfiles = function () {
         e.stopPropagation();
 
         let $parent = $(this).closest('.dropfile');
-
-        /*if($parent.hasClass('js-upload-photos')) {
-            $(this).closest('.dropfile-image__item').remove();
-        }
-        else {
-            let html = ``;
-
-            if($parent.hasClass('js-upload-avatar')) {
-                $parent.find('')
-                html += `<div class="dropfile-descr">
-                        <div class="dropfile-descr__view">
-                            <svg class="icon icon-sm icon-fill">
-                                <use href="img/sprite.svg#image-plus"></use>
-                            </svg>
-                        </div>
-                    </div>`
-            }
-
-            $(this).closest('.dropfile-image').html(html);
-
-            if($parent.hasClass('js-upload-avatar')) {
-                $parent.find('.dropfile-area').removeClass('dropfile-image');
-            }
-        }*/
 
         let html = ``;
 
@@ -1456,12 +1246,4 @@ application.prototype.initDropfiles = function () {
             $parent.find('.dropfile-area').removeClass('dropfile-image');
         }
     });
-
-    /*$('body').on('click', '.js-remove-document', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        console.log('oks')
-        $(this).closest('.dropfile-documents__item').remove();
-    });*/
 };

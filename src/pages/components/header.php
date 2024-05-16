@@ -28,9 +28,9 @@
     <script defer src="js/select2.js"></script>             <!-- select2 -->
     <script defer src="js/readmore.js"></script>            <!-- readmore -->
     <script defer src="js/flatpickr.min.js"></script>       <!-- flatpickr -->
-    <script defer src="js/flatpickr.min.js"></script>       <!-- flatpickr -->
     <script defer src="js/ru.js"></script>                  <!-- flatpickr -->
     <script defer src="js/nouislider.js"></script>          <!-- nouislider -->
+    <script defer src="js/accordion.js"></script>           <!-- accordion -->
 
 	<?/* Подключение библиотек (объединённо)
     <script defer src="js/libs.min.js"></script> */?>

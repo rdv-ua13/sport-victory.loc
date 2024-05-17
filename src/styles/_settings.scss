@@ -1220,6 +1220,9 @@ input.disabled {
 			.nav-breadcrumbs__item {
 				margin-right: 20px;
 				color: var(--gray2-color);
+				text-decoration: none;
+				text-underline-offset: 4px;
+				text-decoration-color: var(--gray3-color);
 
 				&::before {
 					content: "";
@@ -1233,6 +1236,14 @@ input.disabled {
 					height: 4px;
 					border-radius: 1px;
 					background-color: var(--gray3-color);
+					pointer-events: none;
+					user-select: none;
+				}
+
+				&:hover {
+					color: var(--black-color);
+					text-decoration: underline;
+					text-decoration-color: var(--gray3-color);
 				}
 			}
 		}
@@ -1247,7 +1258,8 @@ input.disabled {
 		position: relative;
 		display: inline-flex;
 		font-size: 12px;
-		line-height: 1.5;
+		line-height: 18px;
+		transition: var(--transition);
 	}
 }
 @media (max-width: 991.98px) {
@@ -1256,8 +1268,6 @@ input.disabled {
 		margin-left: -16px;
 
 		.swiper-slide {
-			width: auto;
-
 			&:first-child {
 				padding-left: 16px;
 			}

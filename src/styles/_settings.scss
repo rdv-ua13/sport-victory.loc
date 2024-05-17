@@ -1213,6 +1213,7 @@ input.disabled {
 
 .nav-breadcrumbs {
 	.swiper-slide {
+		display: inline-flex;
 		width: auto;
 
 		&:not(:last-child) {
@@ -1244,7 +1245,7 @@ input.disabled {
 	}
 	&__item {
 		position: relative;
-		display: flex;
+		display: inline-flex;
 		font-size: 12px;
 		line-height: 1.5;
 	}

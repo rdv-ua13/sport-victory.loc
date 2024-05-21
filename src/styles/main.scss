@@ -763,13 +763,9 @@
 					justify-content: space-between;
 					align-items: center;
 					gap: 16px;
-					min-width: calc(100vw - 32px);
 				}
 				&__close {
 					display: flex;
-				}
-				&__selection {
-					minwidth: calc(100vw - 32px);
 				}
 				&__options {
 					&-header {

@@ -461,7 +461,7 @@
                         <div class="cart-buy">
                             <div class="cart-quantity">
                                 <button class="btn-reset cart-quantity-btn cart-quantity-btn--remove" data-value="qty-remove">
-                                    <svg class="icon icon-sm">
+                                    <svg class="icon icon-fill icon-sm">
                                         <use href="img/sprite.svg#minus"></use>
                                     </svg>
                                 </button>
@@ -474,7 +474,7 @@
                                         data-mult="1"
                                 >
                                 <button class="btn-reset cart-quantity-btn cart-quantity-btn--add" data-value="qty-add">
-                                    <svg class="icon icon-sm">
+                                    <svg class="icon icon-fill icon-sm">
                                         <use href="img/sprite.svg#plus"></use>
                                     </svg>
                                 </button>
